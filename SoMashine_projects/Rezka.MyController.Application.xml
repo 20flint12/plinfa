@@ -1009,6 +1009,7 @@
       <Node name="GVL">
         <Node name="bAlarm" type="T_BOOL" access="ReadWrite" />
         <Node name="Buzer_nstart" type="T_BOOL" access="ReadWrite" />
+        <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
         <Node name="qqq" type="T_BOOL" access="ReadWrite" />
         <Node name="wAlarm" type="T_BYTE" access="ReadWrite" />
         <Node name="xBlinker" type="T_BOOL" access="ReadWrite" />
