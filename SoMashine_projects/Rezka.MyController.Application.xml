@@ -196,20 +196,6 @@
       <UserDefElement type="T_UINT" iecname="uiModulus" byteoffset="0" />
       <UserDefElement type="T_UINT" iecname="uiRemainder" byteoffset="2" />
     </TypeUserDef>
-    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
-    <TypeUserDef name="T_TP" size="24" nativesize="24" typeclass="Userdef" iecname="TP">
-      <UserDefElement type="T_BOOL" iecname="IN" byteoffset="4" />
-      <UserDefElement type="T_TIME" iecname="PT" byteoffset="8" />
-      <UserDefElement type="T_BOOL" iecname="Q" byteoffset="12" />
-      <UserDefElement type="T_TIME" iecname="ET" byteoffset="16" />
-    </TypeUserDef>
-    <TypeUserDef name="T_BLINK" size="44" nativesize="44" typeclass="Userdef" iecname="BLINK">
-      <UserDefElement type="T_BOOL" iecname="ENABLE" byteoffset="4" />
-      <UserDefElement type="T_TIME" iecname="TIMELOW" byteoffset="8" />
-      <UserDefElement type="T_TIME" iecname="TIMEHIGH" byteoffset="12" />
-      <UserDefElement type="T_BOOL" iecname="OUT" byteoffset="16" />
-      <UserDefElement type="T_TP" iecname="CLOCK" byteoffset="20" />
-    </TypeUserDef>
     <TypeSimple name="T_POINTER_TO_WORD" size="4" swapsize="4" typeclass="Pointer" iecname="POINTER TO WORD" />
     <TypeUserDef name="T_SEC_PLCSystemFB" size="8" nativesize="8" typeclass="Userdef" iecname="SEC.PLCSystemFB">
       <UserDefElement type="T_POINTER_TO_WORD" iecname="pMW60000" byteoffset="4" />
@@ -294,6 +280,7 @@
       <UserDefElement type="T_SOCKET_TIMEVAL" iecname="timeout" byteoffset="576" />
       <UserDefElement type="T_ARRAY__0__10__OF_SocketInfo" iecname="socketInfos" byteoffset="584" />
     </TypeUserDef>
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
     <TypeUserDef name="T_TON" size="28" nativesize="28" typeclass="Userdef" iecname="TON">
       <UserDefElement type="T_BOOL" iecname="IN" byteoffset="4" />
       <UserDefElement type="T_TIME" iecname="PT" byteoffset="8" />
@@ -1007,12 +994,28 @@
         </Node>
       </Node>
       <Node name="GVL">
-        <Node name="bAlarm" type="T_BOOL" access="ReadWrite" />
-        <Node name="Buzer_nstart" type="T_BOOL" access="ReadWrite" />
         <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
-        <Node name="qqq" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL01" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL02" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL03" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL04" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL05" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL06" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL07" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL08" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL09" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL10" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL11" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL12" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL13" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL14" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL15" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL16" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL17" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL18" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL19" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL20" type="T_BOOL" access="ReadWrite" />
         <Node name="wAlarm" type="T_BYTE" access="ReadWrite" />
-        <Node name="xBlinker" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS">
         <Node name="Altivar_71" type="T_SE_ATV_Axis_Ref_ATV" access="ReadWrite" />
@@ -1221,33 +1224,11 @@
         <Node name="SQ5_s" type="T_BIT_X_7" access="Read" directaddress="%IX6.7" />
         <Node name="SQ6_s" type="T_BIT_X_0" access="Read" directaddress="%IX7.0" />
         <Node name="Stop" type="T_BIT_X_4" access="Read" directaddress="%IX5.4" />
-        <Node name="test_out_0" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX0.0" />
-        <Node name="test_out_1" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX0.1" />
-        <Node name="test_out_2" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX0.2" />
-        <Node name="test_out_3" type="T_BIT_X_3" access="ReadWrite" directaddress="%QX0.3" />
         <Node name="Vper1_s" type="T_BIT_X_3" access="Read" directaddress="%IX6.3" />
         <Node name="Vper2_s" type="T_BIT_X_3" access="Read" directaddress="%IX16.3" />
         <Node name="Vper3_s" type="T_BIT_X_1" access="Read" directaddress="%IX17.1" />
       </Node>
-      <Node name="POU">
-        <Node name="kk" type="T_WORD" access="ReadWrite" />
-        <Node name="kol" type="T_BOOL" access="ReadWrite" />
-        <Node name="M_K1" type="T_BOOL" access="ReadWrite" />
-      </Node>
-      <Node name="POU_OUTPUTS">
-        <Node name="var_KL1" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_KL2" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_KL3" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_KL4" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_KL5" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_KL6" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_KL7" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_KL8" type="T_BOOL" access="ReadWrite" />
-      </Node>
       <Node name="POU_ZAHVAT">
-        <Node name="BLINK_0" type="T_BLINK" access="ReadWrite" />
-        <Node name="button_HMI" type="T_BOOL" access="ReadWrite" />
-        <Node name="buzzer_out" type="T_BOOL" access="ReadWrite" />
         <Node name="Grab_in" type="T_BOOL" access="ReadWrite" />
         <Node name="Grab_out" type="T_BOOL" access="ReadWrite" />
       </Node>
