@@ -196,6 +196,7 @@
       <UserDefElement type="T_UINT" iecname="uiModulus" byteoffset="0" />
       <UserDefElement type="T_UINT" iecname="uiRemainder" byteoffset="2" />
     </TypeUserDef>
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
     <TypeSimple name="T_POINTER_TO_WORD" size="4" swapsize="4" typeclass="Pointer" iecname="POINTER TO WORD" />
     <TypeUserDef name="T_SEC_PLCSystemFB" size="8" nativesize="8" typeclass="Userdef" iecname="SEC.PLCSystemFB">
       <UserDefElement type="T_POINTER_TO_WORD" iecname="pMW60000" byteoffset="4" />
@@ -280,7 +281,6 @@
       <UserDefElement type="T_SOCKET_TIMEVAL" iecname="timeout" byteoffset="576" />
       <UserDefElement type="T_ARRAY__0__10__OF_SocketInfo" iecname="socketInfos" byteoffset="584" />
     </TypeUserDef>
-    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
     <TypeUserDef name="T_TON" size="28" nativesize="28" typeclass="Userdef" iecname="TON">
       <UserDefElement type="T_BOOL" iecname="IN" byteoffset="4" />
       <UserDefElement type="T_TIME" iecname="PT" byteoffset="8" />
@@ -1229,8 +1229,10 @@
         <Node name="Vper3_s" type="T_BIT_X_1" access="Read" directaddress="%IX17.1" />
       </Node>
       <Node name="POU_ZAHVAT">
-        <Node name="Grab_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="Grab_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="GrabTroll_in_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="GrabTroll_out_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_GrabTroll_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_GrabTroll_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="SEC">
         <Node name="PLC_GVL">
