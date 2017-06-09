@@ -1015,6 +1015,50 @@
         <Node name="var_KL18" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL19" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL20" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL21" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL22" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL23" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL24" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL25" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL26" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL27" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL28" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL29" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL30" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL31" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL32" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL33" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL34" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL35" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL36" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL37" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL38" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL39" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL40" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL41" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL42" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL43" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL44" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL45" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL46" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL47" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL48" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL49" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL50" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL51" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL52" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL53" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL54" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL55" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL56" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL57" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL58" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL59" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL60" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL61" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL62" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL63" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_KL64" type="T_BOOL" access="ReadWrite" />
         <Node name="wAlarm" type="T_BYTE" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS">
@@ -1098,7 +1142,6 @@
         <Node name="HED2_1_s" type="T_BIT_X_1" access="Read" directaddress="%IX7.1" />
         <Node name="HED2_2_s" type="T_BIT_X_2" access="Read" directaddress="%IX7.2" />
         <Node name="HED2_5_s" type="T_BIT_X_5" access="Read" directaddress="%IX7.5" />
-        <Node name="ibDI_IB1" type="T_BYTE" access="Read" directaddress="%IB2" />
         <Node name="idwModule_1_ID0" type="T_DWORD" access="Read" directaddress="%ID1" />
         <Node name="idwModule_2_ID0" type="T_DWORD" access="Read" directaddress="%ID2" />
         <Node name="idwModule_3_ID0" type="T_DWORD" access="Read" directaddress="%ID3" />
@@ -1118,7 +1161,6 @@
         <Node name="iuiAltivar_71_IL1R" type="T_UINT" access="Read" directaddress="%IW34" />
         <Node name="iuiAltivar_71_OL1R" type="T_UINT" access="Read" directaddress="%IW30" />
         <Node name="iuiAltivar_71_Statusword" type="T_UINT" access="Read" directaddress="%IW31" />
-        <Node name="iwDI_IW0" type="T_WORD" access="Read" directaddress="%IW0" />
         <Node name="KL1" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX4.0" />
         <Node name="KL10" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX5.1" />
         <Node name="KL11" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX5.2" />
@@ -1233,6 +1275,10 @@
         <Node name="GrabTroll_out_OK" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_GrabTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_GrabTroll_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_TurnTroll_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_TurnTroll_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TurnTroll_in_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="TurnTroll_out_OK" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="SEC">
         <Node name="PLC_GVL">
