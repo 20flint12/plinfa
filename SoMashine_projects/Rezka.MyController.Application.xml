@@ -465,6 +465,20 @@
         <Node name="Vper2_s" type="T_BIT_X_3" access="Read" directaddress="%IX16.3" />
         <Node name="Vper3_s" type="T_BIT_X_1" access="Read" directaddress="%IX17.1" />
       </Node>
+      <Node name="POU_ALTIVARS">
+        <Node name="var_Altivar_0_freq_fwd" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_0_freq_rev" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_0_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_0_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_1_freq_fwd" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_1_freq_rev" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_1_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_1_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_2_freq_fwd" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_2_freq_rev" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_2_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_2_rev" type="T_BOOL" access="ReadWrite" />
+      </Node>
       <Node name="POU_ZAHVAT">
         <Node name="GrabTroll_in_OK" type="T_BOOL" access="ReadWrite" />
         <Node name="GrabTroll_out_OK" type="T_BOOL" access="ReadWrite" />
