@@ -197,6 +197,7 @@
       <UserDefElement type="T_UINT" iecname="uiRemainder" byteoffset="2" />
     </TypeUserDef>
     <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
     <TypeSimple name="T_BIT_X_0" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="0" />
     <TypeSimple name="T_BIT_X_1" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="1" />
     <TypeSimple name="T_BIT_X_2" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="2" />
@@ -230,6 +231,10 @@
       </Node>
       <Node name="GVL">
         <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
+        <Node name="var_CuttingFrame_freq_up" type="T_INT" access="ReadWrite" />
+        <Node name="var_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL01" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL02" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL03" type="T_BOOL" access="ReadWrite" />
@@ -466,18 +471,30 @@
         <Node name="Vper3_s" type="T_BIT_X_1" access="Read" directaddress="%IX17.1" />
       </Node>
       <Node name="POU_ALTIVARS">
-        <Node name="var_Altivar_0_freq_fwd" type="T_UINT" access="ReadWrite" />
-        <Node name="var_Altivar_0_freq_rev" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_0_en" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_0_freq" type="T_INT" access="ReadWrite" />
         <Node name="var_Altivar_0_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="var_Altivar_0_rev" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_Altivar_1_freq_fwd" type="T_UINT" access="ReadWrite" />
-        <Node name="var_Altivar_1_freq_rev" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_1_en" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_1_freq" type="T_INT" access="ReadWrite" />
         <Node name="var_Altivar_1_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="var_Altivar_1_rev" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_Altivar_2_freq_fwd" type="T_UINT" access="ReadWrite" />
-        <Node name="var_Altivar_2_freq_rev" type="T_UINT" access="ReadWrite" />
+        <Node name="var_Altivar_2_en" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_Altivar_2_freq" type="T_INT" access="ReadWrite" />
         <Node name="var_Altivar_2_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="var_Altivar_2_rev" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="POU_PODVODTELEZHKI">
+        <Node name="CentrTroll_in_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="CentrTroll_out_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_CentrTroll_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
+      </Node>
+      <Node name="POU_VERTICALCUTTING">
+        <Node name="PressTable_in_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="PressTable_out_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_PressTable_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PressTable_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_ZAHVAT">
         <Node name="GrabTroll_in_OK" type="T_BOOL" access="ReadWrite" />
