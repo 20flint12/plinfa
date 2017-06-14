@@ -231,6 +231,10 @@
       </Node>
       <Node name="GVL">
         <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
+        <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
+        <Node name="var_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="var_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_up" type="T_INT" access="ReadWrite" />
@@ -299,7 +303,10 @@
         <Node name="var_KL62" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL63" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL64" type="T_BOOL" access="ReadWrite" />
-        <Node name="wAlarm" type="T_BYTE" access="ReadWrite" />
+        <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" />
+        <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" />
+        <Node name="var_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="var_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
         <Node name="C10_s" type="T_BIT_X_7" access="Read" directaddress="%IX15.7" />
