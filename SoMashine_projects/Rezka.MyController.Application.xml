@@ -478,8 +478,12 @@
         <Node name="Vper3_s" type="T_BIT_X_1" access="Read" directaddress="%IX17.1" />
       </Node>
       <Node name="POU_2_TROSTOLKATELI">
+        <Node name="ctrl_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="drv_ctrl_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="drv_ctrl_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
       </Node>
