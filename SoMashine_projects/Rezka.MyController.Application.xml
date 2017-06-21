@@ -230,6 +230,7 @@
         </Node>
       </Node>
       <Node name="GVL">
+        <Node name="bGlobalLock" type="T_BOOL" access="ReadWrite" />
         <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
@@ -307,6 +308,7 @@
         <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" />
         <Node name="var_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="var_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="wStep" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
         <Node name="C10_s" type="T_BIT_X_7" access="Read" directaddress="%IX15.7" />
