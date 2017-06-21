@@ -230,6 +230,9 @@
         </Node>
       </Node>
       <Node name="GVL">
+        <Node name="bGlobalAlarm" type="T_BOOL" access="ReadWrite" />
+        <Node name="bGlobalAuto" type="T_BOOL" access="ReadWrite" />
+        <Node name="bGlobalDebug" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalLock" type="T_BOOL" access="ReadWrite" />
         <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
