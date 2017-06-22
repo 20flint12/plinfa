@@ -506,14 +506,14 @@
         <Node name="ctrl_GrabTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="GrabTroll_in_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="GrabTroll_out_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GrabTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GrabTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_GrabTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_GrabTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_TurnTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_TurnTroll_out" type="T_TIME" access="ReadWrite" />
-        <Node name="TurnTroll_in_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="TurnTroll_out_OK" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="POU_5_OPROKIDYVANIE">
         <Node name="ctrl_FixingFrame_in" type="T_BOOL" access="ReadWrite" />
