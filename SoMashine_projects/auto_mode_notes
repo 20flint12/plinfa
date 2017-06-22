@@ -1,0 +1,30 @@
+							step	next	timeout
+
+POU_3_PodvodTelezhki - Подвод тележки ()
+	CentrTroll
+		CentrTroll_in		21		31		40s			KL27
+		CentrTroll_out		22				30s			KL28
+
+POU_4_Zahvat - Захват и фиксация тележки ()
+	GrabTroll
+		GrabTroll_in		31		33		40s			KL19
+		GrabTroll_out		32		22		35s			KL20
+	TurnTroll
+		TurnTroll_in		33				25s			KL21
+		TurnTroll_out		34		32		25s			KL22
+
+POU_5_Oprokidyvanie	- Опрокидывание и захват тележки, подвод-отвод стола, защёлкивание рамки
+	TakeTable
+		TakeTable_in		41		43		30s			KL19
+		TakeTable_out		42		999		30s			KL20
+	MoveTipper
+		MoveTipper_in		43							KL21
+		MoveTipper_out		44							KL22
+	FixingFrame
+		FixingFrame_in		47							KL23
+		FixingFrame_out		48							KL24
+
+POU_VerticalCutting - Вертикальная резка и прижим массива к столу
+	PressTable
+		PressTable_in		51
+		PressTable_out		52

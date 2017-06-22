@@ -485,10 +485,14 @@
       <Node name="POU_2_TROSTOLKATELI">
         <Node name="ctrl_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_BackPath_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="drv_ctrl_BackPath_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="drv_ctrl_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
       </Node>
@@ -522,12 +526,12 @@
         <Node name="ctrl_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="FixingFrame_in_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="FixingFrame_out_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="MoveTipper_in_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="MoveTipper_out_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="TakeTable_in_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="TakeTable_out_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_FixingFrame_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_FixingFrame_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_MoveTipper_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_TakeTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_TakeTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_FixingFrame_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_FixingFrame_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_MoveTipper_in" type="T_TIME" access="ReadWrite" />
@@ -536,8 +540,10 @@
         <Node name="timer_TakeTable_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_7_VERTICALCUTTING">
-        <Node name="PressTable_in_OK" type="T_BOOL" access="ReadWrite" />
-        <Node name="PressTable_out_OK" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTable_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_PressTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_PressTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_PressTable_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_out" type="T_TIME" access="ReadWrite" />
       </Node>
