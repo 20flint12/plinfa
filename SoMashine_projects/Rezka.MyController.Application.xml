@@ -235,14 +235,14 @@
         <Node name="bGlobalDebug" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalLock" type="T_BOOL" access="ReadWrite" />
         <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_up" type="T_INT" access="ReadWrite" />
-        <Node name="var_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL01" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL02" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL03" type="T_BOOL" access="ReadWrite" />

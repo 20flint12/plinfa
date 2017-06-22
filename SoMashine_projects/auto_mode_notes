@@ -26,5 +26,5 @@ POU_5_Oprokidyvanie	- Опрокидывание и захват тележки,
 
 POU_VerticalCutting - Вертикальная резка и прижим массива к столу
 	PressTable
-		PressTable_in		51
-		PressTable_out		52
+		PressTable_in		51							KL37
+		PressTable_out		52							KL38
