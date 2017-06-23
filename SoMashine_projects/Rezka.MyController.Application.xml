@@ -235,8 +235,10 @@
         <Node name="bGlobalDebug" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalLock" type="T_BOOL" access="ReadWrite" />
         <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
@@ -309,8 +311,6 @@
         <Node name="var_KL64" type="T_BOOL" access="ReadWrite" />
         <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" />
         <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" />
-        <Node name="var_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
         <Node name="wStep" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
@@ -343,7 +343,9 @@
         <Node name="C1A_s" type="T_BIT_X_1" access="Read" directaddress="%IX15.1" />
         <Node name="C20_s" type="T_BIT_X_4" access="Read" directaddress="%IX14.4" />
         <Node name="C21_s" type="T_BIT_X_4" access="Read" directaddress="%IX12.4" />
+        <Node name="C21shtrih_s" type="T_BIT_X_4" access="Read" directaddress="%IX18.4" />
         <Node name="C22_s" type="T_BIT_X_5" access="Read" directaddress="%IX12.5" />
+        <Node name="C22shtrih_s" type="T_BIT_X_5" access="Read" directaddress="%IX18.5" />
         <Node name="C23A_s" type="T_BIT_X_2" access="Read" directaddress="%IX15.2" />
         <Node name="C23B_s" type="T_BIT_X_5" access="Read" directaddress="%IX13.5" />
         <Node name="C23C_s" type="T_BIT_X_6" access="Read" directaddress="%IX13.6" />
@@ -539,6 +541,13 @@
         <Node name="timer_TakeTable_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_TakeTable_out" type="T_TIME" access="ReadWrite" />
       </Node>
+      <Node name="POU_6_HORIZONTALCUTTING">
+        <Node name="sens_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_MovingFrame_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_MovingFrame_fwd" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_MovingFrame_rev" type="T_TIME" access="ReadWrite" />
+      </Node>
       <Node name="POU_7_VERTICALCUTTING">
         <Node name="ctrl_PressTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PressTable_out" type="T_BOOL" access="ReadWrite" />
@@ -546,6 +555,10 @@
         <Node name="sens_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_CuttingFrame_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTable_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_CuttingFrame_dn" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_CuttingFrame_up" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_out" type="T_TIME" access="ReadWrite" />
       </Node>

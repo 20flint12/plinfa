@@ -24,10 +24,15 @@ POU_5_Oprokidyvanie	- Опрокидывание и захват тележки,
 		FixingFrame_in		47							KL23
 		FixingFrame_out		48							KL24
 
-POU_VerticalCutting - Вертикальная резка и прижим массива к столу
+POU_7_VerticalCutting - Вертикальная резка и прижим массива к столу
 	PressTable
 		PressTable_in		51							KL37
 		PressTable_out		52							KL38
 	CuttingFrame
 		CuttingFrame_up		55							UZ2
 		CuttingFrame_dn		56							UZ2
+
+POU_6_HorizontalCutting	- Горизонтальная резка (ToDo: переход на средине движения)
+	MovingFrame
+		MovingFrame_fwd		61				100s		UZ1
+		MovingFrame_rev		62				50s			UZ1
