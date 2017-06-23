@@ -233,8 +233,7 @@
         <Node name="bGlobalAlarm" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalDebug" type="T_BOOL" access="ReadWrite" />
-        <Node name="bGlobalLock" type="T_BOOL" access="ReadWrite" />
-        <Node name="Buzer_start" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_BellPulses" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
