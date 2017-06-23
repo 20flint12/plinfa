@@ -28,3 +28,6 @@ POU_VerticalCutting - Вертикальная резка и прижим мас
 	PressTable
 		PressTable_in		51							KL37
 		PressTable_out		52							KL38
+	CuttingFrame
+		CuttingFrame_up		55							UZ2
+		CuttingFrame_dn		56							UZ2
