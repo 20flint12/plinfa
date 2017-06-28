@@ -451,7 +451,6 @@
         <Node name="KM11" type="T_BIT_X_7" access="Read" directaddress="%IX4.7" />
         <Node name="KM12" type="T_BIT_X_0" access="Read" directaddress="%IX5.0" />
         <Node name="KM13" type="T_BIT_X_1" access="Read" directaddress="%IX5.1" />
-        <Node name="KM14" type="T_BIT_X_2" access="Read" directaddress="%IX5.2" />
         <Node name="KM2" type="T_BIT_X_0" access="Read" directaddress="%IX4.0" />
         <Node name="KM3" type="T_BIT_X_1" access="Read" directaddress="%IX4.1" />
         <Node name="KM4" type="T_BIT_X_2" access="Read" directaddress="%IX4.2" />
