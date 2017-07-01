@@ -313,6 +313,9 @@
         <Node name="wStep" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
+        <Node name="altivar_0_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW19" />
+        <Node name="altivar_0_Motor_current" type="T_UINT" access="ReadWrite" directaddress="%QW20" />
+        <Node name="altivar_0_Output_frequency" type="T_INT" access="ReadWrite" directaddress="%QW21" />
         <Node name="C10_s" type="T_BIT_X_7" access="Read" directaddress="%IX15.7" />
         <Node name="C11A_s" type="T_BIT_X_0" access="Read" directaddress="%IX11.0" />
         <Node name="C11B_s" type="T_BIT_X_3" access="Read" directaddress="%IX9.3" />
@@ -447,6 +450,7 @@
         <Node name="Kluch1_s" type="T_BIT_X_2" access="Read" directaddress="%IX6.2" />
         <Node name="Kluch2_s" type="T_BIT_X_2" access="Read" directaddress="%IX16.2" />
         <Node name="Kluch3_s" type="T_BIT_X_0" access="Read" directaddress="%IX17.0" />
+        <Node name="KM1" type="T_BIT_X_2" access="Read" directaddress="%IX5.2" />
         <Node name="KM10" type="T_BIT_X_6" access="Read" directaddress="%IX4.6" />
         <Node name="KM11" type="T_BIT_X_7" access="Read" directaddress="%IX4.7" />
         <Node name="KM12" type="T_BIT_X_0" access="Read" directaddress="%IX5.0" />
@@ -576,6 +580,9 @@
         <Node name="timer_CuttingFrame_up" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_out" type="T_TIME" access="ReadWrite" />
+      </Node>
+      <Node name="POU_9_ALTIVARS">
+        <Node name="var_Altivar_2_reset" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="SEC">
         <Node name="PLC_GVL">
