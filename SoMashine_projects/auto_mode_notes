@@ -2,27 +2,33 @@
 
 POU_3_PodvodTelezhki - Подвод тележки ()
 	CentrTroll
-		CentrTroll_in		21		31		40s			KL27
-		CentrTroll_out		22				30s			KL28
+		CentrTroll_in		21		31		40s			KL29+
+		CentrTroll_out		22				30s			KL32+
+	PropTroll
+		PropTroll_in		25
+		PropTroll_out		26
 
 POU_4_Zahvat - Захват и фиксация тележки ()
 	GrabTroll
-		GrabTroll_in		31		33		40s			KL19
-		GrabTroll_out		32		22		35s			KL20
+		GrabTroll_in		31		33		40s			KL31+
+		GrabTroll_out		32		22		35s			KL30+
 	TurnTroll
-		TurnTroll_in		33				25s			KL21
-		TurnTroll_out		34		32		25s			KL22
+		TurnTroll_in		33				25s			KL28+
+		TurnTroll_out		34		32		25s			KL27+
 
 POU_5_Oprokidyvanie	- Опрокидывание и захват тележки, подвод-отвод стола, защёлкивание рамки
 	TakeTable
-		TakeTable_in		41		43		30s			KL19
-		TakeTable_out		42		999		30s			KL20
+		TakeTable_in		41		43		30s			KL17+
+		TakeTable_out		42		999		30s			KL18+
 	MoveTipper
 		MoveTipper_in		43							KL21
 		MoveTipper_out		44							KL22
 	FixingFrame
-		FixingFrame_in		47							KL23
-		FixingFrame_out		48							KL24
+		FixingFrame_in		47							KL39+
+		FixingFrame_out		48							KL40+
+	FrameToTipper	
+		FrameToTipper_in	49							KL26+
+		FrameToTipper_out	50							KL25+	
 
 POU_7_VerticalCutting - Вертикальная резка и прижим массива к столу
 	PressTable
