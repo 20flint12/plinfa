@@ -24,11 +24,14 @@ POU_5_Oprokidyvanie	- Опрокидывание и захват тележки,
 		MoveTipper_in		43							KL21
 		MoveTipper_out		44							KL22
 	FixingFrame
-		FixingFrame_in		47							KL39+
-		FixingFrame_out		48							KL40+
+		FixingFrame_in		45							KL39+
+		FixingFrame_out		46							KL40+
 	FrameToTipper	
-		FrameToTipper_in	49							KL26+
-		FrameToTipper_out	50							KL25+	
+		FrameToTipper_in	47							KL26+
+		FrameToTipper_out	48							KL25+	
+	LockTable
+		LockTable_in		49							KL21+
+		LockTable_out		50							KL22+
 
 POU_7_VerticalCutting - Вертикальная резка и прижим массива к столу
 	PressTable

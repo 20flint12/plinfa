@@ -536,6 +536,8 @@
         <Node name="ctrl_FixingFrame_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_FrameToTipper_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_FrameToTipper_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_LockTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_LockTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_MoveTipper_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
@@ -544,22 +546,31 @@
         <Node name="sens_FixingFrame_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_FrameToTipper_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_FrameToTipper_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_LockTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_LockTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_MoveTipper_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_TakeTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_TakeTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="step_FixingFrame_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_FixingFrame_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_FixingFrame_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_FrameToTipper_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_FrameToTipper_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_LockTable_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_LockTable_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_MoveTipper_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_MoveTipper_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_MoveTipper_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_TakeTable_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_FixingFrame_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_FixingFrame_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_FrameToTipper_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_FrameToTipper_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_LockTable_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_LockTable_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_MoveTipper_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_MoveTipper_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_TakeTable_in" type="T_TIME" access="ReadWrite" />
