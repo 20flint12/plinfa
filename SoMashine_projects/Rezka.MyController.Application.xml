@@ -313,11 +313,11 @@
         <Node name="wStep" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
-        <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW18" />
+        <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW16" />
         <Node name="altivar_0_Error_Code" type="T_UINT" access="Read" directaddress="%IW20" />
-        <Node name="altivar_0_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW21" />
-        <Node name="altivar_0_Motor_current" type="T_UINT" access="ReadWrite" directaddress="%QW19" />
-        <Node name="altivar_0_Output_frequency" type="T_INT" access="ReadWrite" directaddress="%QW20" />
+        <Node name="altivar_0_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW19" />
+        <Node name="altivar_0_Motor_current" type="T_UINT" access="ReadWrite" directaddress="%QW17" />
+        <Node name="altivar_0_Output_frequency" type="T_INT" access="ReadWrite" directaddress="%QW18" />
         <Node name="C10_s" type="T_BIT_X_7" access="Read" directaddress="%IX15.7" />
         <Node name="C11A_s" type="T_BIT_X_0" access="Read" directaddress="%IX11.0" />
         <Node name="C11B_s" type="T_BIT_X_3" access="Read" directaddress="%IX9.3" />
