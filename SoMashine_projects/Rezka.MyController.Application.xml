@@ -243,7 +243,7 @@
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
-        <Node name="var_CuttingFrame_freq_up" type="T_INT" access="ReadWrite" />
+        <Node name="var_CuttingFrame_freq_up" type="T_INT" access="ReadWrite" directaddress="%MW100" />
         <Node name="var_KL01" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL02" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL03" type="T_BOOL" access="ReadWrite" />
