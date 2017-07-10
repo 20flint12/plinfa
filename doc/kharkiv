@@ -11,3 +11,8 @@ pptp
 
 Remote via NAT
 etcp3://193.169.81.79:1105,192.168.49.90
+
+
+ipcamera 192.168.48.48
+admin
+admin12345
