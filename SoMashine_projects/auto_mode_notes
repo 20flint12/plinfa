@@ -45,3 +45,17 @@ POU_6_HorizontalCutting	- Горизонтальная резка (ToDo: пер�
 	MovingFrame
 		MovingFrame_fwd		61				100s		UZ1
 		MovingFrame_rev		62				50s			UZ1
+
+
+
+##############################################################################
+STATUS_register
+register_INIT
+register_EXEC
+register_OVER
+register_ERR
+sens_register
+ctrl_register
+
+
+
