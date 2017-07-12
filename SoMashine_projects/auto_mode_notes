@@ -50,18 +50,23 @@ POU_6_HorizontalCutting	- Горизонтальная резка (ToDo: пер�
 
 ##############################################################################
 STATUS_register
-A:	register_INIT	0
-A:	register_EXEC	1
-A:	register_OVER	2
-A:	register_ERR	3
-A:	sens_register	4
-A:	ctrl_register	5
+A:	register_INIT	0		1
+A:	register_EXEC	1		1/2
+A:	register_OVER	2		1/4
+A:	register_ERR	3		1/8
+A:	sens_register	4		1/16
+A:	ctrl_register	5		1/32
 
-B:	register_INIT	8
-B:	register_EXEC	9
-B:	register_OVER	10
-B:	register_ERR	11
-B:	sens_register	12
-B:	ctrl_register	13
+B:	register_INIT	8		1/256
+B:	register_EXEC	9		1/512
+B:	register_OVER	10		1/1024
+B:	register_ERR	11		1/2048
+B:	sens_register	12		1/4096
+B:	ctrl_register	13		1/8192
+
+
+admin	plinfaA$U2017
+plinfa 	plinfa
+user 	user
 
 
