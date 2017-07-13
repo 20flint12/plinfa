@@ -318,8 +318,6 @@
         <Node name="drv_ctrl_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="POU_3_PODVODTELEZHKI">
-        <Node name="ctrl_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_Troll_is" type="T_BOOL" access="ReadWrite" />
@@ -329,10 +327,6 @@
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_4_ZAHVAT">
-        <Node name="ctrl_GrabTroll_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_GrabTroll_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_GrabTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_GrabTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
