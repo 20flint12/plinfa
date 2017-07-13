@@ -125,7 +125,7 @@
         <Node name="var_KL64" type="T_BOOL" access="ReadWrite" />
         <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" directaddress="%MW100" />
         <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" directaddress="%MW101" />
-        <Node name="wStep" type="T_INT" access="ReadWrite" />
+        <Node name="wStep" type="T_INT" access="ReadWrite" directaddress="%MW19" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
         <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW16" />
@@ -341,16 +341,6 @@
         <Node name="timer_TurnTroll_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_5_OPROKIDYVANIE">
-        <Node name="ctrl_FixingFrame_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_FixingFrame_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_FrameToTipper_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_FrameToTipper_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_LockTable_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_LockTable_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_MoveTipper_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_TakeTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_FixingFrame_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_FixingFrame_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_FrameToTipper_in" type="T_BOOL" access="ReadWrite" />
