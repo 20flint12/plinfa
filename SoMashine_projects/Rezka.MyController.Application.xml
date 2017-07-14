@@ -234,6 +234,24 @@
         <Node name="bGlobalAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalDebug" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BellPulses" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_FixingFrame_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_FixingFrame_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_FrameToTipper_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_FrameToTipper_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_GrabTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_GrabTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_LockTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_LockTable_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_MoveTipper_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PropTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PropTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_TakeTable_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
