@@ -1,0 +1,62 @@
+
+admin	plinfaA$U2017
+plinfa 	plinfa
+user 	user
+
+
+
+193.169.81.79
+kharkiv
+123kharkiv
+
+pptp
+
+193.169.81.79:49999	=>	192.168.49.90:1105
+
+
+
+
+192.168.49.90:1105		PLC			TM241CEC24T_U @0080F40B5F14
+192.168.49.95:1155		Panel
+192.168.49.120:80		WebHMI
+
+Remote via NAT
+etcp3://193.169.81.79:1105,192.168.49.90
+etcp3://193.169.81.79:49999,192.168.49.90
+
+
+ipcamera 192.168.48.48
+admin
+admin12345
+
+
+chrome://flags/#enable-npapi
+
+https://sassec.wordpress.com/2016/01/19/solving-hikvision-and-google-chrome-compatibility-issues/
+
+
+http://192.168.48.48
+
+http://admin:admin12345@192.168.48.48/Streaming/channels/102/httppreview
+
+rtsp://192.168.48.48:554/Streaming/Channels/1
+http://192.168.48.48/Streaming/channels/1/picture
+
+=== mjpeg for webhmi ===
+http://192.168.48.48/Streaming/channels/102/httpPreview
+
+Nick
+http://193.169.81.79:45644/doc/page/preview.asp
+
+
+
+http://193.169.81.79:45644/Streaming/channels/102/httpPreview
+rtsp://193.169.81.79:45644/Streaming/Channels/1
+
+
+
+nmap -A 193.169.81.79/32 -p 1105
+
+
+63933
+
