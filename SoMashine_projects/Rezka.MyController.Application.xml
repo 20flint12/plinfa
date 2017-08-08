@@ -45,15 +45,17 @@
   <NodeList>
     <Node name="Application">
       <Node name="_3SCOS">
-        <Node name="CO">
-          <Node name="CANOPENMANAGERVARIABLES">
-            <Node name="m_IStack" type="T_ARRAY__0__9__OF_ICanOpenStack" access="ReadWrite" />
-          </Node>
-        </Node>
         <Node name="GLOBALHELPER">
           <Node name="g_aNetDiagnosis" type="T_ARRAY__0__9__OF_NetDiagnosis" access="ReadWrite" />
           <Node name="g_bSYSTEM_HAS_INTEL_BYTEORDER" type="T_BOOL" access="ReadWrite" />
           <Node name="g_stComponentName" type="T_STRING" access="ReadWrite" />
+        </Node>
+      </Node>
+      <Node name="CIA405">
+        <Node name="CO">
+          <Node name="CANOPENMANAGERVARIABLES">
+            <Node name="m_IStack" type="T_ARRAY__0__9__OF_ICanOpenStack" access="ReadWrite" />
+          </Node>
         </Node>
       </Node>
       <Node name="FDT_CAN">
