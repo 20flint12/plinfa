@@ -530,6 +530,8 @@
         <Node name="step_CentrTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_CentrTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PropTroll_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PropTroll_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_4_ZAHVAT">
         <Node name="sens_GrabTroll_in" type="T_BOOL" access="ReadWrite" />
