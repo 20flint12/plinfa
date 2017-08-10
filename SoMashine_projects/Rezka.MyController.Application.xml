@@ -256,12 +256,18 @@
         <Node name="ctrl_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrldt_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrldt_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrldt_BackPath_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrldt_BackPath_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrldt_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrldt_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
-        <Node name="var_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_up" type="T_INT" access="ReadWrite" />
         <Node name="var_KL01" type="T_BOOL" access="ReadWrite" />
@@ -509,12 +515,6 @@
         <Node name="Vper3_s" type="T_BIT_X_1" access="Read" directaddress="%IX17.1" />
       </Node>
       <Node name="POU_2_TROSTOLKATELI">
-        <Node name="ctrl_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_BackPath_far" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_BackPath_near" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_BackPath_far" type="T_BOOL" access="ReadWrite" />
