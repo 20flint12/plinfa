@@ -531,7 +531,9 @@
         <Node name="sens_PropTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_Troll_is" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_CentrTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_CentrTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GetTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GetTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
