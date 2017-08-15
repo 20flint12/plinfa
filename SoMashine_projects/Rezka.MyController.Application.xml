@@ -235,6 +235,7 @@
         <Node name="bGlobalAlarm" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalDebug" type="T_BOOL" access="ReadWrite" />
+        <Node name="bGlobalTest" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BellPulses" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
@@ -532,11 +533,14 @@
         <Node name="sens_Troll_is" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_CentrTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GetTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GetTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PropTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_CentrTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
