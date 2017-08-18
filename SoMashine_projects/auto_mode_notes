@@ -10,6 +10,9 @@ POU_3_PodvodTelezhki - Подвод тележки ()
 	GetTroll
 		GetTroll_in
 		GetTroll_out
+	PressTroll
+		PressTroll_in		
+		PressTroll_out		
 POU_4_Zahvat - Захват и фиксация тележки ()
 	GrabTroll
 	4	GrabTroll_in		31		33		40s			KL31+	WEB_CONTROL_0.4		(16)

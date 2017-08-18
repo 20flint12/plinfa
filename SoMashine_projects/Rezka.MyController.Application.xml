@@ -249,8 +249,11 @@
         <Node name="ctrl_LockTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_MoveTipper_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_StartAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
@@ -338,6 +341,7 @@
         <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" directaddress="%MW100" />
         <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" directaddress="%MW101" />
         <Node name="wStep" type="T_INT" access="ReadWrite" directaddress="%MW19" />
+        <Node name="wStep2" type="T_INT" access="ReadWrite" directaddress="%MW18" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
         <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW16" />
@@ -522,12 +526,20 @@
         <Node name="drv_ctrl_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="drv_ctrl_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="lim_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="lim_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="lim_BackPath_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="lim_BackPath_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="lim_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
+        <Node name="lim_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="POU_3_PODVODTELEZHKI">
         <Node name="sens_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_GetTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_GetTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_PressTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_PressTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PropTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PropTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_Troll_is" type="T_BOOL" access="ReadWrite" />
@@ -539,13 +551,23 @@
         <Node name="step_GetTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GetTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GetTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PropTrol_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PropTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_CentrTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_GetTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_GetTroll_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PressTroll_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PressTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PropTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PropTroll_out" type="T_TIME" access="ReadWrite" />
       </Node>
