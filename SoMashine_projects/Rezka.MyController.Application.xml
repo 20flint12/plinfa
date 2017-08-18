@@ -239,6 +239,7 @@
         <Node name="ctrl_BellPulses" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_EmergencyStop" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_FixingFrame_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_FixingFrame_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_FrameToTipper_in" type="T_BOOL" access="ReadWrite" />
@@ -253,7 +254,6 @@
         <Node name="ctrl_PressTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_StartAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
