@@ -51,6 +51,11 @@ POU_6_HorizontalCutting	- Горизонтальная резка (ToDo: пер�
 		MovingFrame_fwd		73		31/31/32/44		100s		UZ1							WEB_CONTROL_1.10
 		MovingFrame_rev		74		31/31/32/44		50s			UZ1							WEB_CONTROL_1.11
 
+		bGlobalTest																			WEB_CONTROL_1.12
+		bGlobalDebug																		WEB_CONTROL_1.13
+		bGlobalAuto																			WEB_CONTROL_1.14
+		bGlobalTest																			WEB_CONTROL_1.15
+
 ------------------------------
 Exit codes
 		STEP_Error 			96

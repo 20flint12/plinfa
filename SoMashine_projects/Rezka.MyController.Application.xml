@@ -250,6 +250,8 @@
         <Node name="ctrl_LockTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_MoveTipper_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTable_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PressTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PressTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_in" type="T_BOOL" access="ReadWrite" />
@@ -630,8 +632,6 @@
         <Node name="timer_MovingFrame_rev" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_7_VERTICALCUTTING">
-        <Node name="ctrl_PressTable_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_PressTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_in" type="T_BOOL" access="ReadWrite" />
