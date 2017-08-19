@@ -98,5 +98,8 @@ STEP_TurnTroll_out		STEP_GrabTroll_out
 STEP_GrabTroll_out		STEP_CentrTroll_out
 STEP_CentrTroll_out		STEP_Standby
 
-
-
+2
+STEP_CuttingFrame_up	69
+STEP_PressTable_in
+STEP_PressTable_out
+STEP_CuttingFrame_dn
