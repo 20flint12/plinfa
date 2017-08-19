@@ -272,6 +272,7 @@
         <Node name="ctrldt_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="sel_AutoCycle" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
@@ -340,17 +341,17 @@
         <Node name="var_KL62" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL63" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL64" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" directaddress="%MW100" />
-        <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" directaddress="%MW101" />
+        <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" />
+        <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" />
         <Node name="wStep" type="T_INT" access="ReadWrite" directaddress="%MW19" />
         <Node name="wStep2" type="T_INT" access="ReadWrite" directaddress="%MW18" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
-        <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW16" />
-        <Node name="altivar_0_Error_Code" type="T_UINT" access="Read" directaddress="%IW20" />
-        <Node name="altivar_0_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW19" />
-        <Node name="altivar_0_Motor_current" type="T_UINT" access="ReadWrite" directaddress="%QW17" />
-        <Node name="altivar_0_Output_frequency" type="T_INT" access="ReadWrite" directaddress="%QW18" />
+        <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW26" />
+        <Node name="altivar_0_Error_Code" type="T_UINT" access="Read" directaddress="%IW30" />
+        <Node name="altivar_0_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW29" />
+        <Node name="altivar_0_Motor_current" type="T_UINT" access="ReadWrite" directaddress="%QW27" />
+        <Node name="altivar_0_Output_frequency" type="T_INT" access="ReadWrite" directaddress="%QW28" />
         <Node name="C10_s" type="T_BIT_X_7" access="Read" directaddress="%IX15.7" />
         <Node name="C11A_s" type="T_BIT_X_0" access="Read" directaddress="%IX11.0" />
         <Node name="C11B_s" type="T_BIT_X_3" access="Read" directaddress="%IX9.3" />

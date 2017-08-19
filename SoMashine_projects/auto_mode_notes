@@ -58,10 +58,11 @@ POU_6_HorizontalCutting	- Горизонтальная резка (ToDo: пер�
 
 ------------------------------
 Exit codes
-		STEP_Error 			96
-		STEP_InitError 		97
-		STEP_InitRuntimeError 98
-		STEP_Standby		99
+		STEP_stageTimeoutOver	95
+		STEP_Error 				96
+		STEP_InitError 			97
+		STEP_InitRuntimeError 	98
+		STEP_Standby			99
 
 
 
@@ -87,5 +88,15 @@ H:	reg_INIT_ERR	14		1/16384
 admin	plinfaA$U2017
 plinfa 	plinfa
 user 	user
+
+
+1
+STEP_CentrTroll_in		STEP_GrabTroll_in
+STEP_GrabTroll_in		STEP_TurnTroll_in
+STEP_TurnTroll_in		STEP_TurnTroll_out
+STEP_TurnTroll_out		STEP_GrabTroll_out
+STEP_GrabTroll_out		STEP_CentrTroll_out
+STEP_CentrTroll_out		STEP_Standby
+
 
 
