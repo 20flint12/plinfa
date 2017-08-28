@@ -346,6 +346,13 @@
         <Node name="wStep" type="T_INT" access="ReadWrite" directaddress="%MW19" />
         <Node name="wStep2" type="T_INT" access="ReadWrite" directaddress="%MW18" />
       </Node>
+      <Node name="GVL_STAGES_CONST">
+        <Node name="CutsPerDay" type="T_UINT" access="ReadWrite" />
+        <Node name="CutsPerHour" type="T_UINT" access="ReadWrite" />
+        <Node name="CutsTotal" type="T_UINT" access="ReadWrite" />
+        <Node name="Prog1" type="T_BOOL" access="ReadWrite" />
+        <Node name="Prog2" type="T_BOOL" access="ReadWrite" />
+      </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
         <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW26" />
         <Node name="altivar_0_Error_Code" type="T_UINT" access="Read" directaddress="%IW30" />
