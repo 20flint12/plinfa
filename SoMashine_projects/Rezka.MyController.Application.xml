@@ -272,7 +272,7 @@
         <Node name="ctrldt_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
-        <Node name="sel_AutoCycle" type="T_INT" access="ReadWrite" />
+        <Node name="sel_AutoCycle" type="T_UINT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
