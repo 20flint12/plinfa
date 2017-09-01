@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.3.50</Version>
+    <SymbolConfigObject version="3.5.3.50" />
+    <ProjectInfo name="Burner" devicename="MyController" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="GVL">
+        <Node name="KLxx_0_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="KLxx_ON_OFF" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="IOCONFIG_GLOBALS_MAPPING">
+        <Node name="A2_ID1" type="T_DWORD" access="Read" directaddress="%ID1">
+          <Comment>A6 : </Comment>
+        </Node>
+        <Node name="A3_ID2" type="T_DWORD" access="Read" directaddress="%ID2">
+          <Comment>A6 : </Comment>
+        </Node>
+        <Node name="A4_QD1" type="T_DWORD" access="ReadWrite" directaddress="%QD1">
+          <Comment>A6 : </Comment>
+        </Node>
+        <Node name="A5_QD2" type="T_DWORD" access="ReadWrite" directaddress="%QD2">
+          <Comment>A6 : </Comment>
+        </Node>
+        <Node name="A6_QD3" type="T_DWORD" access="ReadWrite" directaddress="%QD3" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
