@@ -232,6 +232,7 @@
         </Node>
       </Node>
       <Node name="GVL">
+        <Node name="bDebugBlockInitState" type="T_BOOL" access="ReadWrite" />
         <Node name="bDebugBlockKM" type="T_BOOL" access="ReadWrite" />
         <Node name="bDebugBlockLimit" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalAlarm" type="T_BOOL" access="ReadWrite" />
@@ -253,8 +254,10 @@
         <Node name="ctrl_MoveTipper_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PressTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PressTable_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_PressTroll_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_PressTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_A_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_A_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_B_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_B_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
@@ -574,11 +577,11 @@
         <Node name="step_PressTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_PropTrol_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PropTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_CentrTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_GetTroll_in" type="T_TIME" access="ReadWrite" />
