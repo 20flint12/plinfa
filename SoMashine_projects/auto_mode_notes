@@ -90,7 +90,7 @@ plinfa 	plinfa
 user 	user
 
 
-sel_AutoCycle №1
+sel_AutoCycle №1	######################
 STEP_CentrTroll_in		STEP_GrabTroll_in
 STEP_GrabTroll_in		STEP_TurnTroll_in
 STEP_TurnTroll_in		STEP_TurnTroll_out
@@ -98,14 +98,15 @@ STEP_TurnTroll_out		STEP_GrabTroll_out
 STEP_GrabTroll_out		STEP_CentrTroll_out
 STEP_CentrTroll_out		STEP_Standby
 
-sel_AutoCycle №2
-
-
+sel_AutoCycle №2	######################
 STEP_CentrTroll_in		STEP_GrabTroll_in
 STEP_GrabTroll_in		STEP_TurnTroll_in
 STEP_TurnTroll_in		STEP_PropTroll_in
 STEP_PropTroll_in		STEP_TakeTable_in
 STEP_TakeTable_in		STEP_TakeTable_out
+STEP_LockTable_in
+
+STEP_LockTable_out
 STEP_TakeTable_out		STEP_PropTroll_out
 STEP_PropTroll_out		STEP_TurnTroll_out
 STEP_TurnTroll_out		STEP_GrabTroll_out
