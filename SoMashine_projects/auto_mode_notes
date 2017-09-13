@@ -93,28 +93,42 @@ user 	user
 sel_AutoCycle №1	######################
 STEP_CentrTroll_in		STEP_GrabTroll_in
 STEP_GrabTroll_in		STEP_TurnTroll_in
-STEP_TurnTroll_in		STEP_TurnTroll_out
-STEP_TurnTroll_out		STEP_GrabTroll_out
-STEP_GrabTroll_out		STEP_CentrTroll_out
-STEP_CentrTroll_out		STEP_Standby
-
-sel_AutoCycle №2	######################
-STEP_CentrTroll_in		STEP_GrabTroll_in
-STEP_GrabTroll_in		STEP_TurnTroll_in
 STEP_TurnTroll_in		STEP_PropTroll_in
-STEP_PropTroll_in		STEP_TakeTable_in
-STEP_TakeTable_in		STEP_TakeTable_out
-STEP_TakeTable_out		STEP_PropTroll_out
+STEP_PropTroll_in		STEP_Standby	STEP_PropTroll_out
 STEP_PropTroll_out		STEP_TurnTroll_out
 STEP_TurnTroll_out		STEP_GrabTroll_out
 STEP_GrabTroll_out		STEP_CentrTroll_out
 STEP_CentrTroll_out		STEP_Standby
 
 
+
+
+
+
+sel_AutoCycle №2	######################
+STEP_FixingFrame_in(!)	STEP_LockTable_in
+STEP_LockTable_in		STEP_TakeTable_in
+STEP_TakeTable_in		STEP_FrameToTipper_in
+STEP_FrameToTipper_in	STEP_MoveTipper_in
+STEP_MoveTipper_in		STEP_FrameToTipper_out
+STEP_FrameToTipper_out	STEP_MoveTipper_out
+STEP_MoveTipper_out		STEP_Standby
+
+
+
+
+
+
+
+
+
+
+
+
 sel_AutoCycle №3	######################
 STEP_FrameToTipper_out	STEP_TakeTable_out
 STEP_TakeTable_out		STEP_LockTable_out
-STEP_LockTable_out		STEP_CuttingFrame_up
+STEP_LockTable_out		STEP_CuttingFrame_up	STEP_Standby
 STEP_CuttingFrame_up	STEP_CuttingFrame_dn
 STEP_CuttingFrame_dn	STEP_LockTable_in
 STEP_LockTable_in		STEP_TakeTable_in
