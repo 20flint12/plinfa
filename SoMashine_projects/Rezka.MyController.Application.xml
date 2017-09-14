@@ -266,8 +266,12 @@
         <Node name="ctrl_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrld_GetTroll_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrld_GetTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_a_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_a_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_b_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_b_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_c_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_GetTroll_c_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
@@ -348,7 +352,6 @@
         <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" />
         <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" />
         <Node name="wStep" type="T_UINT" access="ReadWrite" directaddress="%MW19" />
-        <Node name="wStep0" type="T_UINT" access="ReadWrite" directaddress="%MW15" />
         <Node name="wStep1" type="T_UINT" access="ReadWrite" directaddress="%MW16" />
         <Node name="wStep2" type="T_UINT" access="ReadWrite" directaddress="%MW17" />
         <Node name="wStep3" type="T_UINT" access="ReadWrite" directaddress="%MW18" />
@@ -556,8 +559,12 @@
       <Node name="POU_3_PODVODTELEZHKI">
         <Node name="sens_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="sens_GetTroll_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="sens_GetTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GetTroll_a_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GetTroll_a_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GetTroll_b_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GetTroll_b_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GetTroll_c_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_GetTroll_c_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PropTroll_in" type="T_BOOL" access="ReadWrite" />
@@ -568,11 +575,21 @@
         <Node name="step_CentrTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_GetTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_GetTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_GetTroll_INIT" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_GetTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_GetTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_a_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_a_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_a_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_a_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_a_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_b_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_b_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_b_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_b_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_b_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_c_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_c_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_c_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_c_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GetTroll_c_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTroll_INIT" type="T_BOOL" access="ReadWrite" />
@@ -585,8 +602,12 @@
         <Node name="step_PropTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_CentrTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
-        <Node name="timer_GetTroll_in" type="T_TIME" access="ReadWrite" />
-        <Node name="timer_GetTroll_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_GetTroll_a_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_GetTroll_a_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_GetTroll_b_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_GetTroll_b_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_GetTroll_c_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_GetTroll_c_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PropTroll_in" type="T_TIME" access="ReadWrite" />
