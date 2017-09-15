@@ -141,3 +141,20 @@ STEP_PressTable_in
 STEP_PressTable_out
 STEP_CuttingFrame_dn
 
+
+
+
+
+
+AutoCycle_A №4	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+STEP_GetTroll_a_out		STEP_GetTroll_a_in
+STEP_GetTroll_a_in		STEP_GetTroll_b_out
+STEP_GetTroll_b_out		STEP_GetTroll_b_in
+STEP_GetTroll_b_in		STEP_GetTroll_c_out
+STEP_GetTroll_c_out		STEP_GetTroll_c_in
+STEP_GetTroll_c_in		STEP_Standby
+
+
+
+
+
