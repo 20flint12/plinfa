@@ -281,8 +281,10 @@
         <Node name="ctrldt_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
-        <Node name="sel_AutoCycle" type="T_UINT" access="ReadWrite" />
         <Node name="Step_A" type="T_UINT" access="ReadWrite" directaddress="%MW15" />
+        <Node name="Step_B" type="T_UINT" access="ReadWrite" directaddress="%MW16" />
+        <Node name="Step_C" type="T_UINT" access="ReadWrite" directaddress="%MW17" />
+        <Node name="Step_D" type="T_UINT" access="ReadWrite" directaddress="%MW18" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
         <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
@@ -353,23 +355,23 @@
         <Node name="var_KL64" type="T_BOOL" access="ReadWrite" />
         <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" />
         <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" />
-        <Node name="wStep" type="T_UINT" access="ReadWrite" directaddress="%MW19" />
       </Node>
       <Node name="GVL_STAGES_CONST">
         <Node name="AutoCycle_A" type="T_UINT" access="ReadWrite" />
+        <Node name="AutoCycle_B" type="T_UINT" access="ReadWrite" />
         <Node name="CutsPerDay" type="T_UINT" access="ReadWrite" />
         <Node name="CutsPerHour" type="T_UINT" access="ReadWrite" />
         <Node name="CutsTotal" type="T_UINT" access="ReadWrite" />
         <Node name="Prog_0_A" type="T_BOOL" access="ReadWrite" />
-        <Node name="PROG_0_PAUSE" type="T_BOOL" access="ReadWrite" />
+        <Node name="Prog_0_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_1_A" type="T_BOOL" access="ReadWrite" />
-        <Node name="PROG_1_MAIN" type="T_BOOL" access="ReadWrite" />
+        <Node name="Prog_1_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_2_A" type="T_BOOL" access="ReadWrite" />
-        <Node name="PROG_2_ADD" type="T_BOOL" access="ReadWrite" />
+        <Node name="Prog_2_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_3_A" type="T_BOOL" access="ReadWrite" />
-        <Node name="PROG_3_ADD2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Prog_3_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_4_A" type="T_BOOL" access="ReadWrite" />
-        <Node name="PROG_4_TEST" type="T_BOOL" access="ReadWrite" />
+        <Node name="Prog_4_B" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
         <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW26" />
