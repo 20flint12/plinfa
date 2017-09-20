@@ -102,7 +102,7 @@ STEP_TakeTable_in		стол опущен
 STEP_FrameToTipper_in	стол поднят
 STEP_MoveTipper_in		вертикальная резка внизу, горизонт. в начале, прижим поднят, провод не мешает(!)
 STEP_FrameToTipper_out	опрокидыватель поднят
-STEP_MoveTipper_out		опрокидыватель отцеплен, находится вверху
+STEP_MoveTipper_out	[Trig_1_B]	опрокидыватель отцеплен, находится вверху
 
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
@@ -110,7 +110,7 @@ STEP_HorizontalCutting_fwd
 STEP_LockTable_out		отцепить, вертикальная внизу
 STEP_VerticalCutting_up	+ STEP_PressTable_in
 							+ (!)FixingFrame_out
-STEP_PressTable_out
+STEP_PressTable_out [Trig_2_B]
 	
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать порезаный массив)
@@ -125,7 +125,7 @@ STEP_FrameToTipper_out	+ 	STEP_TakeTable_out
 STEP_PropTroll_out		
 STEP_TurnTroll_out		
 STEP_GrabTroll_out		
-STEP_CentrTroll_out		STEP_Standby
+STEP_CentrTroll_out	[Trig_3_B]	STEP_Standby
 
 
 
