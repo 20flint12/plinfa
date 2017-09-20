@@ -1,4 +1,4 @@
-
+﻿
 *.bootinfo_guids
 *.compileinfo
 *.bootinfo
@@ -10,3 +10,6 @@ doc/
 video/
 DropMeFiles_NM5B0.zip
 DSCN8877.JPG
+doc/Дзвин
+doc/Elas
+
