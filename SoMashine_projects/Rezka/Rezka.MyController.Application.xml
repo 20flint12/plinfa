@@ -265,16 +265,16 @@
         <Node name="ctrl_TakeTable_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrld_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrld_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_GetTroll_a_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_GetTroll_a_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_GetTroll_b_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_GetTroll_b_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_GetTroll_c_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_GetTroll_c_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrld_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrld_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_HorizontalCutting_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_HorizontalCutting_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_VerticalCutting_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_VerticalCutting_up" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_AfterCutter_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BackPath_far" type="T_BOOL" access="ReadWrite" />
@@ -287,8 +287,8 @@
         <Node name="Step_D" type="T_UINT" access="ReadWrite" directaddress="%MW18" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
-        <Node name="var_CuttingFrame_freq_dn" type="T_INT" access="ReadWrite" />
-        <Node name="var_CuttingFrame_freq_up" type="T_INT" access="ReadWrite" />
+        <Node name="var_HorizontalCutting_freq_fwd" type="T_INT" access="ReadWrite" />
+        <Node name="var_HorizontalCutting_freq_rev" type="T_INT" access="ReadWrite" />
         <Node name="var_KL01" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL02" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL03" type="T_BOOL" access="ReadWrite" />
@@ -353,8 +353,8 @@
         <Node name="var_KL62" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL63" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL64" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_MovingFrame_freq_fwd" type="T_INT" access="ReadWrite" />
-        <Node name="var_MovingFrame_freq_rev" type="T_INT" access="ReadWrite" />
+        <Node name="var_VerticalCutting_freq_dn" type="T_INT" access="ReadWrite" />
+        <Node name="var_VerticalCutting_freq_up" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="GVL_STAGES_CONST">
         <Node name="AutoCycle_A" type="T_UINT" access="ReadWrite" />
@@ -629,12 +629,14 @@
         <Node name="step_GrabTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GrabTroll_in_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GrabTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_GrabTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GrabTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GrabTroll_out_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_GrabTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TurnTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TurnTroll_in_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TurnTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_TurnTroll_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TurnTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TurnTroll_out_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TurnTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
@@ -701,35 +703,41 @@
         <Node name="timer_TakeTable_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_6_HORIZONTALCUTTING">
-        <Node name="sens_MovingFrame_fwd" type="T_BOOL" access="ReadWrite" />
-        <Node name="sens_MovingFrame_rev" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_MovingFrame_fwd_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_MovingFrame_fwd_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_MovingFrame_INIT" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_MovingFrame_rev_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_MovingFrame_rev_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="timer_MovingFrame_fwd" type="T_TIME" access="ReadWrite" />
-        <Node name="timer_MovingFrame_rev" type="T_TIME" access="ReadWrite" />
+        <Node name="sens_HorizontalCutting_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_HorizontalCutting_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizontalCutting_fwd_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizontalCutting_fwd_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizontalCutting_fwd_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizontalCutting_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizontalCutting_rev_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizontalCutting_rev_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizontalCutting_rev_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_HorizontalCutting_fwd" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_HorizontalCutting_rev" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_7_VERTICALCUTTING">
-        <Node name="sens_CuttingFrame_dn" type="T_BOOL" access="ReadWrite" />
-        <Node name="sens_CuttingFrame_up" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_CuttingFrame_dn_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_CuttingFrame_dn_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_CuttingFrame_INIT" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_CuttingFrame_up_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_CuttingFrame_up_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_VerticalCutting_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_VerticalCutting_up" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTable_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTable_in_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTable_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTable_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTable_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTable_out_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PressTable_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="timer_CuttingFrame_dn" type="T_TIME" access="ReadWrite" />
-        <Node name="timer_CuttingFrame_up" type="T_TIME" access="ReadWrite" />
+        <Node name="step_VerticalCutting_dn_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_VerticalCutting_dn_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_VerticalCutting_dn_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_VerticalCutting_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_VerticalCutting_up_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_VerticalCutting_up_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_VerticalCutting_up_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_PressTable_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_VerticalCutting_dn" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_VerticalCutting_up" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_9_ALTIVARS">
         <Node name="var_Altivar_2_reset" type="T_BOOL" access="ReadWrite" />
