@@ -66,7 +66,7 @@ Exit codes
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 STATUS_register
 L:	register_INIT	0		1
 L:	register_EXEC	1		1/2
@@ -102,31 +102,36 @@ STEP_TakeTable_in		стол опущен
 STEP_FrameToTipper_in	стол поднят
 STEP_MoveTipper_in		вертикальная резка внизу, горизонт. в начале, прижим поднят, провод не мешает(!)
 STEP_FrameToTipper_out	опрокидыватель поднят
-STEP_MoveTipper_out	[Trig_1_B]	опрокидыватель отцеплен, находится вверху
-
+STEP_MoveTipper_out		[post_B1_MoveTipper_out_EXEC]
+						опрокидыватель отцеплен, находится вверху
+					
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
 STEP_HorizontalCutting_fwd
-STEP_LockTable_out		отцепить, вертикальная внизу
-						+ STEP_PressTable_in
-						+ (!)FixingFrame_out
-STEP_VerticalCutting_up	[Trig_2_B]
-						+ STEP_PressTable_out 
+STEP_LockTable_out		[post_B2_LockTable_out_EXEC]
+						{Prog_1_C}
+							STEP_PressTable_in
+							+ (!)FixingFrame_out
+STEP_VerticalCutting_up	[post_B2_VerticalCutting_up_EXEC]
+						{Prog_2_C}
+							STEP_PressTable_out 
 	
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать порезаный массив)
 STEP_MoveTipper_in		открыта зацепки для стола
 STEP_FrameToTipper_in 	
 STEP_MoveTipper_out		
-STEP_FrameToTipper_out	+ 	(Prog_3_C)STEP_TakeTable_out
+STEP_FrameToTipper_out	[post_B3_FrameToTipper_out_EXEC]
+						{Prog_3_C}	
+							STEP_TakeTable_out
 							STEP_VerticalCutting_dn
-								+ (!)FixingFrame_in
-							STEP_LockTable_in
+							+ (!)FixingFrame_in
 							STEP_HorizontalCutting_rev
 STEP_PropTroll_out		
 STEP_TurnTroll_out		
 STEP_GrabTroll_out		
-STEP_CentrTroll_out	[Trig_3_B]	STEP_Standby
+STEP_CentrTroll_out		[post_B3_CentrTroll_out_EXEC]
+						STEP_Standby
 
 
 
