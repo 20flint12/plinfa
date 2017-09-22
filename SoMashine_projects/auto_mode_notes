@@ -118,7 +118,7 @@ BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать по�
 STEP_MoveTipper_in		открыта зацепки для стола
 STEP_FrameToTipper_in 	
 STEP_MoveTipper_out		
-STEP_FrameToTipper_out	+ 	STEP_TakeTable_out
+STEP_FrameToTipper_out	+ 	(Prog_3_C)STEP_TakeTable_out
 							STEP_VerticalCutting_dn
 								+ (!)FixingFrame_in
 							STEP_LockTable_in
