@@ -374,9 +374,14 @@
         <Node name="Prog_3_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_4_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_4_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="Trig_1_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Trig_1_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="Trig_2_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Trig_2_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="Trig_3_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Trig_3_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="Trig_4_A" type="T_BOOL" access="ReadWrite" />
+        <Node name="Trig_4_B" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
         <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW26" />
@@ -710,13 +715,13 @@
       <Node name="POU_6_HORIZONTALCUTTING">
         <Node name="sens_HorizontalCutting_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_HorizontalCutting_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizCutting_fwd_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_HorizCutting_rev_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_HorizontalCutting_fwd_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_HorizontalCutting_fwd_EXEC" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_HorizontalCutting_fwd_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_HorizontalCutting_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_HorizontalCutting_rev_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_HorizontalCutting_rev_EXEC" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_HorizontalCutting_rev_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_HorizontalCutting_fwd" type="T_TIME" access="ReadWrite" />
         <Node name="timer_HorizontalCutting_rev" type="T_TIME" access="ReadWrite" />
       </Node>

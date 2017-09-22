@@ -108,9 +108,10 @@ STEP_MoveTipper_out	[Trig_1_B]	опрокидыватель отцеплен, н
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
 STEP_HorizontalCutting_fwd
 STEP_LockTable_out		отцепить, вертикальная внизу
-STEP_VerticalCutting_up	+ STEP_PressTable_in
-							+ (!)FixingFrame_out
-STEP_PressTable_out [Trig_2_B]
+						+ STEP_PressTable_in
+						+ (!)FixingFrame_out
+STEP_VerticalCutting_up	[Trig_2_B]
+						+ STEP_PressTable_out 
 	
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать порезаный массив)
