@@ -197,6 +197,7 @@
       <UserDefElement type="T_UINT" iecname="uiRemainder" byteoffset="2" />
     </TypeUserDef>
     <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeSimple name="T_DINT" size="4" swapsize="4" typeclass="DInt" iecname="DINT" />
     <TypeSimple name="T_BIT_X_0" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="0" />
     <TypeSimple name="T_BIT_X_1" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="1" />
     <TypeSimple name="T_BIT_X_2" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="2" />
@@ -273,6 +274,8 @@
         <Node name="ctrld_GetTroll_c_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_HorizontalCutting_fwd" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_HorizontalCutting_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_PulloutTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrld_PulloutTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_VerticalCutting_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_VerticalCutting_up" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_AfterCutter_far" type="T_BOOL" access="ReadWrite" />
@@ -363,6 +366,7 @@
         <Node name="ContinuousCycle_A" type="T_BOOL" access="ReadWrite" />
         <Node name="ContinuousCycle_B" type="T_BOOL" access="ReadWrite" />
         <Node name="ContinuousCycle_C" type="T_BOOL" access="ReadWrite" />
+        <Node name="CutsLastCycle" type="T_DINT" access="ReadWrite" />
         <Node name="CutsPerDay" type="T_UINT" access="ReadWrite" />
         <Node name="CutsPerHour" type="T_UINT" access="ReadWrite" />
         <Node name="CutsTotal" type="T_UINT" access="ReadWrite" />
@@ -594,6 +598,24 @@
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PropTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PropTroll_out" type="T_TIME" access="ReadWrite" />
+      </Node>
+      <Node name="POU_12_PULLOUTTROLL">
+        <Node name="sens_PulloutTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_PulloutTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PulloutTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PulloutTroll_in_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PulloutTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PulloutTroll_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PulloutTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PulloutTroll_out_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PulloutTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_PulloutTroll_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PulloutTroll_out" type="T_TIME" access="ReadWrite" />
+      </Node>
+      <Node name="POU_1_UTILS">
+        <Node name="saved_stopwatch" type="T_TIME" access="ReadWrite" />
+        <Node name="saved_stopwatch_str" type="T_STRING" access="ReadWrite" />
+        <Node name="stopwatch_secs" type="T_DINT" access="ReadWrite" />
       </Node>
       <Node name="POU_2_TROSTOLKATELI">
         <Node name="drv_ctrl_AfterCutter_far" type="T_BOOL" access="ReadWrite" />

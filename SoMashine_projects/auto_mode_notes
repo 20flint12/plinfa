@@ -85,6 +85,27 @@ H:	ctrl_register	13		1/8192
 H:	reg_INIT_ERR	14		1/16384
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+STATUS_register
+L:	register_INIT		0		1
+L:	register_LIM		1		1/2
+L:	register_EXEC		2		1/4
+L:	register_INIT_ERR	3		1/8
+L:	register_ERR		4		1/16
+
+H:	register_INIT		8		1/256
+H:	register_LIM		9		1/512
+H:	register_EXEC		10		1/1024
+H:	register_INIT_ERR	11		1/2048
+H:	register_ERR		12		1/4096
+
+
+
+
+
+
 admin	plinfaA$U2017
 plinfa 	plinfa
 user 	user
