@@ -88,29 +88,29 @@ Exit codes
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-STATUS_register
-L:	register_INIT	0		1
-L:	register_EXEC	1		1/2
-L:	register_OVER	2		1/4
-L:	register_ERR	3		1/8
-L:	sens_register	4		1/16
-L:	ctrl_register	5		1/32
-L:	reg_INIT_ERR	6		1/64
+STATUS_drivers %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-H:	register_INIT	8		1/256
-H:	register_EXEC	9		1/512
-H:	register_OVER	10		1/1024
-H:	register_ERR	11		1/2048
-H:	sens_register	12		1/4096
-H:	ctrl_register	13		1/8192
-H:	reg_INIT_ERR	14		1/16384
+drv_ctrl_BeforeCutter_far		STATUS_drivers.0
+drv_ctrl_BeforeCutter_near		STATUS_drivers.1
 
+drv_ctrl_AfterCutter_far		STATUS_drivers.2
+drv_ctrl_AfterCutter_near		STATUS_drivers.3
+
+drv_ctrl_BackPath_far			STATUS_drivers.4
+drv_ctrl_BackPath_near			STATUS_drivers.5
+
+ctrld_HorizontalCutting_fwd		STATUS_drivers.8
+ctrld_HorizontalCutting_rev		STATUS_drivers.9
+
+ctrld_VerticalCutting_up		STATUS_drivers.10
+ctrld_VerticalCutting_dn		STATUS_drivers.11
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-STATUS_register
+
+
+STATUS_register %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 L:	register_INIT		0		1
 L:	register_LIM		1		1/2
 L:	register_EXEC		2		1/4
