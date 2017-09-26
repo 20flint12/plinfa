@@ -1,60 +1,82 @@
-	WEB_CONTROL				step	next (sel)		timeout
+	WEB_CONTROL				step		timeout
 
-POU_3_PodvodTelezhki - Подвод тележки () ##############################################################################
+POU_0_CentrPropPress - Подвод тележки () ##############################################################################
 	CentrTroll
-		CentrTroll_in		21		31/31/32/44		40s			KL29						WEB_CONTROL_0.0
-		CentrTroll_out		22		31/31/32/44		30s			KL32						WEB_CONTROL_0.1
+		CentrTroll_in		21				40s			KL29						WEB_CONTROL_0.0
+		CentrTroll_out		22				30s			KL32						WEB_CONTROL_0.1
 	PropTroll
-		PropTroll_in		25		31/31/32/44		40s			KL19						WEB_CONTROL_0.2
-		PropTroll_out		26		31/31/32/44		40s			KL20						WEB_CONTROL_0.3
+		PropTroll_in		25				40s			KL19						WEB_CONTROL_0.2
+		PropTroll_out		26				40s			KL20						WEB_CONTROL_0.3
 	PressTroll
-		PressTroll_in		29		31/31/32/44		40s			???							WEB_CONTROL_0.4
-		PressTroll_out		30		31/31/32/44		40s			???							WEB_CONTROL_0.5
-	GetTroll
-		GetTroll_in			33		31/31/32/44		40s			ctrldt_BeforeCutter_far		WEB_CONTROL_0.6
-		GetTroll_out		34		31/31/32/44		40s			ctrldt_BeforeCutter_far		WEB_CONTROL_0.7
+		ctrl_PressTroll_A_in		29												WEB_CONTROL_0.4
+		ctrl_PressTroll_A_out		30												WEB_CONTROL_0.5
+		ctrl_PressTroll_B_in 														WEB_CONTROL_0.6
+		ctrl_PressTroll_B_out														WEB_CONTROL_0.7
+
 POU_4_Zahvat - Захват и фиксация тележки () ###########################################################################
 	GrabTroll
-		GrabTroll_in		37		31/31/32/44		40s			KL31						WEB_CONTROL_0.8
-		GrabTroll_out		38		31/31/32/44		35s			KL30						WEB_CONTROL_0.9
+		GrabTroll_in		37				40s			KL31						WEB_CONTROL_0.8
+		GrabTroll_out		38				35s			KL30						WEB_CONTROL_0.9
 	TurnTroll
-		TurnTroll_in		41		31/31/32/44		25s			KL28						WEB_CONTROL_0.10
-		TurnTroll_out		42		31/31/32/44		25s			KL27						WEB_CONTROL_0.11
+		TurnTroll_in		41				25s			KL28						WEB_CONTROL_0.10
+		TurnTroll_out		42				25s			KL27						WEB_CONTROL_0.11
 
 POU_5_Oprokidyvanie	- Опрокидывание и захват тележки, подвод-отвод стола, защёлкивание рамки ##########################
 	TakeTable
-		TakeTable_in		45		31/31/32/44		30s			KL17						WEB_CONTROL_0.12
-		TakeTable_out		46		31/31/32/44		30s			KL18						WEB_CONTROL_0.13
+		TakeTable_in		45				30s			KL17						WEB_CONTROL_0.12
+		TakeTable_out		46				30s			KL18						WEB_CONTROL_0.13
 	MoveTipper
-		MoveTipper_in		49		31/31/32/44					KL48						WEB_CONTROL_0.14
-		MoveTipper_out		50		31/31/32/44					KL49						WEB_CONTROL_0.15
+		MoveTipper_in		49							KL48						WEB_CONTROL_0.14
+		MoveTipper_out		50							KL49						WEB_CONTROL_0.15
 	FixingFrame
-		FixingFrame_in		53		31/31/32/44					KL39						WEB_CONTROL_1.0
-		FixingFrame_out		54		31/31/32/44					KL40						WEB_CONTROL_1.1
+		FixingFrame_in		53							KL39						WEB_CONTROL_1.0
+		FixingFrame_out		54							KL40						WEB_CONTROL_1.1
 	FrameToTipper	
-		FrameToTipper_in	57		31/31/32/44					KL26						WEB_CONTROL_1.2
-		FrameToTipper_out	58		31/31/32/44					KL25						WEB_CONTROL_1.3
+		FrameToTipper_in	57							KL26						WEB_CONTROL_1.2
+		FrameToTipper_out	58							KL25						WEB_CONTROL_1.3
 	LockTable
-		LockTable_in		61		31/31/32/44					KL21						WEB_CONTROL_1.4
-		LockTable_out		62		31/31/32/44					KL22						WEB_CONTROL_1.5
+		LockTable_in		61							KL21						WEB_CONTROL_1.4
+		LockTable_out		62							KL22						WEB_CONTROL_1.5
 
 POU_7_VerticalCutting - Вертикальная резка и прижим массива к столу ###################################################
 	PressTable
-		PressTable_in		65		31/31/32/44					KL23						WEB_CONTROL_1.6
-		PressTable_out		66		31/31/32/44					KL24						WEB_CONTROL_1.7
+		PressTable_in		65							KL23						WEB_CONTROL_1.6
+		PressTable_out		66							KL24						WEB_CONTROL_1.7
 	VerticalCutting
-		VerticalCutting_up	69		31/31/32/44					UZ2							WEB_CONTROL_1.8
-		VerticalCutting_dn	70		31/31/32/44					UZ2							WEB_CONTROL_1.9
+		VerticalCutting_up	69							UZ2							WEB_CONTROL_1.8
+		VerticalCutting_dn	70							UZ2							WEB_CONTROL_1.9
 
 POU_6_HorizontalCutting	- Горизонтальная резка (ToDo: переход на средине движения) ####################################
 	HorizontalCutting
-		HorizontalCutting_fwd	73		31/31/32/44		100s		UZ1							WEB_CONTROL_1.10
-		HorizontalCutting_rev	74		31/31/32/44		50s			UZ1							WEB_CONTROL_1.11
+		HorizontalCutting_fwd	73				100s		UZ1						WEB_CONTROL_1.10
+		HorizontalCutting_rev	74				50s			UZ1						WEB_CONTROL_1.11
 
-		bGlobalTest																			WEB_CONTROL_1.12
-		bGlobalDebug																		WEB_CONTROL_1.13
-		bGlobalAuto																			WEB_CONTROL_1.14
-		bGlobalTest																			WEB_CONTROL_1.15
+bGlobalTest																			WEB_CONTROL_1.12		bGlobalAlarm																		WEB_CONTROL_1.13
+bGlobalAuto																			WEB_CONTROL_1.14
+
+POU_3_PodvodTelezhki - Упр. тросовым толкателем перед резкой 
+############################
+	GetTroll
+		ctrld_GetTroll_a_in		33				40s									WEB_CONTROL_2.0
+		ctrld_GetTroll_a_out	34				40s									WEB_CONTROL_2.1
+
+		ctrld_GetTroll_b_in		33				40s									WEB_CONTROL_2.2
+		ctrld_GetTroll_b_out	34				40s									WEB_CONTROL_2.3
+
+		ctrld_GetTroll_c_in		33				40s									WEB_CONTROL_2.4
+		ctrld_GetTroll_c_out	34				40s									WEB_CONTROL_2.5
+
+POU_12_PulloutTroll - Упр. тросовым толкателем после резки 
+############################
+	PulloutTroll
+		ctrld_PulloutTroll_in														WEB_CONTROL_2.6
+		ctrld_PulloutTroll_out														WEB_CONTROL_2.7
+
+bDebugBlockInitState																WEB_CONTROL_2.12
+bDebugBlockLimit																	WEB_CONTROL_2.13
+bDebugBlockKM																		WEB_CONTROL_2.14
+bDebug																				WEB_CONTROL_2.15
+
 
 ------------------------------
 Exit codes

@@ -284,10 +284,10 @@
         <Node name="ctrldt_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
-        <Node name="Step_A" type="T_UINT" access="ReadWrite" directaddress="%MW15" />
-        <Node name="Step_B" type="T_UINT" access="ReadWrite" directaddress="%MW16" />
-        <Node name="Step_C" type="T_UINT" access="ReadWrite" directaddress="%MW17" />
-        <Node name="Step_D" type="T_UINT" access="ReadWrite" directaddress="%MW18" />
+        <Node name="Step_A" type="T_UINT" access="ReadWrite" directaddress="%MW23" />
+        <Node name="Step_B" type="T_UINT" access="ReadWrite" directaddress="%MW24" />
+        <Node name="Step_C" type="T_UINT" access="ReadWrite" directaddress="%MW25" />
+        <Node name="Step_D" type="T_UINT" access="ReadWrite" directaddress="%MW26" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
         <Node name="var_HorizontalCutting_freq_fwd" type="T_INT" access="ReadWrite" />
