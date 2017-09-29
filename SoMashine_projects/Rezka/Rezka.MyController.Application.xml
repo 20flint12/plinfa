@@ -284,6 +284,18 @@
         <Node name="ctrldt_BackPath_near" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_far" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrldt_BeforeCutter_near" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL10_KM11_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL11_KM12_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL12_KM12_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL13_KM13_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL14_KM13_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL1_KM2_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL2_KM3_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL3_KM4_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL6_KM7_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL7_KM8_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL8_KM9_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL9_KM10_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="Step_A" type="T_UINT" access="ReadWrite" directaddress="%MW23" />
         <Node name="Step_B" type="T_UINT" access="ReadWrite" directaddress="%MW24" />
         <Node name="Step_C" type="T_UINT" access="ReadWrite" directaddress="%MW25" />
