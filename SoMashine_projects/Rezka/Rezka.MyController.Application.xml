@@ -411,11 +411,11 @@
         <Node name="Trig_4_C" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="IOCONFIG_GLOBALS_MAPPING">
-        <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW26" />
-        <Node name="altivar_0_Error_Code" type="T_UINT" access="Read" directaddress="%IW30" />
-        <Node name="altivar_0_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW29" />
-        <Node name="altivar_0_Motor_current" type="T_UINT" access="ReadWrite" directaddress="%QW27" />
-        <Node name="altivar_0_Output_frequency" type="T_INT" access="ReadWrite" directaddress="%QW28" />
+        <Node name="altivar_0_Control_Effort" type="T_INT" access="Read" directaddress="%IW41" />
+        <Node name="altivar_0_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW30" />
+        <Node name="altivar_0_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW31" />
+        <Node name="altivar_1_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW27" />
+        <Node name="altivar_2_HMI_Frequency_ref" type="T_INT" access="ReadWrite" directaddress="%QW29" />
         <Node name="C10_s" type="T_BIT_X_7" access="Read" directaddress="%IX15.7" />
         <Node name="C11A_s" type="T_BIT_X_0" access="Read" directaddress="%IX11.0" />
         <Node name="C11B_s" type="T_BIT_X_3" access="Read" directaddress="%IX9.3" />
