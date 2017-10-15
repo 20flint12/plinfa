@@ -203,5 +203,11 @@ STEP_CentrTroll_out		[post_B3_CentrTroll_out_EXEC]
 						STEP_Standby
 
 
+BBBBBBBBBBBBBBBBBBBB AutoCycle_B №4 BBBBBBBBBBBBBBBBBBBB (Вывод в исходное положение)
+STEP_PropTroll_out		
+STEP_TurnTroll_out		
+STEP_GrabTroll_out		
+STEP_CentrTroll_out		
 
+вывести резки и потом стол
 
