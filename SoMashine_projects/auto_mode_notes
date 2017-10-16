@@ -211,3 +211,25 @@ STEP_CentrTroll_out
 
 вывести резки и потом стол
 
+
+
+
+AAAAAAAAAAAAAAAAAAAA AutoCycle_A №1 AAAAAAAAAAAAAAAAAAAA (полный цикл)
+STEP_GetTroll_a_out
+STEP_GetTroll_a_in
+STEP_GetTroll_b_out
+STEP_GetTroll_b_in
+STEP_GetTroll_c_out
+STEP_GetTroll_c_in
+
+AAAAAAAAAAAAAAAAAAAA AutoCycle_A №2 AAAAAAAAAAAAAAAAAAAA (со второго этапа)
+STEP_GetTroll_b_out
+STEP_GetTroll_b_in
+STEP_GetTroll_c_out
+STEP_GetTroll_c_in
+
+
+AAAAAAAAAAAAAAAAAAAA AutoCycle_A №3 AAAAAAAAAAAAAAAAAAAA (с третьего этапа)
+STEP_GetTroll_c_out
+STEP_GetTroll_c_in
+
