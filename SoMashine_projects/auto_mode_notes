@@ -209,8 +209,9 @@ STEP_TurnTroll_out
 STEP_GrabTroll_out		
 STEP_CentrTroll_out		
 
-вывести резки и потом стол
 
+вывести резки и потом стол
+STEP_HorizontalCutting_rev
 
 
 
@@ -232,4 +233,11 @@ STEP_GetTroll_c_in
 AAAAAAAAAAAAAAAAAAAA AutoCycle_A №3 AAAAAAAAAAAAAAAAAAAA (с третьего этапа)
 STEP_GetTroll_c_out
 STEP_GetTroll_c_in
+
+altivar_0_Control_Effort
+altivar_0_Output_freq
+
+
+HMIGTO5310/5315 @0001234E1EAE
+
 
