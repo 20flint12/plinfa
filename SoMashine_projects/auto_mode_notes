@@ -162,56 +162,52 @@ user 	user
 
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №1 BBBBBBBBBBBBBBBBBBBB (Поставить массив на стол)
-STEP_CentrTroll_in		сигналы колёс
-STEP_GrabTroll_in		отцентрировано
-STEP_TurnTroll_in		отцентрировано
-STEP_PropTroll_in		отцентрировано и захвачено
-STEP_LockTable_in		рамка должна быть на столе(!)-отфиксирована, замок рамки на столе(по центру)
-STEP_TakeTable_in		стол опущен
-STEP_FrameToTipper_in	стол поднят
-STEP_MoveTipper_in		вертикальная резка внизу, горизонт. в начале, прижим поднят, провод не мешает(!)
-STEP_FrameToTipper_out	опрокидыватель поднят
-STEP_MoveTipper_out		[post_B1_MoveTipper_out_EXEC]
-						опрокидыватель отцеплен, находится вверху
+[B1]STEP_CentrTroll_in		
+[B1]STEP_GrabTroll_in		
+[B1]STEP_TurnTroll_in		
+[B1]STEP_PropTroll_in		
+[B1]STEP_LockTable_in		
+[B1]STEP_TakeTable_in		[post_B1_TakeTable_in_EXEC]
+[B1]STEP_FrameToTipper_in	
+[B1]STEP_MoveTipper_in		
+[B1]STEP_FrameToTipper_out	
+[B1]STEP_MoveTipper_out		[post_B1_MoveTipper_out_EXEC]
+								+ STEP_PulloutTroll_in
 					
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
-STEP_HorizontalCutting_fwd
-STEP_LockTable_out		[post_B2_LockTable_out_EXEC]
-						{Prog_1_C}
-							STEP_PressTable_in
-							+ (!)FixingFrame_out
-STEP_VerticalCutting_up	[post_B2_VerticalCutting_up_EXEC]
-						{Prog_2_C}
-							STEP_PressTable_out 
+[B2]STEP_HorizontalCutting_fwd
+[B2]STEP_LockTable_out		[post_B2_LockTable_out_EXEC] {Prog_1_C}						
+							[C1]STEP_PressTable_in							
+								+ (!)FixingFrame_out
+[B2]STEP_VerticalCutting_up	[post_B2_VerticalCutting_up_EXEC] {Prog_2_C}						
+							[C2]STEP_PressTable_out 
 	
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать порезаный массив)
-STEP_MoveTipper_in		открыта зацепки для стола
-STEP_FrameToTipper_in 	
-STEP_MoveTipper_out		
-STEP_FrameToTipper_out	[post_B3_FrameToTipper_out_EXEC]
-						{Prog_3_C}	
-							STEP_TakeTable_out
-							STEP_VerticalCutting_dn
-							+ (!)FixingFrame_in
-							STEP_HorizontalCutting_rev
-STEP_PropTroll_out		
-STEP_TurnTroll_out		
-STEP_GrabTroll_out		
-STEP_CentrTroll_out		[post_B3_CentrTroll_out_EXEC]
-						STEP_Standby
+[B3]STEP_MoveTipper_in		
+[B3]STEP_FrameToTipper_in 	
+[B3]STEP_MoveTipper_out		
+[B3]STEP_FrameToTipper_out	[post_B3_FrameToTipper_out_EXEC] {Prog_3_C}
+							[C3]STEP_TakeTable_out
+							[C3]STEP_VerticalCutting_dn
+								+ (!)FixingFrame_in
+							[C3]STEP_HorizontalCutting_rev
+[B3]STEP_PropTroll_out		
+[B3]STEP_TurnTroll_out		
+[B3]STEP_GrabTroll_out		
+[B3]STEP_CentrTroll_out		[post_B3_CentrTroll_out_EXEC] {STEP_Standby}
+						
 
 
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №4 BBBBBBBBBBBBBBBBBBBB (Вывод в исходное положение)
-STEP_PropTroll_out		
-STEP_TurnTroll_out		
-STEP_GrabTroll_out		
-STEP_CentrTroll_out		
-
+[B4]STEP_PropTroll_out		
+[B4]STEP_TurnTroll_out		
+[B4]STEP_GrabTroll_out		
+[B4]STEP_CentrTroll_out		
 
 вывести резки и потом стол
-STEP_HorizontalCutting_rev
+[B4]STEP_HorizontalCutting_rev
 
 
 
