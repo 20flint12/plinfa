@@ -260,6 +260,8 @@
         <Node name="ctrl_PressTroll_A_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PressTroll_B_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PressTroll_B_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_PressTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_PropTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
@@ -596,6 +598,8 @@
       <Node name="POU_0_CENTRPROPPRESS">
         <Node name="sens_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_CentrTroll_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_PressTroll_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_PressTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PropTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PropTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_Troll_is" type="T_BOOL" access="ReadWrite" />
@@ -606,6 +610,13 @@
         <Node name="step_CentrTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_out_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_CentrTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_in_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_out_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_PressTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_PropTroll_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
@@ -615,6 +626,8 @@
         <Node name="step_PropTroll_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_CentrTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_CentrTroll_out" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PressTroll_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_PressTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PropTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PropTroll_out" type="T_TIME" access="ReadWrite" />
       </Node>
