@@ -161,45 +161,40 @@ user 	user
 
 
 
-BBBBBBBBBBBBBBBBBBBB AutoCycle_B №1 BBBBBBBBBBBBBBBBBBBB (Поставить массив на стол)
-[B1]STEP_CentrTroll_in		
-[B1]STEP_GrabTroll_in		
-[B1]STEP_TurnTroll_in		
-[B1]STEP_PropTroll_in		
-[B1]STEP_LockTable_in		
-[B1]STEP_TakeTable_in		[post_B1_TakeTable_in_EXEC]
+
+2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №1 BBBBBBBBBBBBBBBBBBBB (Поставить массив на стол)
+{Prog_1_B} ++++++++++++++++++++++++++++++++++++++++ {Prog_1_C}
+[B1]STEP_LockTable_in								[C1]STEP_CentrTroll_in
+[B1]STEP_TakeTable_in								[C1]STEP_GrabTroll_in |
+[B1]STEP_PressTroll_in
 [B1]STEP_FrameToTipper_in	
 [B1]STEP_MoveTipper_in		
 [B1]STEP_FrameToTipper_out	
-[B1]STEP_MoveTipper_out		[post_B1_MoveTipper_out_EXEC]
-								+ STEP_PulloutTroll_in
-					
-
-BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
+[B1]STEP_MoveTipper_out	|
+	[post_B1_MoveTipper_out] ---------------------- {Prog_2_B} + {D}STEP_PulloutTroll_in
+			
+2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
+{Prog_2_B} + {D}STEP_PulloutTroll_in
 [B2]STEP_HorizontalCutting_fwd
-[B2]STEP_LockTable_out		[post_B2_LockTable_out_EXEC] {Prog_1_C}						
-							[C1]STEP_PressTable_in							
-								+ (!)FixingFrame_out
-[B2]STEP_VerticalCutting_up	[post_B2_VerticalCutting_up_EXEC] {Prog_2_C}						
-							[C2]STEP_PressTable_out 
+[B2]STEP_LockTable_out		
+	[post_B2_LockTable_out] ----------------------- {Prog_2_C}						
+[B2]STEP_VerticalCutting_up	+ (!)FixingFrame_out |	[C2]STEP_PressTable_in |								
+	[post_B2_VerticalCutting_up] ------------------ {Prog_3_B}
+													{Prog_3_C}						
+													[C3]STEP_PressTable_out |
 	
-
-BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать порезаный массив)
+2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать порезаный массив)
+{Prog_3_B}
 [B3]STEP_MoveTipper_in		
 [B3]STEP_FrameToTipper_in 	
 [B3]STEP_MoveTipper_out		
-[B3]STEP_FrameToTipper_out	[post_B3_FrameToTipper_out_EXEC] {Prog_3_C}
-							[C3]STEP_TakeTable_out
-							[C3]STEP_VerticalCutting_dn
-								+ (!)FixingFrame_in
-							[C3]STEP_HorizontalCutting_rev
-[B3]STEP_PropTroll_out		
-[B3]STEP_TurnTroll_out		
-[B3]STEP_GrabTroll_out		
-[B3]STEP_CentrTroll_out		[post_B3_CentrTroll_out_EXEC] {STEP_Standby}
+[B3]STEP_FrameToTipper_out	
+	[post_B3_FrameToTipper_out] ------------------- {Prog_4_C}
+[B3]STEP_PropTroll_out								[C4]STEP_PressTroll_out
+[B3]STEP_GrabTroll_out								[C4]STEP_TakeTable_out
+[B3]STEP_CentrTroll_out								[C4]STEP_VerticalCutting_dn + (!)FixingFrame_in
+[B3]STEP_PulloutTroll_out |			 				[C4]STEP_HorizontalCutting_rev |
 						
-
-
 BBBBBBBBBBBBBBBBBBBB AutoCycle_B №4 BBBBBBBBBBBBBBBBBBBB (Вывод в исходное положение)
 [B4]STEP_PropTroll_out		
 [B4]STEP_TurnTroll_out		
