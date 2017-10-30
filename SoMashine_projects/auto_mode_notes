@@ -162,12 +162,39 @@ user 	user
 
 
 
-2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №1 BBBBBBBBBBBBBBBBBBBB (Поставить массив на стол)
+---2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №1 BBBBBBBBBBBBBBBBBBBB (Поставить массив на стол)
+{Prog_1_B} ++++++++++++++++++++++++++++++++++++++++ {Prog_1_C}
+[B1]STEP_LockTable_in								[C1]STEP_CentrTroll_in
+[B1]STEP_TakeTable_in								[B1]STEP_PressTroll_in
+[B1]STEP_FrameToTipper_in							[C1]STEP_GrabTroll_in
+[B1]STEP_MoveTipper_in								[C1]STEP_PropTroll_in |
+[B1]STEP_FrameToTipper_out							
+[B1]STEP_MoveTipper_out	|
+	[post_B1_MoveTipper_out] ---------------------- {Prog_2_B} + {D}STEP_PulloutTroll_in
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++++2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №1 BBBBBBBBBBBBBBBBBBBB (Поставить массив на стол)
 {Prog_1_B} ++++++++++++++++++++++++++++++++++++++++ {Prog_1_C}
 [B1]STEP_LockTable_in								[C1]STEP_CentrTroll_in
 [B1]STEP_TakeTable_in								[C1]STEP_GrabTroll_in |
-[B1]STEP_PressTroll_in
-[B1]STEP_FrameToTipper_in	
+[B1]STEP_PressTroll_in								
+[B1]STEP_PropTroll_in 
+[B1]STEP_FrameToTipper_in							
+[B1]STEP_MoveTipper_in		
+[B1]STEP_FrameToTipper_out	
+[B1]STEP_MoveTipper_out	|
+	[post_B1_MoveTipper_out] ---------------------- {Prog_2_B} + {D}STEP_PulloutTroll_in
+
+
+
+2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №1 BBBBBBBBBBBBBBBBBBBB (Поставить массив на стол)
+{Prog_1_B} ++++++++++++++++++++++++++++++++++++++++ {Prog_1_C}
+[B1]STEP_LockTable_in								[C1]STEP_CentrTroll_in
+[B1]STEP_TakeTable_in								[C1]STEP_GrabTroll_in
+[B1]STEP_PressTroll_in								[C1]STEP_PropTroll_in |
+[B1]STEP_FrameToTipper_in							
 [B1]STEP_MoveTipper_in		
 [B1]STEP_FrameToTipper_out	
 [B1]STEP_MoveTipper_out	|
