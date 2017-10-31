@@ -239,6 +239,8 @@
         <Node name="bDebugBlockLimit" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalAlarm" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalAuto" type="T_BOOL" access="ReadWrite" />
+        <Node name="bGlobalBlockConflict" type="T_BOOL" access="ReadWrite" />
+        <Node name="bGlobalManualInitAlert" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalTest" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_AutoStop" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BellPulses" type="T_BOOL" access="ReadWrite" />
@@ -793,6 +795,7 @@
         <Node name="timer_HorizontalCutting_rev" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_7_VERTICALCUTTING">
+        <Node name="adjusted_C10_s" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="sens_PressTable_out" type="T_BOOL" access="ReadWrite" />
@@ -812,6 +815,7 @@
         <Node name="step_VerticalCutting_up_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_VerticalCutting_up_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_VerticalCutting_up_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="time_edge" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_VerticalCutting_dn" type="T_TIME" access="ReadWrite" />

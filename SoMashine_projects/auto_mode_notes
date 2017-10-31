@@ -198,7 +198,7 @@ user 	user
 [B1]STEP_MoveTipper_in		
 [B1]STEP_FrameToTipper_out	
 [B1]STEP_MoveTipper_out	|
-	[post_B1_MoveTipper_out] ---------------------- {Prog_2_B} + {D}STEP_PulloutTroll_in
+	[post_B1_MoveTipper_out] ---------------------- {Prog_2_B} + {D}STEP_PulloutTroll_in |
 			
 2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
 {Prog_2_B} + {D}STEP_PulloutTroll_in
