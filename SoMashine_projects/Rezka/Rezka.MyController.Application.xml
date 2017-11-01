@@ -765,10 +765,11 @@
         <Node name="step_MoveTipper_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_in_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_in_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_TakeTable_in_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="step_TakeTable_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_out_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_out_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_TakeTable_out_INIT" type="T_BOOL" access="ReadWrite" />
         <Node name="step_TakeTable_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="timer_FixingFrame_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_FixingFrame_out" type="T_TIME" access="ReadWrite" />
