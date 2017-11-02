@@ -401,6 +401,7 @@
         <Node name="Prog_4_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_4_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_4_C" type="T_BOOL" access="ReadWrite" />
+        <Node name="TIME_Edge" type="T_TIME" access="ReadWrite" />
         <Node name="Trig_1_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Trig_1_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Trig_1_C" type="T_BOOL" access="ReadWrite" />
@@ -816,7 +817,6 @@
         <Node name="step_VerticalCutting_up_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="step_VerticalCutting_up_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="step_VerticalCutting_up_INIT_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="time_edge" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_PressTable_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_VerticalCutting_dn" type="T_TIME" access="ReadWrite" />
