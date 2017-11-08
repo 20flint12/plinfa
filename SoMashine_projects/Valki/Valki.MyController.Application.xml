@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.3.50</Version>
+    <SymbolConfigObject version="3.5.3.50" />
+    <ProjectInfo name="Valki" devicename="MyController" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_WORD" size="2" swapsize="2" typeclass="Word" iecname="WORD" />
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_BYTE" size="1" swapsize="1" typeclass="Byte" iecname="BYTE" />
+    <TypeArray name="T_ARRAY__0__3__OF_BYTE" size="4" nativesize="4" typeclass="Array" iecname="ARRAY [0..3] OF BYTE" basetype="T_BYTE">
+      <ArrayDim minrange="0" maxrange="3" />
+    </TypeArray>
+    <TypeSimple name="T_PLC_R_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_STATUS" />
+    <TypeSimple name="T_PLC_R_BOOT_PROJECT_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_BOOT_PROJECT_STATUS" />
+    <TypeSimple name="T_PLC_R_STOP_CAUSE" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_STOP_CAUSE" />
+    <TypeSimple name="T_PLC_R_APPLICATION_ERROR" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_APPLICATION_ERROR" />
+    <TypeSimple name="T_LWORD" size="8" swapsize="8" typeclass="LWord" iecname="LWORD" />
+    <TypeSimple name="T_PLC_R_IO_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_IO_STATUS" />
+    <TypeSimple name="T_STRING_31_" size="32" swapsize="0" typeclass="String" iecname="STRING(31)" />
+    <TypeSimple name="T_STRING_99_" size="100" swapsize="0" typeclass="String" iecname="STRING(99)" />
+    <TypeSimple name="T_UINT" size="2" swapsize="2" typeclass="UInt" iecname="UINT" />
+    <TypeSimple name="T_PLC_R_TERMINAL_PORT_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_TERMINAL_PORT_STATUS" />
+    <TypeSimple name="T_PLC_R_SDCARD_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_SDCARD_STATUS" />
+    <TypeSimple name="T_UDINT" size="4" swapsize="4" typeclass="UDInt" iecname="UDINT" />
+    <TypeSimple name="T_PLC_R_TM3_BUS_STATE" size="2" swapsize="2" typeclass="Enum" iecname="PLC_R_TM3_BUS_STATE" />
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeUserDef name="T_PLC_R_STRUCT" size="272" nativesize="272" typeclass="Userdef" iecname="PLC_R_STRUCT">
+      <UserDefElement type="T_WORD" iecname="i_wVendorID" byteoffset="0" />
+      <UserDefElement type="T_WORD" iecname="i_wProductID" byteoffset="2" />
+      <UserDefElement type="T_DWORD" iecname="i_dwSerialNumber" byteoffset="4" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_byFirmVersion" byteoffset="8" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_byBootVersion" byteoffset="12" />
+      <UserDefElement type="T_DWORD" iecname="i_dwHardVersion" byteoffset="16" />
+      <UserDefElement type="T_DWORD" iecname="i_dwChipVersion" byteoffset="20" />
+      <UserDefElement type="T_PLC_R_STATUS" iecname="i_wStatus" byteoffset="24" />
+      <UserDefElement type="T_PLC_R_BOOT_PROJECT_STATUS" iecname="i_wBootProjectStatus" byteoffset="26" />
+      <UserDefElement type="T_PLC_R_STOP_CAUSE" iecname="i_wLastStopCause" byteoffset="28" />
+      <UserDefElement type="T_PLC_R_APPLICATION_ERROR" iecname="i_wLastApplicationError" byteoffset="30" />
+      <UserDefElement type="T_LWORD" iecname="i_lwSystemFault_1" byteoffset="32" />
+      <UserDefElement type="T_LWORD" iecname="i_lwSystemFault_2" byteoffset="40" />
+      <UserDefElement type="T_PLC_R_IO_STATUS" iecname="i_wIOStatus1" byteoffset="48" />
+      <UserDefElement type="T_PLC_R_IO_STATUS" iecname="i_wIOStatus2" byteoffset="50" />
+      <UserDefElement type="T_WORD" iecname="i_wClockBatterystatus" byteoffset="52" />
+      <UserDefElement type="T_DWORD" iecname="i_dwAppliSignature1" byteoffset="56" />
+      <UserDefElement type="T_DWORD" iecname="i_dwAppliSignature2" byteoffset="60" />
+      <UserDefElement type="T_DWORD" iecname="i_dwAppliSignature3" byteoffset="64" />
+      <UserDefElement type="T_DWORD" iecname="i_dwAppliSignature4" byteoffset="68" />
+      <UserDefElement type="T_STRING_31_" iecname="i_sVendorName" byteoffset="72" />
+      <UserDefElement type="T_STRING_31_" iecname="i_sProductRef" byteoffset="104" />
+      <UserDefElement type="T_STRING_99_" iecname="i_sNodeName" byteoffset="136" />
+      <UserDefElement type="T_DWORD" iecname="i_dwLastStopTime" byteoffset="236" />
+      <UserDefElement type="T_DWORD" iecname="i_dwLastPowerOffDate" byteoffset="240" />
+      <UserDefElement type="T_UINT" iecname="i_uiEventsCounter" byteoffset="244" />
+      <UserDefElement type="T_PLC_R_TERMINAL_PORT_STATUS" iecname="i_wTerminalPortStatus" byteoffset="246" />
+      <UserDefElement type="T_PLC_R_SDCARD_STATUS" iecname="i_wSdCardStatus" byteoffset="248" />
+      <UserDefElement type="T_WORD" iecname="i_wUsrFreeFileHdl" byteoffset="250" />
+      <UserDefElement type="T_UDINT" iecname="i_udiUsrFsTotalBytes" byteoffset="252" />
+      <UserDefElement type="T_UDINT" iecname="i_udiUsrFsFreeBytes" byteoffset="256" />
+      <UserDefElement type="T_PLC_R_TM3_BUS_STATE" iecname="i_uiTM3BusState" byteoffset="260" />
+      <UserDefElement type="T_BYTE" iecname="i_ExpertIO_RunStop_Input" byteoffset="262" />
+      <UserDefElement type="T_BOOL" iecname="i_x10msClk" byteoffset="263" />
+      <UserDefElement type="T_BOOL" iecname="i_x100msClk" byteoffset="264" />
+      <UserDefElement type="T_BOOL" iecname="i_x1sClk" byteoffset="265" />
+    </TypeUserDef>
+    <TypeSimple name="T_PLC_W_COMMAND" size="2" swapsize="2" typeclass="Enum" iecname="PLC_W_COMMAND" />
+    <TypeUserDef name="T_PLC_W_STRUCT" size="6" nativesize="6" typeclass="Userdef" iecname="PLC_W_STRUCT">
+      <UserDefElement type="T_WORD" iecname="q_wResetCounterEvent" byteoffset="0" />
+      <UserDefElement type="T_UINT" iecname="q_uiOpenPLCControl" byteoffset="2" />
+      <UserDefElement type="T_PLC_W_COMMAND" iecname="q_wPLCControl" byteoffset="4" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__5__OF_BYTE" size="6" nativesize="6" typeclass="Array" iecname="ARRAY [0..5] OF BYTE" basetype="T_BYTE">
+      <ArrayDim minrange="0" maxrange="5" />
+    </TypeArray>
+    <TypeSimple name="T_STRING_15_" size="16" swapsize="0" typeclass="String" iecname="STRING(15)" />
+    <TypeSimple name="T_ETH_R_IP_MODE" size="2" swapsize="2" typeclass="Enum" iecname="ETH_R_IP_MODE" />
+    <TypeSimple name="T_ETH_R_FRAME_PROTOCOL" size="2" swapsize="2" typeclass="Enum" iecname="ETH_R_FRAME_PROTOCOL" />
+    <TypeSimple name="T_ETH_R_PORT_LINK_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="ETH_R_PORT_LINK_STATUS" />
+    <TypeSimple name="T_ETH_R_PORT_SPEED" size="2" swapsize="2" typeclass="Enum" iecname="ETH_R_PORT_SPEED" />
+    <TypeSimple name="T_ETH_R_PORT_DUPLEX_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="ETH_R_PORT_DUPLEX_STATUS" />
+    <TypeSimple name="T_ETH_R_RUN_IDLE" size="1" swapsize="1" typeclass="Enum" iecname="ETH_R_RUN_IDLE" />
+    <TypeSimple name="T_ETH_R_PORT_IP_STATUS" size="2" swapsize="2" typeclass="Enum" iecname="ETH_R_PORT_IP_STATUS" />
+    <TypeUserDef name="T_ETH_R_STRUCT" size="168" nativesize="168" typeclass="Userdef" iecname="ETH_R_STRUCT">
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_byIPAddress" byteoffset="0" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_bySubNetMask" byteoffset="4" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_byGateway" byteoffset="8" />
+      <UserDefElement type="T_ARRAY__0__5__OF_BYTE" iecname="i_byMACAddress" byteoffset="12" />
+      <UserDefElement type="T_STRING_15_" iecname="i_sDeviceName" byteoffset="18" />
+      <UserDefElement type="T_ETH_R_IP_MODE" iecname="i_wIpMode" byteoffset="34" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_byFDRServerIPAddress" byteoffset="36" />
+      <UserDefElement type="T_UDINT" iecname="i_udiOpenTcpConnections" byteoffset="40" />
+      <UserDefElement type="T_UDINT" iecname="i_udiFramesTransmittedOK" byteoffset="44" />
+      <UserDefElement type="T_UDINT" iecname="i_udiFramedReceivedOK" byteoffset="48" />
+      <UserDefElement type="T_UDINT" iecname="i_udiTransmitBufferErrors" byteoffset="52" />
+      <UserDefElement type="T_UDINT" iecname="i_udiReceiveBufferErrors" byteoffset="56" />
+      <UserDefElement type="T_ETH_R_FRAME_PROTOCOL" iecname="i_wFrameSendingProtocol" byteoffset="60" />
+      <UserDefElement type="T_ETH_R_PORT_LINK_STATUS" iecname="i_wPortALinkStatus" byteoffset="62" />
+      <UserDefElement type="T_ETH_R_PORT_SPEED" iecname="i_wPortASpeed" byteoffset="64" />
+      <UserDefElement type="T_ETH_R_PORT_DUPLEX_STATUS" iecname="i_wPortADuplexStatus" byteoffset="66" />
+      <UserDefElement type="T_UDINT" iecname="i_udiPortACollisions" byteoffset="68" />
+      <UserDefElement type="T_UDINT" iecname="i_udiModbusMessageTransmitted" byteoffset="72" />
+      <UserDefElement type="T_UDINT" iecname="i_udiModbusMessageReceived" byteoffset="76" />
+      <UserDefElement type="T_UDINT" iecname="i_udiModbusErrorMessage" byteoffset="80" />
+      <UserDefElement type="T_UDINT" iecname="i_udiETHIP_IOMessagingTransmitted" byteoffset="84" />
+      <UserDefElement type="T_UDINT" iecname="i_udiETHIP_IOMessagingReceived" byteoffset="88" />
+      <UserDefElement type="T_UDINT" iecname="i_udiUCMM_Request" byteoffset="92" />
+      <UserDefElement type="T_UDINT" iecname="i_udiUCMM_Error" byteoffset="96" />
+      <UserDefElement type="T_UDINT" iecname="i_udiClass3_Request" byteoffset="100" />
+      <UserDefElement type="T_UDINT" iecname="i_udiClass3_Error" byteoffset="104" />
+      <UserDefElement type="T_UINT" iecname="i_uiAssemblyInstanceInput" byteoffset="108" />
+      <UserDefElement type="T_UINT" iecname="i_uiAssemblyInstanceInputSize" byteoffset="110" />
+      <UserDefElement type="T_UINT" iecname="i_uiAssemblyInstanceOutput" byteoffset="112" />
+      <UserDefElement type="T_UINT" iecname="i_uiAssemblyInstanceOutputSize" byteoffset="114" />
+      <UserDefElement type="T_UINT" iecname="i_uiETHIP_ConnectionTimeouts" byteoffset="116" />
+      <UserDefElement type="T_ETH_R_RUN_IDLE" iecname="i_ucEipRunIdle" byteoffset="118" />
+      <UserDefElement type="T_BYTE" iecname="i_byMasterIpTimeouts" byteoffset="119" />
+      <UserDefElement type="T_BYTE" iecname="i_byMasterIpLost" byteoffset="120" />
+      <UserDefElement type="T_ETH_R_PORT_IP_STATUS" iecname="i_wPortAIpStatus" byteoffset="122" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_byIPAddress_If2" byteoffset="124" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_bySubNetMask_If2" byteoffset="128" />
+      <UserDefElement type="T_ARRAY__0__3__OF_BYTE" iecname="i_byGateway_If2" byteoffset="132" />
+      <UserDefElement type="T_ARRAY__0__5__OF_BYTE" iecname="i_byMACAddress_If2" byteoffset="136" />
+      <UserDefElement type="T_STRING_15_" iecname="i_sDeviceName_If2" byteoffset="142" />
+      <UserDefElement type="T_ETH_R_IP_MODE" iecname="i_wIpMode_If2" byteoffset="158" />
+      <UserDefElement type="T_ETH_R_PORT_LINK_STATUS" iecname="i_wPortALinkStatus_If2" byteoffset="160" />
+      <UserDefElement type="T_ETH_R_PORT_SPEED" iecname="i_wPortASpeed_If2" byteoffset="162" />
+      <UserDefElement type="T_ETH_R_PORT_DUPLEX_STATUS" iecname="i_wPortADuplexStatus_If2" byteoffset="164" />
+      <UserDefElement type="T_ETH_R_PORT_IP_STATUS" iecname="i_wPortAIpStatus_If2" byteoffset="166" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ETH_W_STRUCT" size="2" nativesize="2" typeclass="Userdef" iecname="ETH_W_STRUCT">
+      <UserDefElement type="T_WORD" iecname="q_wResetCounter" byteoffset="0" />
+    </TypeUserDef>
+    <TypeUserDef name="T_SERIAL_R_STRUCT" size="24" nativesize="24" typeclass="Userdef" iecname="SERIAL_R_STRUCT">
+      <UserDefElement type="T_UDINT" iecname="i_udiFramesTransmittedOK" byteoffset="0" />
+      <UserDefElement type="T_UDINT" iecname="i_udiFramesReceivedOK" byteoffset="4" />
+      <UserDefElement type="T_UDINT" iecname="i_udiRX_MessagesError" byteoffset="8" />
+      <UserDefElement type="T_UINT" iecname="i_uiSlaveExceptionCount" byteoffset="12" />
+      <UserDefElement type="T_UINT" iecname="i_udiSlaveMsgCount" byteoffset="14" />
+      <UserDefElement type="T_UINT" iecname="i_uiSlaveNoRespCount" byteoffset="16" />
+      <UserDefElement type="T_UINT" iecname="i_uiSlaveNakCount" byteoffset="18" />
+      <UserDefElement type="T_UINT" iecname="i_uiSlaveBusyCount" byteoffset="20" />
+      <UserDefElement type="T_UINT" iecname="i_uiCharOverrunCount" byteoffset="22" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__1__OF_SERIAL_R_STRUCT" size="48" nativesize="48" typeclass="Array" iecname="ARRAY [0..1] OF SERIAL_R_STRUCT" basetype="T_SERIAL_R_STRUCT">
+      <ArrayDim minrange="0" maxrange="1" />
+    </TypeArray>
+    <TypeUserDef name="T_SERIAL_W_STRUCT" size="2" nativesize="2" typeclass="Userdef" iecname="SERIAL_W_STRUCT">
+      <UserDefElement type="T_WORD" iecname="q_wResetCounter" byteoffset="0" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__1__OF_SERIAL_W_STRUCT" size="4" nativesize="4" typeclass="Array" iecname="ARRAY [0..1] OF SERIAL_W_STRUCT" basetype="T_SERIAL_W_STRUCT">
+      <ArrayDim minrange="0" maxrange="1" />
+    </TypeArray>
+    <TypeUserDef name="T_PROFIBUS_R_STRUCT" size="16" nativesize="16" typeclass="Userdef" iecname="PROFIBUS_R_STRUCT">
+      <UserDefElement type="T_WORD" iecname="i_wPNOIdentifier" byteoffset="0" />
+      <UserDefElement type="T_UINT" iecname="i_wBusAdr" byteoffset="2" />
+      <UserDefElement type="T_UDINT" iecname="i_CommState" byteoffset="4" />
+      <UserDefElement type="T_UDINT" iecname="i_CommError" byteoffset="8" />
+      <UserDefElement type="T_UDINT" iecname="i_ErrorCount" byteoffset="12" />
+    </TypeUserDef>
+    <TypeSimple name="T_TM3_MODULE_STATE" size="4" swapsize="4" typeclass="Enum" iecname="TM3_MODULE_STATE" />
+    <TypeUserDef name="T_TM3_MODULE_R_STRUCT" size="8" nativesize="8" typeclass="Userdef" iecname="TM3_MODULE_R_STRUCT">
+      <UserDefElement type="T_WORD" iecname="i_wProductID" byteoffset="0" />
+      <UserDefElement type="T_TM3_MODULE_STATE" iecname="i_wModuleState" byteoffset="4" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__13__OF_TM3_MODULE_R_STRUCT" size="112" nativesize="112" typeclass="Array" iecname="ARRAY [0..13] OF TM3_MODULE_R_STRUCT" basetype="T_TM3_MODULE_R_STRUCT">
+      <ArrayDim minrange="0" maxrange="13" />
+    </TypeArray>
+    <TypeSimple name="T_CART_R_MODULE_ID" size="2" swapsize="2" typeclass="Enum" iecname="CART_R_MODULE_ID" />
+    <TypeSimple name="T_CART_R_STATE" size="4" swapsize="4" typeclass="Enum" iecname="CART_R_STATE" />
+    <TypeUserDef name="T_CART_R_STRUCT" size="8" nativesize="8" typeclass="Userdef" iecname="CART_R_STRUCT">
+      <UserDefElement type="T_CART_R_MODULE_ID" iecname="i_uiModuleId" byteoffset="0" />
+      <UserDefElement type="T_UINT" iecname="i_uifirmwareVersion" byteoffset="2" />
+      <UserDefElement type="T_CART_R_STATE" iecname="i_udiCartState" byteoffset="4" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__1__OF_CART_R_STRUCT" size="16" nativesize="16" typeclass="Array" iecname="ARRAY [0..1] OF CART_R_STRUCT" basetype="T_CART_R_STRUCT">
+      <ArrayDim minrange="0" maxrange="1" />
+    </TypeArray>
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeUserDef name="T_LIMITALARM" size="16" nativesize="16" typeclass="Userdef" iecname="LIMITALARM">
+      <UserDefElement type="T_INT" iecname="IN" byteoffset="4" />
+      <UserDefElement type="T_INT" iecname="HIGH" byteoffset="6" />
+      <UserDefElement type="T_INT" iecname="LOW" byteoffset="8" />
+      <UserDefElement type="T_BOOL" iecname="O" byteoffset="10" />
+      <UserDefElement type="T_BOOL" iecname="U" byteoffset="11" />
+      <UserDefElement type="T_BOOL" iecname="IL" byteoffset="12" />
+    </TypeUserDef>
+    <TypeSimple name="T_POINTER_TO_WORD" size="4" swapsize="4" typeclass="Pointer" iecname="POINTER TO WORD" />
+    <TypeUserDef name="T_SEC_PLCSystemFB" size="8" nativesize="8" typeclass="Userdef" iecname="SEC.PLCSystemFB">
+      <UserDefElement type="T_POINTER_TO_WORD" iecname="pMW60000" byteoffset="4" />
+    </TypeUserDef>
+    <TypeUserDef name="T_SEC_RELOC_RelocationTableFB" size="4" nativesize="0" typeclass="Userdef" iecname="SEC_RELOC.RelocationTableFB" />
+    <TypeSimple name="T_POINTER_TO_IoConfigTaskMap" size="4" swapsize="4" typeclass="Pointer" iecname="POINTER TO IoConfigTaskMap" />
+    <TypeSimple name="T_DINT" size="4" swapsize="4" typeclass="DInt" iecname="DINT" />
+    <TypeSimple name="T_BIT_X_0" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="0" />
+    <TypeSimple name="T_BIT_X_1" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="1" />
+    <TypeSimple name="T_BIT_X_2" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="2" />
+    <TypeSimple name="T_BIT_X_3" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="3" />
+    <TypeSimple name="T_BIT_X_4" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="4" />
+    <TypeSimple name="T_BIT_X_5" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="5" />
+    <TypeSimple name="T_BIT_X_6" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="6" />
+    <TypeSimple name="T_BIT_X_7" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="7" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="IOCONFIG_GLOBALS">
+        <Node name="MyController" type="T_SEC_PLCSystemFB" access="ReadWrite" />
+        <Node name="nIoConfigTaskMapCount" type="T_DINT" access="ReadWrite" />
+        <Node name="pIoConfigTaskMap" type="T_POINTER_TO_IoConfigTaskMap" access="ReadWrite" />
+        <Node name="RelocTable" type="T_SEC_RELOC_RelocationTableFB" access="ReadWrite" />
+      </Node>
+      <Node name="IOCONFIG_GLOBALS_MAPPING">
+        <Node name="Alarm" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX1.1" />
+        <Node name="ibDI_IB1" type="T_BYTE" access="Read" directaddress="%IB2" />
+        <Node name="ibModule_1_IBStatusIW0" type="T_BYTE" access="Read" directaddress="%IB20" />
+        <Node name="ibModule_1_IBStatusIW1" type="T_BYTE" access="Read" directaddress="%IB21" />
+        <Node name="ibModule_1_IBStatusIW2" type="T_BYTE" access="Read" directaddress="%IB22" />
+        <Node name="ibModule_1_IBStatusIW3" type="T_BYTE" access="Read" directaddress="%IB23" />
+        <Node name="ibModule_1_IBStatusIW4" type="T_BYTE" access="Read" directaddress="%IB24" />
+        <Node name="ibModule_1_IBStatusIW5" type="T_BYTE" access="Read" directaddress="%IB25" />
+        <Node name="ibModule_1_IBStatusIW6" type="T_BYTE" access="Read" directaddress="%IB26" />
+        <Node name="ibModule_1_IBStatusIW7" type="T_BYTE" access="Read" directaddress="%IB27" />
+        <Node name="ibModule_7_IBStatusQW0" type="T_BYTE" access="Read" directaddress="%IB28" />
+        <Node name="ibModule_7_IBStatusQW1" type="T_BYTE" access="Read" directaddress="%IB29" />
+        <Node name="ibModule_7_IBStatusQW2" type="T_BYTE" access="Read" directaddress="%IB30" />
+        <Node name="ibModule_7_IBStatusQW3" type="T_BYTE" access="Read" directaddress="%IB31" />
+        <Node name="ibModule_8_IBStatusQW0" type="T_BYTE" access="Read" directaddress="%IB32" />
+        <Node name="ibModule_8_IBStatusQW1" type="T_BYTE" access="Read" directaddress="%IB33" />
+        <Node name="ibModule_8_IBStatusQW2" type="T_BYTE" access="Read" directaddress="%IB34" />
+        <Node name="ibModule_8_IBStatusQW3" type="T_BYTE" access="Read" directaddress="%IB35" />
+        <Node name="iiModule_1_IW6" type="T_INT" access="Read" directaddress="%IW8" />
+        <Node name="iiModule_1_IW7" type="T_INT" access="Read" directaddress="%IW9" />
+        <Node name="iwDI_IW0" type="T_WORD" access="Read" directaddress="%IW0" />
+        <Node name="iwEthernetIP_IW0" type="T_WORD" access="Read" directaddress="%IW18" />
+        <Node name="iwEthernetIP_IW1" type="T_WORD" access="Read" directaddress="%IW19" />
+        <Node name="iwEthernetIP_IW10" type="T_WORD" access="Read" directaddress="%IW28" />
+        <Node name="iwEthernetIP_IW11" type="T_WORD" access="Read" directaddress="%IW29" />
+        <Node name="iwEthernetIP_IW12" type="T_WORD" access="Read" directaddress="%IW30" />
+        <Node name="iwEthernetIP_IW13" type="T_WORD" access="Read" directaddress="%IW31" />
+        <Node name="iwEthernetIP_IW14" type="T_WORD" access="Read" directaddress="%IW32" />
+        <Node name="iwEthernetIP_IW15" type="T_WORD" access="Read" directaddress="%IW33" />
+        <Node name="iwEthernetIP_IW16" type="T_WORD" access="Read" directaddress="%IW34" />
+        <Node name="iwEthernetIP_IW17" type="T_WORD" access="Read" directaddress="%IW35" />
+        <Node name="iwEthernetIP_IW18" type="T_WORD" access="Read" directaddress="%IW36" />
+        <Node name="iwEthernetIP_IW19" type="T_WORD" access="Read" directaddress="%IW37" />
+        <Node name="iwEthernetIP_IW2" type="T_WORD" access="Read" directaddress="%IW20" />
+        <Node name="iwEthernetIP_IW3" type="T_WORD" access="Read" directaddress="%IW21" />
+        <Node name="iwEthernetIP_IW4" type="T_WORD" access="Read" directaddress="%IW22" />
+        <Node name="iwEthernetIP_IW5" type="T_WORD" access="Read" directaddress="%IW23" />
+        <Node name="iwEthernetIP_IW6" type="T_WORD" access="Read" directaddress="%IW24" />
+        <Node name="iwEthernetIP_IW7" type="T_WORD" access="Read" directaddress="%IW25" />
+        <Node name="iwEthernetIP_IW8" type="T_WORD" access="Read" directaddress="%IW26" />
+        <Node name="iwEthernetIP_IW9" type="T_WORD" access="Read" directaddress="%IW27" />
+        <Node name="KL1_ap_pres1" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX0.0" />
+        <Node name="KL2_dun_pres1" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX0.1" />
+        <Node name="KL3_ap_pres2" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX0.2" />
+        <Node name="KL4_dun_pres2" type="T_BIT_X_3" access="ReadWrite" directaddress="%QX0.3" />
+        <Node name="KL5_ap_pres3" type="T_BIT_X_4" access="ReadWrite" directaddress="%QX0.4" />
+        <Node name="KL6_dun_pres3" type="T_BIT_X_5" access="ReadWrite" directaddress="%QX0.5" />
+        <Node name="KL7_stop_pres1" type="T_BIT_X_6" access="ReadWrite" directaddress="%QX0.6" />
+        <Node name="KL8_stop_pres2" type="T_BIT_X_7" access="ReadWrite" directaddress="%QX0.7" />
+        <Node name="KL9_stop_pres3" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX1.0" />
+        <Node name="PA1_A_pres1" type="T_INT" access="ReadWrite" directaddress="%QW2" />
+        <Node name="PA2_MM_pres1" type="T_INT" access="ReadWrite" directaddress="%QW3" />
+        <Node name="PA3_A_pres2" type="T_INT" access="ReadWrite" directaddress="%QW4" />
+        <Node name="PA4_MM_pres2" type="T_INT" access="ReadWrite" directaddress="%QW5" />
+        <Node name="PA5_A_pres3" type="T_INT" access="ReadWrite" directaddress="%QW6" />
+        <Node name="PA6_MM_pres3" type="T_INT" access="ReadWrite" directaddress="%QW7" />
+        <Node name="qiModule_8_QW2" type="T_INT" access="ReadWrite" directaddress="%QW8" />
+        <Node name="qiModule_8_QW3" type="T_INT" access="ReadWrite" directaddress="%QW9" />
+        <Node name="qwEthernetIP_QW0" type="T_WORD" access="ReadWrite" directaddress="%QW10" />
+        <Node name="qwEthernetIP_QW1" type="T_WORD" access="ReadWrite" directaddress="%QW11" />
+        <Node name="qwEthernetIP_QW10" type="T_WORD" access="ReadWrite" directaddress="%QW20" />
+        <Node name="qwEthernetIP_QW11" type="T_WORD" access="ReadWrite" directaddress="%QW21" />
+        <Node name="qwEthernetIP_QW12" type="T_WORD" access="ReadWrite" directaddress="%QW22" />
+        <Node name="qwEthernetIP_QW13" type="T_WORD" access="ReadWrite" directaddress="%QW23" />
+        <Node name="qwEthernetIP_QW14" type="T_WORD" access="ReadWrite" directaddress="%QW24" />
+        <Node name="qwEthernetIP_QW15" type="T_WORD" access="ReadWrite" directaddress="%QW25" />
+        <Node name="qwEthernetIP_QW16" type="T_WORD" access="ReadWrite" directaddress="%QW26" />
+        <Node name="qwEthernetIP_QW17" type="T_WORD" access="ReadWrite" directaddress="%QW27" />
+        <Node name="qwEthernetIP_QW18" type="T_WORD" access="ReadWrite" directaddress="%QW28" />
+        <Node name="qwEthernetIP_QW19" type="T_WORD" access="ReadWrite" directaddress="%QW29" />
+        <Node name="qwEthernetIP_QW2" type="T_WORD" access="ReadWrite" directaddress="%QW12" />
+        <Node name="qwEthernetIP_QW3" type="T_WORD" access="ReadWrite" directaddress="%QW13" />
+        <Node name="qwEthernetIP_QW4" type="T_WORD" access="ReadWrite" directaddress="%QW14" />
+        <Node name="qwEthernetIP_QW5" type="T_WORD" access="ReadWrite" directaddress="%QW15" />
+        <Node name="qwEthernetIP_QW6" type="T_WORD" access="ReadWrite" directaddress="%QW16" />
+        <Node name="qwEthernetIP_QW7" type="T_WORD" access="ReadWrite" directaddress="%QW17" />
+        <Node name="qwEthernetIP_QW8" type="T_WORD" access="ReadWrite" directaddress="%QW18" />
+        <Node name="qwEthernetIP_QW9" type="T_WORD" access="ReadWrite" directaddress="%QW19" />
+        <Node name="SL1_lainPer1" type="T_INT" access="Read" directaddress="%IW3" />
+        <Node name="SL2_lainPer2" type="T_INT" access="Read" directaddress="%IW5" />
+        <Node name="SL3_lainPer3" type="T_INT" access="Read" directaddress="%IW7" />
+        <Node name="SQ1_max1" type="T_BIT_X_0" access="Read" directaddress="%IX0.0" />
+        <Node name="SQ2_min1" type="T_BIT_X_1" access="Read" directaddress="%IX0.1" />
+        <Node name="SQ3_PozP1" type="T_BIT_X_2" access="Read" directaddress="%IX0.2" />
+        <Node name="SQ4_max2" type="T_BIT_X_3" access="Read" directaddress="%IX0.3" />
+        <Node name="SQ5_min2" type="T_BIT_X_4" access="Read" directaddress="%IX0.4" />
+        <Node name="SQ6_PozP2" type="T_BIT_X_5" access="Read" directaddress="%IX0.5" />
+        <Node name="SQ7_max3" type="T_BIT_X_6" access="Read" directaddress="%IX0.6" />
+        <Node name="SQ8_min3" type="T_BIT_X_7" access="Read" directaddress="%IX0.7" />
+        <Node name="SQ9_PozP3" type="T_BIT_X_0" access="Read" directaddress="%IX1.0" />
+        <Node name="TA1_TT1" type="T_INT" access="Read" directaddress="%IW2" />
+        <Node name="TA2_TT2" type="T_INT" access="Read" directaddress="%IW4" />
+        <Node name="TA3_TT3" type="T_INT" access="Read" directaddress="%IW6" />
+      </Node>
+      <Node name="POU">
+        <Node name="AL_dun_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="AL_limit_P1" type="T_LIMITALARM" access="ReadWrite" />
+        <Node name="AL_linper_HIGH_P1" type="T_INT" access="ReadWrite" />
+        <Node name="AL_linper_HIGH_P1_buf" type="T_INT" access="ReadWrite" />
+        <Node name="AL_linper_LOW_P1" type="T_INT" access="ReadWrite" />
+        <Node name="AL_linper_LOW_P1_buf" type="T_INT" access="ReadWrite" />
+        <Node name="AL_per_dun_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="AL_per_up_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="AL_TA1_HIGH_P1" type="T_INT" access="ReadWrite" />
+        <Node name="AL_TA1_LOW_P1" type="T_INT" access="ReadWrite" />
+        <Node name="AL_up_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="ALARM_limit_P1" type="T_INT" access="ReadWrite" />
+        <Node name="dun_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="kvitir" type="T_BOOL" access="ReadWrite" />
+        <Node name="limit_P1" type="T_LIMITALARM" access="ReadWrite" />
+        <Node name="m_KL2" type="T_BOOL" access="ReadWrite" />
+        <Node name="M_limit_P1" type="T_INT" access="ReadWrite" />
+        <Node name="OK_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="SL1_lainPer1_buf" type="T_INT" access="ReadWrite" />
+        <Node name="Sl1_step1" type="T_INT" access="ReadWrite" />
+        <Node name="Step_zaspki1" type="T_INT" access="ReadWrite" />
+        <Node name="TA1_HIGH_P1" type="T_INT" access="ReadWrite" />
+        <Node name="TA1_LOW_P1" type="T_INT" access="ReadWrite" />
+        <Node name="TA1_TT1_buf" type="T_INT" access="ReadWrite" />
+        <Node name="TA1_TT1_buf_max" type="T_INT" access="ReadWrite" />
+        <Node name="TT1_ust" type="T_INT" access="ReadWrite" />
+        <Node name="up_P1" type="T_BOOL" access="Write" />
+        <Node name="ust_lain_pr1" type="T_INT" access="ReadWrite" />
+      </Node>
+      <Node name="SEC">
+        <Node name="PLC_GVL">
+          <Node name="CART_R" type="T_ARRAY__0__1__OF_CART_R_STRUCT" access="ReadWrite" />
+          <Node name="ETH_R" type="T_ETH_R_STRUCT" access="ReadWrite" />
+          <Node name="ETH_W" type="T_ETH_W_STRUCT" access="ReadWrite" />
+          <Node name="PLC_R" type="T_PLC_R_STRUCT" access="ReadWrite" />
+          <Node name="PLC_W" type="T_PLC_W_STRUCT" access="ReadWrite" />
+          <Node name="PROFIBUS_R" type="T_PROFIBUS_R_STRUCT" access="ReadWrite" />
+          <Node name="SERIAL_R" type="T_ARRAY__0__1__OF_SERIAL_R_STRUCT" access="ReadWrite" />
+          <Node name="SERIAL_W" type="T_ARRAY__0__1__OF_SERIAL_W_STRUCT" access="ReadWrite" />
+          <Node name="TM3_MODULE_R" type="T_ARRAY__0__13__OF_TM3_MODULE_R_STRUCT" access="ReadWrite" />
+        </Node>
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
