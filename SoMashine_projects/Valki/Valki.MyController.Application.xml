@@ -231,26 +231,6 @@
         <Node name="iiModule_1_IW6" type="T_INT" access="Read" directaddress="%IW8" />
         <Node name="iiModule_1_IW7" type="T_INT" access="Read" directaddress="%IW9" />
         <Node name="iwDI_IW0" type="T_WORD" access="Read" directaddress="%IW0" />
-        <Node name="iwEthernetIP_IW0" type="T_WORD" access="Read" directaddress="%IW18" />
-        <Node name="iwEthernetIP_IW1" type="T_WORD" access="Read" directaddress="%IW19" />
-        <Node name="iwEthernetIP_IW10" type="T_WORD" access="Read" directaddress="%IW28" />
-        <Node name="iwEthernetIP_IW11" type="T_WORD" access="Read" directaddress="%IW29" />
-        <Node name="iwEthernetIP_IW12" type="T_WORD" access="Read" directaddress="%IW30" />
-        <Node name="iwEthernetIP_IW13" type="T_WORD" access="Read" directaddress="%IW31" />
-        <Node name="iwEthernetIP_IW14" type="T_WORD" access="Read" directaddress="%IW32" />
-        <Node name="iwEthernetIP_IW15" type="T_WORD" access="Read" directaddress="%IW33" />
-        <Node name="iwEthernetIP_IW16" type="T_WORD" access="Read" directaddress="%IW34" />
-        <Node name="iwEthernetIP_IW17" type="T_WORD" access="Read" directaddress="%IW35" />
-        <Node name="iwEthernetIP_IW18" type="T_WORD" access="Read" directaddress="%IW36" />
-        <Node name="iwEthernetIP_IW19" type="T_WORD" access="Read" directaddress="%IW37" />
-        <Node name="iwEthernetIP_IW2" type="T_WORD" access="Read" directaddress="%IW20" />
-        <Node name="iwEthernetIP_IW3" type="T_WORD" access="Read" directaddress="%IW21" />
-        <Node name="iwEthernetIP_IW4" type="T_WORD" access="Read" directaddress="%IW22" />
-        <Node name="iwEthernetIP_IW5" type="T_WORD" access="Read" directaddress="%IW23" />
-        <Node name="iwEthernetIP_IW6" type="T_WORD" access="Read" directaddress="%IW24" />
-        <Node name="iwEthernetIP_IW7" type="T_WORD" access="Read" directaddress="%IW25" />
-        <Node name="iwEthernetIP_IW8" type="T_WORD" access="Read" directaddress="%IW26" />
-        <Node name="iwEthernetIP_IW9" type="T_WORD" access="Read" directaddress="%IW27" />
         <Node name="KL1_ap_pres1" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX0.0" />
         <Node name="KL2_dun_pres1" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX0.1" />
         <Node name="KL3_ap_pres2" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX0.2" />
@@ -268,26 +248,6 @@
         <Node name="PA6_MM_pres3" type="T_INT" access="ReadWrite" directaddress="%QW7" />
         <Node name="qiModule_8_QW2" type="T_INT" access="ReadWrite" directaddress="%QW8" />
         <Node name="qiModule_8_QW3" type="T_INT" access="ReadWrite" directaddress="%QW9" />
-        <Node name="qwEthernetIP_QW0" type="T_WORD" access="ReadWrite" directaddress="%QW10" />
-        <Node name="qwEthernetIP_QW1" type="T_WORD" access="ReadWrite" directaddress="%QW11" />
-        <Node name="qwEthernetIP_QW10" type="T_WORD" access="ReadWrite" directaddress="%QW20" />
-        <Node name="qwEthernetIP_QW11" type="T_WORD" access="ReadWrite" directaddress="%QW21" />
-        <Node name="qwEthernetIP_QW12" type="T_WORD" access="ReadWrite" directaddress="%QW22" />
-        <Node name="qwEthernetIP_QW13" type="T_WORD" access="ReadWrite" directaddress="%QW23" />
-        <Node name="qwEthernetIP_QW14" type="T_WORD" access="ReadWrite" directaddress="%QW24" />
-        <Node name="qwEthernetIP_QW15" type="T_WORD" access="ReadWrite" directaddress="%QW25" />
-        <Node name="qwEthernetIP_QW16" type="T_WORD" access="ReadWrite" directaddress="%QW26" />
-        <Node name="qwEthernetIP_QW17" type="T_WORD" access="ReadWrite" directaddress="%QW27" />
-        <Node name="qwEthernetIP_QW18" type="T_WORD" access="ReadWrite" directaddress="%QW28" />
-        <Node name="qwEthernetIP_QW19" type="T_WORD" access="ReadWrite" directaddress="%QW29" />
-        <Node name="qwEthernetIP_QW2" type="T_WORD" access="ReadWrite" directaddress="%QW12" />
-        <Node name="qwEthernetIP_QW3" type="T_WORD" access="ReadWrite" directaddress="%QW13" />
-        <Node name="qwEthernetIP_QW4" type="T_WORD" access="ReadWrite" directaddress="%QW14" />
-        <Node name="qwEthernetIP_QW5" type="T_WORD" access="ReadWrite" directaddress="%QW15" />
-        <Node name="qwEthernetIP_QW6" type="T_WORD" access="ReadWrite" directaddress="%QW16" />
-        <Node name="qwEthernetIP_QW7" type="T_WORD" access="ReadWrite" directaddress="%QW17" />
-        <Node name="qwEthernetIP_QW8" type="T_WORD" access="ReadWrite" directaddress="%QW18" />
-        <Node name="qwEthernetIP_QW9" type="T_WORD" access="ReadWrite" directaddress="%QW19" />
         <Node name="SL1_lainPer1" type="T_INT" access="Read" directaddress="%IW3" />
         <Node name="SL2_lainPer2" type="T_INT" access="Read" directaddress="%IW5" />
         <Node name="SL3_lainPer3" type="T_INT" access="Read" directaddress="%IW7" />
