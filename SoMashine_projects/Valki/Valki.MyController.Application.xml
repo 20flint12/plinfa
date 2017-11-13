@@ -177,14 +177,6 @@
       <ArrayDim minrange="0" maxrange="1" />
     </TypeArray>
     <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
-    <TypeUserDef name="T_LIMITALARM" size="16" nativesize="16" typeclass="Userdef" iecname="LIMITALARM">
-      <UserDefElement type="T_INT" iecname="IN" byteoffset="4" />
-      <UserDefElement type="T_INT" iecname="HIGH" byteoffset="6" />
-      <UserDefElement type="T_INT" iecname="LOW" byteoffset="8" />
-      <UserDefElement type="T_BOOL" iecname="O" byteoffset="10" />
-      <UserDefElement type="T_BOOL" iecname="U" byteoffset="11" />
-      <UserDefElement type="T_BOOL" iecname="IL" byteoffset="12" />
-    </TypeUserDef>
     <TypeSimple name="T_POINTER_TO_WORD" size="4" swapsize="4" typeclass="Pointer" iecname="POINTER TO WORD" />
     <TypeUserDef name="T_SEC_PLCSystemFB" size="8" nativesize="8" typeclass="Userdef" iecname="SEC.PLCSystemFB">
       <UserDefElement type="T_POINTER_TO_WORD" iecname="pMW60000" byteoffset="4" />
@@ -200,9 +192,36 @@
     <TypeSimple name="T_BIT_X_5" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="5" />
     <TypeSimple name="T_BIT_X_6" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="6" />
     <TypeSimple name="T_BIT_X_7" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="7" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
   </TypeList>
   <NodeList>
     <Node name="Application">
+      <Node name="GVL">
+        <Node name="auto_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="auto_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="auto_P3" type="T_BOOL" access="ReadWrite" />
+        <Node name="corr_time_P1" type="T_TIME" access="ReadWrite" />
+        <Node name="corr_time_P2" type="T_TIME" access="ReadWrite" />
+        <Node name="corr_time_P3" type="T_TIME" access="ReadWrite" />
+        <Node name="kvitir" type="T_BOOL" access="ReadWrite" />
+        <Node name="LD1_cur" type="T_INT" access="ReadWrite" />
+        <Node name="LD2_cur" type="T_INT" access="ReadWrite" />
+        <Node name="LD3_cur" type="T_INT" access="ReadWrite" />
+        <Node name="Per_day_counter" type="T_UINT" access="ReadWrite" directaddress="%MW2" />
+        <Node name="step_backfilling_P1" type="T_INT" access="ReadWrite" />
+        <Node name="step_backfilling_P2" type="T_INT" access="ReadWrite" />
+        <Node name="step_backfilling_P3" type="T_INT" access="ReadWrite" />
+        <Node name="Total_counter" type="T_UINT" access="ReadWrite" directaddress="%MW1" />
+        <Node name="TT1_max" type="T_INT" access="ReadWrite" />
+        <Node name="TT2_max" type="T_INT" access="ReadWrite" />
+        <Node name="TT3_max" type="T_INT" access="ReadWrite" />
+        <Node name="ust_LD1" type="T_INT" access="ReadWrite" />
+        <Node name="ust_LD2" type="T_INT" access="ReadWrite" />
+        <Node name="ust_LD3" type="T_INT" access="ReadWrite" />
+        <Node name="ust_TT1" type="T_INT" access="ReadWrite" />
+        <Node name="ust_TT2" type="T_INT" access="ReadWrite" />
+        <Node name="ust_TT3" type="T_INT" access="ReadWrite" />
+      </Node>
       <Node name="IOCONFIG_GLOBALS">
         <Node name="MyController" type="T_SEC_PLCSystemFB" access="ReadWrite" />
         <Node name="nIoConfigTaskMapCount" type="T_DINT" access="ReadWrite" />
@@ -231,15 +250,6 @@
         <Node name="iiModule_1_IW6" type="T_INT" access="Read" directaddress="%IW8" />
         <Node name="iiModule_1_IW7" type="T_INT" access="Read" directaddress="%IW9" />
         <Node name="iwDI_IW0" type="T_WORD" access="Read" directaddress="%IW0" />
-        <Node name="KL1_ap_pres1" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX0.0" />
-        <Node name="KL2_dun_pres1" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX0.1" />
-        <Node name="KL3_ap_pres2" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX0.2" />
-        <Node name="KL4_dun_pres2" type="T_BIT_X_3" access="ReadWrite" directaddress="%QX0.3" />
-        <Node name="KL5_ap_pres3" type="T_BIT_X_4" access="ReadWrite" directaddress="%QX0.4" />
-        <Node name="KL6_dun_pres3" type="T_BIT_X_5" access="ReadWrite" directaddress="%QX0.5" />
-        <Node name="KL7_stop_pres1" type="T_BIT_X_6" access="ReadWrite" directaddress="%QX0.6" />
-        <Node name="KL8_stop_pres2" type="T_BIT_X_7" access="ReadWrite" directaddress="%QX0.7" />
-        <Node name="KL9_stop_pres3" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX1.0" />
         <Node name="PA1_A_pres1" type="T_INT" access="ReadWrite" directaddress="%QW2" />
         <Node name="PA2_MM_pres1" type="T_INT" access="ReadWrite" directaddress="%QW3" />
         <Node name="PA3_A_pres2" type="T_INT" access="ReadWrite" directaddress="%QW4" />
@@ -248,9 +258,6 @@
         <Node name="PA6_MM_pres3" type="T_INT" access="ReadWrite" directaddress="%QW7" />
         <Node name="qiModule_8_QW2" type="T_INT" access="ReadWrite" directaddress="%QW8" />
         <Node name="qiModule_8_QW3" type="T_INT" access="ReadWrite" directaddress="%QW9" />
-        <Node name="SL1_lainPer1" type="T_INT" access="Read" directaddress="%IW3" />
-        <Node name="SL2_lainPer2" type="T_INT" access="Read" directaddress="%IW5" />
-        <Node name="SL3_lainPer3" type="T_INT" access="Read" directaddress="%IW7" />
         <Node name="SQ1_max1" type="T_BIT_X_0" access="Read" directaddress="%IX0.0" />
         <Node name="SQ2_min1" type="T_BIT_X_1" access="Read" directaddress="%IX0.1" />
         <Node name="SQ3_PozP1" type="T_BIT_X_2" access="Read" directaddress="%IX0.2" />
@@ -264,35 +271,19 @@
         <Node name="TA2_TT2" type="T_INT" access="Read" directaddress="%IW4" />
         <Node name="TA3_TT3" type="T_INT" access="Read" directaddress="%IW6" />
       </Node>
-      <Node name="POU">
-        <Node name="AL_dun_P1" type="T_BOOL" access="ReadWrite" />
-        <Node name="AL_limit_P1" type="T_LIMITALARM" access="ReadWrite" />
-        <Node name="AL_linper_HIGH_P1" type="T_INT" access="ReadWrite" />
-        <Node name="AL_linper_HIGH_P1_buf" type="T_INT" access="ReadWrite" />
-        <Node name="AL_linper_LOW_P1" type="T_INT" access="ReadWrite" />
-        <Node name="AL_linper_LOW_P1_buf" type="T_INT" access="ReadWrite" />
-        <Node name="AL_per_dun_P1" type="T_BOOL" access="ReadWrite" />
-        <Node name="AL_per_up_P1" type="T_BOOL" access="ReadWrite" />
-        <Node name="AL_TA1_HIGH_P1" type="T_INT" access="ReadWrite" />
-        <Node name="AL_TA1_LOW_P1" type="T_INT" access="ReadWrite" />
-        <Node name="AL_up_P1" type="T_BOOL" access="ReadWrite" />
-        <Node name="ALARM_limit_P1" type="T_INT" access="ReadWrite" />
-        <Node name="dun_P1" type="T_BOOL" access="ReadWrite" />
-        <Node name="kvitir" type="T_BOOL" access="ReadWrite" />
-        <Node name="limit_P1" type="T_LIMITALARM" access="ReadWrite" />
-        <Node name="m_KL2" type="T_BOOL" access="ReadWrite" />
-        <Node name="M_limit_P1" type="T_INT" access="ReadWrite" />
-        <Node name="OK_P1" type="T_BOOL" access="ReadWrite" />
-        <Node name="SL1_lainPer1_buf" type="T_INT" access="ReadWrite" />
-        <Node name="Sl1_step1" type="T_INT" access="ReadWrite" />
-        <Node name="Step_zaspki1" type="T_INT" access="ReadWrite" />
-        <Node name="TA1_HIGH_P1" type="T_INT" access="ReadWrite" />
-        <Node name="TA1_LOW_P1" type="T_INT" access="ReadWrite" />
-        <Node name="TA1_TT1_buf" type="T_INT" access="ReadWrite" />
-        <Node name="TA1_TT1_buf_max" type="T_INT" access="ReadWrite" />
-        <Node name="TT1_ust" type="T_INT" access="ReadWrite" />
-        <Node name="up_P1" type="T_BOOL" access="Write" />
-        <Node name="ust_lain_pr1" type="T_INT" access="ReadWrite" />
+      <Node name="POU_MAIN">
+        <Node name="Delta_ALARM_HIGH_LD1" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_HIGH_LD2" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_HIGH_LD3" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_LOW_LD1" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_LOW_LD2" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_LOW_LD3" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_TT1" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_TT2" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_LIMIT_TT1" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_LIMIT_TT2" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_LIMIT_TT3" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="SEC">
         <Node name="PLC_GVL">
