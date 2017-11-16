@@ -204,17 +204,16 @@
         <Node name="corr_time_P2" type="T_TIME" access="ReadWrite" />
         <Node name="corr_time_P3" type="T_TIME" access="ReadWrite" />
         <Node name="kvitir" type="T_BOOL" access="ReadWrite" />
-        <Node name="LD1_cur" type="T_INT" access="ReadWrite" />
-        <Node name="LD2_cur" type="T_INT" access="ReadWrite" />
-        <Node name="LD3_cur" type="T_INT" access="ReadWrite" />
-        <Node name="Per_day_counter" type="T_UINT" access="ReadWrite" directaddress="%MW2" />
+        <Node name="LD1_cur" type="T_INT" access="ReadWrite" directaddress="%MW23" />
+        <Node name="LD2_cur" type="T_INT" access="ReadWrite" directaddress="%MW24" />
+        <Node name="LD3_cur" type="T_INT" access="ReadWrite" directaddress="%MW25" />
         <Node name="step_backfilling_P1" type="T_INT" access="ReadWrite" />
         <Node name="step_backfilling_P2" type="T_INT" access="ReadWrite" />
         <Node name="step_backfilling_P3" type="T_INT" access="ReadWrite" />
         <Node name="Total_counter" type="T_UINT" access="ReadWrite" directaddress="%MW1" />
-        <Node name="TT1_max" type="T_INT" access="ReadWrite" />
-        <Node name="TT2_max" type="T_INT" access="ReadWrite" />
-        <Node name="TT3_max" type="T_INT" access="ReadWrite" />
+        <Node name="TT1_max" type="T_INT" access="ReadWrite" directaddress="%MW20" />
+        <Node name="TT2_max" type="T_INT" access="ReadWrite" directaddress="%MW21" />
+        <Node name="TT3_max" type="T_INT" access="ReadWrite" directaddress="%MW22" />
         <Node name="ust_LD1" type="T_INT" access="ReadWrite" />
         <Node name="ust_LD2" type="T_INT" access="ReadWrite" />
         <Node name="ust_LD3" type="T_INT" access="ReadWrite" />
