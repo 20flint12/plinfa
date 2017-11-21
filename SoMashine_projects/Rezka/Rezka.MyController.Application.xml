@@ -303,10 +303,10 @@
         <Node name="KL9_KM10_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="Operator_num" type="T_UINT" access="ReadWrite" />
         <Node name="Operator_password" type="T_UINT" access="ReadWrite" />
-        <Node name="Pwd_1" type="T_UINT" access="ReadWrite" />
-        <Node name="Pwd_2" type="T_UINT" access="ReadWrite" />
-        <Node name="Pwd_3" type="T_UINT" access="ReadWrite" />
-        <Node name="Pwd_4" type="T_UINT" access="ReadWrite" />
+        <Node name="Pwd_1" type="T_UINT" access="ReadWrite" directaddress="%MW27" />
+        <Node name="Pwd_2" type="T_UINT" access="ReadWrite" directaddress="%MW28" />
+        <Node name="Pwd_3" type="T_UINT" access="ReadWrite" directaddress="%MW29" />
+        <Node name="Pwd_4" type="T_UINT" access="ReadWrite" directaddress="%MW30" />
         <Node name="Step_A" type="T_UINT" access="ReadWrite" directaddress="%MW23" />
         <Node name="Step_B" type="T_UINT" access="ReadWrite" directaddress="%MW24" />
         <Node name="Step_C" type="T_UINT" access="ReadWrite" directaddress="%MW25" />
