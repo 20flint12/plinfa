@@ -242,6 +242,7 @@
         <Node name="bGlobalBlockConflict" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalManualInitAlert" type="T_BOOL" access="ReadWrite" />
         <Node name="bGlobalTest" type="T_BOOL" access="ReadWrite" />
+        <Node name="bLoggedState" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_AutoStop" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_BellPulses" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_CentrTroll_in" type="T_BOOL" access="ReadWrite" />
@@ -300,6 +301,12 @@
         <Node name="KL7_KM8_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="KL8_KM9_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="KL9_KM10_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="Operator_num" type="T_UINT" access="ReadWrite" />
+        <Node name="Operator_password" type="T_UINT" access="ReadWrite" />
+        <Node name="Pwd_1" type="T_UINT" access="ReadWrite" />
+        <Node name="Pwd_2" type="T_UINT" access="ReadWrite" />
+        <Node name="Pwd_3" type="T_UINT" access="ReadWrite" />
+        <Node name="Pwd_4" type="T_UINT" access="ReadWrite" />
         <Node name="Step_A" type="T_UINT" access="ReadWrite" directaddress="%MW23" />
         <Node name="Step_B" type="T_UINT" access="ReadWrite" directaddress="%MW24" />
         <Node name="Step_C" type="T_UINT" access="ReadWrite" directaddress="%MW25" />
