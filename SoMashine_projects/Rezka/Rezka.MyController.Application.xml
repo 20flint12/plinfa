@@ -301,8 +301,9 @@
         <Node name="KL7_KM8_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="KL8_KM9_ERR" type="T_BOOL" access="ReadWrite" />
         <Node name="KL9_KM10_ERR" type="T_BOOL" access="ReadWrite" />
-        <Node name="Operator_num" type="T_UINT" access="ReadWrite" />
-        <Node name="Operator_password" type="T_UINT" access="ReadWrite" />
+        <Node name="Mass_strength" type="T_UINT" access="ReadWrite" directaddress="%MW34" />
+        <Node name="Operator_num" type="T_UINT" access="ReadWrite" directaddress="%MW31" />
+        <Node name="Operator_password" type="T_UINT" access="ReadWrite" directaddress="%MW32" />
         <Node name="Pwd_1" type="T_UINT" access="ReadWrite" directaddress="%MW27" />
         <Node name="Pwd_2" type="T_UINT" access="ReadWrite" directaddress="%MW28" />
         <Node name="Pwd_3" type="T_UINT" access="ReadWrite" directaddress="%MW29" />
@@ -311,6 +312,8 @@
         <Node name="Step_B" type="T_UINT" access="ReadWrite" directaddress="%MW24" />
         <Node name="Step_C" type="T_UINT" access="ReadWrite" directaddress="%MW25" />
         <Node name="Step_D" type="T_UINT" access="ReadWrite" directaddress="%MW26" />
+        <Node name="strDescription" type="T_STRING" access="ReadWrite" directaddress="%MB35" />
+        <Node name="Troll_num" type="T_UINT" access="ReadWrite" directaddress="%MW33" />
         <Node name="var_BeforeCutter_freq_far" type="T_INT" access="ReadWrite" />
         <Node name="var_BeforeCutter_freq_near" type="T_INT" access="ReadWrite" />
         <Node name="var_HorizontalCutting_freq_fwd" type="T_INT" access="ReadWrite" />

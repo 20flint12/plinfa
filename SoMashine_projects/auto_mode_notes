@@ -53,6 +53,7 @@ POU_6_HorizontalCutting	- Горизонтальная резка (ToDo: пер�
 
 bGlobalTest																			WEB_CONTROL_1.12		bGlobalAlarm																		WEB_CONTROL_1.13
 bGlobalAuto																			WEB_CONTROL_1.14
+bLoggedState																		WEB_CONTROL_1.15
 
 POU_3_PodvodTelezhki - Упр. тросовым толкателем перед резкой 
 ############################
