@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.3.50</Version>
+    <SymbolConfigObject version="3.5.3.50" />
+    <ProjectInfo name="BoshanMassa" devicename="MASSA" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeSimple name="T_BIT_X_0" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="0" />
+    <TypeSimple name="T_BIT_X_1" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="1" />
+    <TypeSimple name="T_BIT_X_2" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="2" />
+    <TypeSimple name="T_BIT_X_3" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="3" />
+    <TypeSimple name="T_BIT_X_4" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="4" />
+    <TypeSimple name="T_BIT_X_5" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="5" />
+    <TypeSimple name="T_BIT_X_6" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="6" />
+    <TypeSimple name="T_BIT_X_7" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="7" />
+    <TypeSimple name="T_UINT" size="2" swapsize="2" typeclass="UInt" iecname="UINT" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="IOCONFIG_GLOBALS_MAPPING">
+        <Node name="i_ATVPL012_OutCur" type="T_UINT" access="Read" directaddress="%IW3" />
+        <Node name="i_ATVPL012_OutFrec" type="T_INT" access="Read" directaddress="%IW2" />
+        <Node name="i_ATVPL012_Status" type="T_UINT" access="Read" directaddress="%IW1" />
+        <Node name="i_ATVPL024_OutCur" type="T_UINT" access="Read" directaddress="%IW9" />
+        <Node name="i_ATVPL024_OutFrec" type="T_INT" access="Read" directaddress="%IW8" />
+        <Node name="i_ATVPL024_Status" type="T_UINT" access="Read" directaddress="%IW7" />
+        <Node name="i_Avar_PL012" type="T_BIT_X_0" access="Read" directaddress="%IX0.0" />
+        <Node name="i_Avar_PL024" type="T_BIT_X_7" access="Read" directaddress="%IX31.7" />
+        <Node name="i_Avar_PL250" type="T_BIT_X_2" access="Read" directaddress="%IX0.2" />
+        <Node name="i_Avar_SMK517_ATS" type="T_BIT_X_1" access="Read" directaddress="%IX29.1" />
+        <Node name="i_Avar_USM40" type="T_BIT_X_7" access="Read" directaddress="%IX0.7" />
+        <Node name="i_Gotov_USM40" type="T_BIT_X_3" access="Read" directaddress="%IX0.3" />
+        <Node name="i_KEY_Protochka" type="T_BIT_X_4" access="Read" directaddress="%IX31.4" />
+        <Node name="i_Kozhuh_SMK516" type="T_BIT_X_2" access="Read" directaddress="%IX31.2" />
+        <Node name="i_Kozhuh_SMK517" type="T_BIT_X_0" access="Read" directaddress="%IX31.0" />
+        <Node name="i_Liniya_USM40_v_rabote" type="T_BIT_X_5" access="Read" directaddress="%IX0.5" />
+        <Node name="i_Nominal_SMK517_ATS" type="T_BIT_X_0" access="Read" directaddress="%IX29.0" />
+        <Node name="i_Othod_SMK516" type="T_BIT_X_1" access="Read" directaddress="%IX31.1" />
+        <Node name="i_Othod_SMK517" type="T_BIT_X_7" access="Read" directaddress="%IX30.7" />
+        <Node name="i_Otkl_Protoch517" type="T_BIT_X_5" access="Read" directaddress="%IX1.5" />
+        <Node name="i_Privoda_USM40_v_rabote" type="T_BIT_X_4" access="Read" directaddress="%IX0.4" />
+        <Node name="i_Rabota_PL250" type="T_BIT_X_1" access="Read" directaddress="%IX0.1" />
+        <Node name="i_Tros_KO1" type="T_BIT_X_1" access="Read" directaddress="%IX30.1" />
+        <Node name="i_Tros_KO11" type="T_BIT_X_1" access="Read" directaddress="%IX1.1" />
+        <Node name="i_Tros_KO2" type="T_BIT_X_2" access="Read" directaddress="%IX30.2" />
+        <Node name="i_Tros_KO3" type="T_BIT_X_3" access="Read" directaddress="%IX30.3" />
+        <Node name="i_Tros_KO4" type="T_BIT_X_4" access="Read" directaddress="%IX30.4" />
+        <Node name="i_Tros_KO6" type="T_BIT_X_5" access="Read" directaddress="%IX30.5" />
+        <Node name="i_Tros_KO7" type="T_BIT_X_6" access="Read" directaddress="%IX30.6" />
+        <Node name="i_Tros_KonvSMK516" type="T_BIT_X_3" access="Read" directaddress="%IX31.3" />
+        <Node name="i_TrosLentaUSM40" type="T_BIT_X_6" access="Read" directaddress="%IX0.6" />
+        <Node name="i_TZ_EP80_1" type="T_BIT_X_7" access="Read" directaddress="%IX29.7" />
+        <Node name="i_TZ_EP80_2" type="T_BIT_X_0" access="Read" directaddress="%IX30.0" />
+        <Node name="i_TZ_KO1" type="T_BIT_X_0" access="Read" directaddress="%IX28.0" />
+        <Node name="i_TZ_KO11" type="T_BIT_X_0" access="Read" directaddress="%IX1.0" />
+        <Node name="i_TZ_KO2" type="T_BIT_X_1" access="Read" directaddress="%IX28.1" />
+        <Node name="i_TZ_KO3" type="T_BIT_X_2" access="Read" directaddress="%IX28.2" />
+        <Node name="i_TZ_KO4" type="T_BIT_X_3" access="Read" directaddress="%IX28.3" />
+        <Node name="i_TZ_KO6" type="T_BIT_X_4" access="Read" directaddress="%IX28.4" />
+        <Node name="i_TZ_KO7" type="T_BIT_X_5" access="Read" directaddress="%IX28.5" />
+        <Node name="i_TZ_KonvSMK516" type="T_BIT_X_4" access="Read" directaddress="%IX29.4" />
+        <Node name="i_TZ_PL1" type="T_BIT_X_2" access="Read" directaddress="%IX1.2" />
+        <Node name="i_TZ_PL2" type="T_BIT_X_3" access="Read" directaddress="%IX1.3" />
+        <Node name="i_TZ_RazrSMK516" type="T_BIT_X_5" access="Read" directaddress="%IX29.5" />
+        <Node name="i_TZ_SMK516_37" type="T_BIT_X_2" access="Read" directaddress="%IX29.2" />
+        <Node name="i_TZ_SMK516_45" type="T_BIT_X_3" access="Read" directaddress="%IX29.3" />
+        <Node name="i_TZ_SMK517_37" type="T_BIT_X_6" access="Read" directaddress="%IX28.6" />
+        <Node name="i_TZ_SMK517_5" type="T_BIT_X_7" access="Read" directaddress="%IX28.7" />
+        <Node name="i_Vkl_Protoch517" type="T_BIT_X_4" access="Read" directaddress="%IX1.4" />
+        <Node name="q_ATVPL012_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW1" />
+        <Node name="q_ATVPL012_WriteVelocity" type="T_INT" access="ReadWrite" directaddress="%QW2" />
+        <Node name="q_ATVPL024_Controlword" type="T_UINT" access="ReadWrite" directaddress="%QW5" />
+        <Node name="q_ATVPL024_WriteVelocity" type="T_INT" access="ReadWrite" directaddress="%QW6" />
+        <Node name="q_Podgot_USM40" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX22.1" />
+        <Node name="q_Pusk_EP80_1" type="T_BIT_X_4" access="ReadWrite" directaddress="%QX21.4" />
+        <Node name="q_Pusk_EP80_2" type="T_BIT_X_5" access="ReadWrite" directaddress="%QX21.5" />
+        <Node name="q_Pusk_KO1" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX20.0" />
+        <Node name="q_Pusk_KO11" type="T_BIT_X_4" access="ReadWrite" directaddress="%QX22.4" />
+        <Node name="q_Pusk_KO2" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX20.1" />
+        <Node name="q_Pusk_KO3" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX20.2" />
+        <Node name="q_Pusk_KO4" type="T_BIT_X_3" access="ReadWrite" directaddress="%QX20.3" />
+        <Node name="q_Pusk_KO6" type="T_BIT_X_4" access="ReadWrite" directaddress="%QX20.4" />
+        <Node name="q_Pusk_KO7" type="T_BIT_X_5" access="ReadWrite" directaddress="%QX20.5" />
+        <Node name="q_Pusk_KonvSMK516" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX21.2" />
+        <Node name="q_Pusk_LiniyaUSM40" type="T_BIT_X_3" access="ReadWrite" directaddress="%QX22.3" />
+        <Node name="q_Pusk_PL012" type="T_BIT_X_7" access="ReadWrite" directaddress="%QX21.7" />
+        <Node name="q_Pusk_PL024" type="T_BIT_X_6" access="ReadWrite" directaddress="%QX21.6" />
+        <Node name="q_Pusk_PL1" type="T_BIT_X_5" access="ReadWrite" directaddress="%QX22.5" />
+        <Node name="q_Pusk_PL2" type="T_BIT_X_6" access="ReadWrite" directaddress="%QX22.6" />
+        <Node name="q_Pusk_PL250" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX22.0" />
+        <Node name="q_Pusk_PrivodaUSM40" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX22.2" />
+        <Node name="q_Pusk_RazrSMK516" type="T_BIT_X_3" access="ReadWrite" directaddress="%QX21.3" />
+        <Node name="q_Pusk_SMK516_37" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX21.0" />
+        <Node name="q_Pusk_SMK516_45" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX21.1" />
+        <Node name="q_Pusk_SMK517_37" type="T_BIT_X_6" access="ReadWrite" directaddress="%QX20.6" />
+        <Node name="q_Pusk_SMK517_ATS" type="T_BIT_X_7" access="ReadWrite" directaddress="%QX20.7" />
+        <Node name="q_SMK517_Prjamo" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX23.0" />
+        <Node name="q_SMK517_Revers" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX23.1" />
+        <Node name="q_Vkl_Voda_PL250" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX23.2" />
+        <Node name="q_Zvonok" type="T_BIT_X_7" access="ReadWrite" directaddress="%QX22.7" />
+      </Node>
+      <Node name="POU_M">
+        <Node name="Kvitir_HMI" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_ATVPL012_OutCur" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL012_OutFrec" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL024_OutCur" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL024_OutFrec" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL1_OutCur" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL1OutFrec" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL250_OutCur" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL250OutFrec" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL2_OutCur" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVPL2OutFrec" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVRazrSMK516_OutCur" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVRazrSMK516OutFrec" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVUSM40_OutCur" type="T_INT" access="ReadWrite" />
+        <Node name="m_ATVUSM40OutFrec" type="T_INT" access="ReadWrite" />
+        <Node name="m_Avar_Lin" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Avar_PL012" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Avar_PL024" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Avar_PL250" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Avar_Priv" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Avar_SMK517_ATS" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Avar_USM40" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_AvarATVPL012" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_AvarATVPL024" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_AvarATVPL1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_AvarATVPL2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_AvarATVPL250" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_AvarATVRazrSMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_AvarATVUSM40" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL012" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL012_R1" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL012_R2" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL012_R3" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL012_R4" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL024" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL024_R1" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL024_R2" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL024_R3" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL024_R4" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL1" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL1_R1" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL1_R2" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL1_R3" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL1_R4" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL2" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL250" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL2_R1" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL2_R2" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL2_R3" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecPL2_R4" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecRazrSMK516" type="T_INT" access="ReadWrite" />
+        <Node name="m_HMI_WriteFrecUSM40" type="T_INT" access="ReadWrite" />
+        <Node name="m_Kozhuh_SMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Kozhuh_SMK517" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Othod_SMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Othod_SMK517" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Pusk_Liniya" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Pusk_Privoda" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVAll" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL012" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL012_R1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL012_R2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL012_R3" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL012_R4" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL024" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL024_R1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL024_R2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL024_R3" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL024_R4" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL1_R1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL1_R2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL1_R3" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL1_R4" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL2_R1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL2_R2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL2_R3" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_RunATVPL2_R4" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_All" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KO1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KO11" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KO2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KO3" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KO4" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KO6" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KO7" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Tros_KonvSMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TrosLentaUSM40" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_EP80_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_EP80_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KO1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KO11" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KO2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KO3" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KO4" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KO6" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KO7" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_KonvSMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_PL1" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_PL2" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_RazrSMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_SMK516_37" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_SMK516_45" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_SMK517_37" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_TZ_SMK517_5" type="T_BOOL" access="ReadWrite" />
+        <Node name="m_Vkl_Protoch517" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_EP80_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_EP80_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KO1" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KO11" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KO2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KO3" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KO4" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KO6" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KO7" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_KonvSMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_Liniya" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_LiniyaUSM40" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_PL012" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_PL024" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_PL1" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_PL2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_PL250" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_PodgotUSM40" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_Privoda" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_PrivodaUSM40" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_RazrSMK516" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_SMK516_37" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_SMK516_45" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_SMK517_37" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_SMK517_5" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_SMK517_5_Rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_VodaPL250" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusk_HMI_Zvonok" type="T_BOOL" access="ReadWrite" />
+        <Node name="SbrosZvonka_HMI" type="T_BOOL" access="ReadWrite" />
+        <Node name="StopHMILinAvt" type="T_BOOL" access="ReadWrite" />
+        <Node name="t_OF_KO1" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_KO11" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_KO2" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_KO3" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_KO4" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_KO6" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_KO7" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_KonvSMK516" type="T_TIME" access="ReadWrite" />
+        <Node name="t_OF_LiniyaUSM40" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_KO1" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_KO2" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_KO3" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_KO4" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_KO6" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_KO7" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_KonvSMK516" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_PL012" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_PL250" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_RazrSMK516" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_SMK516_37" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_SMK516_45" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_SMK517_37" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_SMK517_5" type="T_TIME" access="ReadWrite" />
+        <Node name="t_ON_USM40Lin" type="T_TIME" access="ReadWrite" />
+        <Node name="TargMaxUrovenPL024U" type="T_INT" access="ReadWrite" />
+        <Node name="TargMinUrovenPL024U" type="T_INT" access="ReadWrite" />
+        <Node name="Uroven0100_PL024U" type="T_INT" access="ReadWrite" directaddress="%MW21" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>

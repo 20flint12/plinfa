@@ -1,0 +1,92 @@
+
+admin	plinfaA$U2017
+plinfa 	plinfa
+user 	user
+
+surmylovpn	surmylo121
+
+WebHMI 	193.169.81.79:50081	=> 192.168.0.21:80
+
+193.169.81.79
+kharkiv
+123kharkiv
+
+pptp
+
+193.169.81.79:49999	=>	192.168.49.90:1105
+
+
+
+
+192.168.49.90:1105		PLC			TM241CEC24T_U @0080F40B5F14
+192.168.49.95:1155		Panel
+192.168.49.120:80		WebHMI
+
+TM241CEC24T_U @0080F40B3252
+TM241CEC24T_U @00-80-F4-0B-32-52
+TM241CEC24T_U @00-80-F4-0B-32-52
+
+Remote via NAT
+etcp3://193.169.81.79:49999,192.168.49.10
+
+
+
+https://sassec.wordpress.com/2016/01/19/solving-hikvision-and-google-chrome-compatibility-issues/
+
+
+http://plinfa:TTT333ddd@192.168.48.48
+http://plinfa:TTT333ddd@193.169.81.79:45644
+http://plinfa:TTT333ddd@192.168.48.48/Streaming/channels/102/httppreview
+http://plinfa:TTT333ddd@193.169.81.79:45644/Streaming/channels/102/httppreview
+
+
+rtsp://192.168.48.48:554/Streaming/Channels/1
+rtsp://plinfa:TTT333ddd@192.168.48.48:554/Streaming/Channels/1
+
+Take picture
+http://plinfa:TTT333ddd@192.168.48.48/Streaming/channels/1/picture
+
+=== mjpeg for webhmi ===
+http://192.168.48.48/Streaming/channels/102/httpPreview
+
+Nick
+http://plinfa:TTT333ddd@193.169.81.79:45644/doc/page/preview.asp
+
+
+
+http://193.169.81.79:45644/Streaming/channels/102/httpPreview
+rtsp://193.169.81.79:45644/Streaming/Channels/1
+	
+
+
+nmap -A 193.169.81.79/32 -p 1105
+
+
+63933
+
+
+http://192.168.0.85
+surmylo		88888878
+
+
+
+plinfa
+TTT333ddd
+rtsp://plinfa:TTT333ddd@192.168.48.48:554/Streaming/Channels/1
+
+
+operator plinfa TTT333ddd
+user user GGG777hhh
+
+
+Valki
+HMIGTO4310 @0001234E7A9D
+
+info@webhmi.com.ua
+
+
+
+Fatal error: Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 5 database is locked' in /www/setup/registers.php:355 Stack trace: #0 /www/setup/registers.php(355): PDOStatement->execute() #1 /www/setup/registers.php(359): updatePLCmtime('652') #2 /www/setup/formgenerator.php(559): _callback_before_save('652') #3 /www/setup/registers.php(383): preprocess() #4 {main} thrown in /www/setup/registers.php on line 355
+
+
+

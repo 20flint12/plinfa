@@ -1,0 +1,73 @@
+TM241CEC24T_U @0080F40B5F14
+
+etcp3://193.169.81.79:49999,192.168.49.10
+
+PLINFA7-PC
+
+
+Operator_1		operator1
+
+SOM
+Adminisrtrator	plinfa
+
+
+(PwdUser_1==_SoM.MyController.Application.GVL.Pwd_1) || (PwdUser_2==_SoM.MyController.Application.GVL.Pwd_2) || (PwdUser_3==_SoM.MyController.Application.GVL.Pwd_3) || (PwdUser_4==_SoM.MyController.Application.GVL.Pwd_4)
+
+
+enodename3://193.169.81.79:49999,TM241CEC24T_U @0080F40B5F14
+
+
+
+
+
+
+
+Код обновления 09152749D0AB91FE7DBDD50CB20DC57C58275DB1
+
+
+
+
+Fatal error: Cannot redeclare getRegsForLog() (previously declared in /www/config.php:260) in /www/menu.php on line 28
+
+
+
+function main (userId)
+
+    if( GetReg("var_I10") == 0 ) then
+
+        -- Add your code here
+        local value = GetReg("out_Q0_byte"); -- Q0_byte (Q0@Соединение Сименс)
+    
+        value = value + 2;
+        
+        WriteReg("var_CopyOfOutputs", value); -- Q0_byte (Q0@Соединение Сименс)
+        SetReg("out_Q0_byte", value); -- Q0_byte (Q0@Соединение Сименс)
+        
+        AddInfoMessage("This is I10 => " .. value, userId);
+    end
+
+end
+
+
+        
+AddInfoMessage("This is a Lua script" + tostring(is_running), userId);
+AddWarningMessage("Warning. This is a Lua script" + cur_val, userId);
+AddAlertMessage("Alert! This is a Lua script", userId);
+
+
+function main (userId)
+    local randomVal = GetReg("random_val");
+    SetReg("random_val_copy", randomVal);
+    WriteReg("result", randomVal + 2);
+ 
+    AddInfoMessage("This is a Lua script", userId);
+    AddWarningMessage("Warning. This is a Lua script", userId);
+    AddAlertMessage("Alert! This is a Lua script", userId);
+ 
+    SendSMS("380501234567", "This is a test SMS");
+ 
+    ERROR("This message will be added to communication log with ERROR level");
+    INFO("This message will be added to communication log with INFO level");
+    DEBUG("This message will be added to communication log with DEBUG level");
+    TRACE("This message will be added to communication log with TRACE level");
+end
