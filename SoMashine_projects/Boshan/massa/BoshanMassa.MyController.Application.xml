@@ -7,6 +7,7 @@
   </Header>
   <TypeList>
     <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
   </TypeList>
   <NodeList>
     <Node name="Application">
@@ -18,6 +19,50 @@
         <Node name="ctrl_PuskAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_StopAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL15" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="GVL_STAGES_CONST">
+        <Node name="ctrl_K_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_10" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_3" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_4" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_5" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_6" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_7" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_8" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_K_9" type="T_BOOL" access="ReadWrite" />
+        <Node name="TIMEOUT_K_10_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_10_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_1_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_1_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_2_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_2_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_3_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_3_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_4_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_4_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_5_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_5_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_6_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_6_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_7_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_7_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_8_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_8_out" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_9_in" type="T_TIME" access="ReadWrite" />
+        <Node name="TIMEOUT_K_9_out" type="T_TIME" access="ReadWrite" />
+      </Node>
+      <Node name="POU_TRANSPORTER">
+        <Node name="K_10_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_1_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_2_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_3_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_4_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_5_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_6_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_7_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_8_is_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="K_9_is_running" type="T_BOOL" access="ReadWrite" />
       </Node>
     </Node>
   </NodeList>
