@@ -7,6 +7,8 @@
   </Header>
   <TypeList>
     <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
     <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
   </TypeList>
   <NodeList>
@@ -35,6 +37,10 @@
         <Node name="ctrl_K_7" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_K_8" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_K_9" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_KP_11_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_KP_11_rev" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_KP_12_fwd" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_KP_12_rev" type="T_BOOL" access="ReadWrite" />
         <Node name="TIMEOUT_K_10_in" type="T_TIME" access="ReadWrite" />
         <Node name="TIMEOUT_K_10_out" type="T_TIME" access="ReadWrite" />
         <Node name="TIMEOUT_K_1_in" type="T_TIME" access="ReadWrite" />
@@ -56,29 +62,41 @@
         <Node name="TIMEOUT_K_9_in" type="T_TIME" access="ReadWrite" />
         <Node name="TIMEOUT_K_9_out" type="T_TIME" access="ReadWrite" />
       </Node>
+      <Node name="IOCONFIG_GLOBALS_MAPPING">
+        <Node name="A2_ID0" type="T_DWORD" access="Read" directaddress="%ID1" />
+        <Node name="A3_ID0" type="T_DWORD" access="Read" directaddress="%ID2" />
+        <Node name="Ai1" type="T_INT" access="Read" directaddress="%IW11" />
+        <Node name="Ai2" type="T_INT" access="Read" directaddress="%IW12" />
+        <Node name="Ai3" type="T_INT" access="Read" directaddress="%IW13" />
+        <Node name="Level_1" type="T_INT" access="Read" directaddress="%IW8" />
+        <Node name="Level_2" type="T_INT" access="Read" directaddress="%IW9" />
+        <Node name="Level_2_1_1" type="T_INT" access="Read" directaddress="%IW6" />
+        <Node name="Level_2_1_2" type="T_INT" access="Read" directaddress="%IW7" />
+        <Node name="Level_3" type="T_INT" access="Read" directaddress="%IW10" />
+      </Node>
       <Node name="POU_CONVEYOR">
-        <Node name="ctrl_K_10_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_10_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_1_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_1_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_2_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_2_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_3_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_3_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_4_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_4_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_5_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_5_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_6_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_6_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_7_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_7_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_8_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_8_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_9_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_9_out" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_XX_in" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_K_XX_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_10_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_10_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_1_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_1_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_2_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_2_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_3_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_3_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_4_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_4_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_5_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_5_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_6_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_6_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_7_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_7_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_8_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_8_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_9_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_9_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_XX_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="next_K_XX_out" type="T_BOOL" access="ReadWrite" />
         <Node name="stage_K_10_in_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="stage_K_10_out_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="stage_K_1_in_EXEC" type="T_BOOL" access="ReadWrite" />
@@ -99,28 +117,16 @@
         <Node name="stage_K_8_out_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="stage_K_9_in_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="stage_K_9_out_EXEC" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_10" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_3" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_4" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_5" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_6" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_7" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_8" type="T_BOOL" access="ReadWrite" />
-        <Node name="var_K_9" type="T_BOOL" access="ReadWrite" />
       </Node>
-      <Node name="POU_TRANSPORTER">
-        <Node name="K_10_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_1_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_2_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_3_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_4_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_5_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_6_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_7_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_8_is_running" type="T_BOOL" access="ReadWrite" />
-        <Node name="K_9_is_running" type="T_BOOL" access="ReadWrite" />
+      <Node name="POU_TESTING">
+        <Node name="KL_01_16" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL_01_16_ON_OFF" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL_16_32" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL_16_32_ON_OFF" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL_32_48" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL_32_48_ON_OFF" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL_48_64" type="T_BOOL" access="ReadWrite" />
+        <Node name="KL_48_64_ON_OFF" type="T_BOOL" access="ReadWrite" />
       </Node>
     </Node>
   </NodeList>
