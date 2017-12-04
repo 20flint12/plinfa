@@ -124,11 +124,8 @@
         <Node name="stage_K_9_out_EXEC" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="POU_MASHINES">
-        <Node name="exec1" type="T_BOOL" access="ReadWrite" />
-        <Node name="next1" type="T_BOOL" access="ReadWrite" />
-        <Node name="ok1" type="T_BOOL" access="ReadWrite" />
-        <Node name="resp1" type="T_BOOL" access="ReadWrite" />
-        <Node name="timer_1" type="T_TIME" access="ReadWrite" />
+        <Node name="error_USM40" type="T_BOOL" access="ReadWrite" />
+        <Node name="started_USM40" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="POU_TESTING">
         <Node name="KL_01_16" type="T_BOOL" access="ReadWrite" />
@@ -139,6 +136,23 @@
         <Node name="KL_32_48_ON_OFF" type="T_BOOL" access="ReadWrite" />
         <Node name="KL_48_64" type="T_BOOL" access="ReadWrite" />
         <Node name="KL_48_64_ON_OFF" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="POU_USM40">
+        <Node name="err1" type="T_BOOL" access="ReadWrite" />
+        <Node name="err2" type="T_BOOL" access="ReadWrite" />
+        <Node name="err3" type="T_BOOL" access="ReadWrite" />
+        <Node name="exec1" type="T_BOOL" access="ReadWrite" />
+        <Node name="exec2" type="T_BOOL" access="ReadWrite" />
+        <Node name="exec3" type="T_BOOL" access="ReadWrite" />
+        <Node name="ok1" type="T_BOOL" access="ReadWrite" />
+        <Node name="ok2" type="T_BOOL" access="ReadWrite" />
+        <Node name="ok3" type="T_BOOL" access="ReadWrite" />
+        <Node name="resp1" type="T_BOOL" access="ReadWrite" />
+        <Node name="resp2" type="T_BOOL" access="ReadWrite" />
+        <Node name="resp3" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_1" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_2" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_3" type="T_TIME" access="ReadWrite" />
       </Node>
     </Node>
   </NodeList>
