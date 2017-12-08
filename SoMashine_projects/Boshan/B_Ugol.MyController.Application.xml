@@ -8,6 +8,7 @@
   <TypeList>
     <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
     <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_WORD" size="2" swapsize="2" typeclass="Word" iecname="WORD" />
     <TypeSimple name="T_BIT_X_0" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="0" />
     <TypeSimple name="T_BIT_X_1" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="1" />
     <TypeSimple name="T_BIT_X_2" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" bitoffset="2" />
@@ -46,6 +47,15 @@
         <Node name="i_Tros_KR2" type="T_BIT_X_4" access="Read" directaddress="%IX0.4" />
         <Node name="i_TZ_K1" type="T_BIT_X_1" access="Read" directaddress="%IX0.1" />
         <Node name="i_TZ_KR2" type="T_BIT_X_2" access="Read" directaddress="%IX0.2" />
+        <Node name="i_Uroven111" type="T_INT" access="Read" directaddress="%IW2" />
+        <Node name="i_Uroven112" type="T_INT" access="Read" directaddress="%IW3" />
+        <Node name="i_Uroven3" type="T_INT" access="Read" directaddress="%IW4" />
+        <Node name="i_Uroven4" type="T_INT" access="Read" directaddress="%IW5" />
+        <Node name="iiModule_2_IW4" type="T_INT" access="Read" directaddress="%IW6" />
+        <Node name="iiModule_2_IW5" type="T_INT" access="Read" directaddress="%IW7" />
+        <Node name="iiModule_2_IW6" type="T_INT" access="Read" directaddress="%IW8" />
+        <Node name="iiModule_2_IW7" type="T_INT" access="Read" directaddress="%IW9" />
+        <Node name="iwDI_IW0" type="T_WORD" access="Read" directaddress="%IW0" />
         <Node name="q_Green1" type="T_BIT_X_7" access="ReadWrite" directaddress="%QX0.7" />
         <Node name="q_Green2" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX3.0" />
         <Node name="q_PuskEP80" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX0.1" />
@@ -98,6 +108,12 @@
         <Node name="PuskHMI_Red2_RR" type="T_BOOL" access="ReadWrite" />
         <Node name="PuskHMI_Yellow1_RR" type="T_BOOL" access="ReadWrite" />
         <Node name="PuskHMI_Yellow2_RR" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="POU_TESTING">
+        <Node name="EXTMOD_0_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="EXTMOD_ON_OFF" type="T_BOOL" access="ReadWrite" />
+        <Node name="ONBOARD_0_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="ONBOARD_ON_OFF" type="T_BOOL" access="ReadWrite" />
       </Node>
     </Node>
   </NodeList>
