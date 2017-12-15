@@ -200,6 +200,7 @@
         <Node name="auto_P1" type="T_BOOL" access="ReadWrite" />
         <Node name="auto_P2" type="T_BOOL" access="ReadWrite" />
         <Node name="auto_P3" type="T_BOOL" access="ReadWrite" />
+        <Node name="bGlobalTest" type="T_BOOL" access="ReadWrite" />
         <Node name="corr_time_P1" type="T_TIME" access="ReadWrite" />
         <Node name="corr_time_P2" type="T_TIME" access="ReadWrite" />
         <Node name="corr_time_P3" type="T_TIME" access="ReadWrite" />
@@ -271,18 +272,48 @@
         <Node name="TA3_TT3" type="T_INT" access="Read" directaddress="%IW6" />
       </Node>
       <Node name="POU_MAIN">
+        <Node name="alarm_dn_LD_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_dn_LD_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_dn_LD_P3" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_dn_TT_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_dn_TT_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_dn_TT_P3" type="T_BOOL" access="ReadWrite" />
+        <Node name="ALARM_HIGH_TT1" type="T_INT" access="ReadWrite" />
+        <Node name="ALARM_HIGH_TT2" type="T_INT" access="ReadWrite" />
+        <Node name="ALARM_HIGH_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="ALARM_LOW_TT1" type="T_INT" access="ReadWrite" />
+        <Node name="ALARM_LOW_TT2" type="T_INT" access="ReadWrite" />
+        <Node name="ALARM_LOW_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="alarm_up_LD_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_up_LD_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_up_LD_P3" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_up_TT_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_up_TT_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_up_TT_P3" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P1_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P1_stop" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P1_up" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P2_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P2_stop" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P2_up" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P3_dn" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P3_stop" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_out_P3_up" type="T_BOOL" access="ReadWrite" />
         <Node name="Delta_ALARM_HIGH_LD1" type="T_INT" access="ReadWrite" />
         <Node name="Delta_ALARM_HIGH_LD2" type="T_INT" access="ReadWrite" />
         <Node name="Delta_ALARM_HIGH_LD3" type="T_INT" access="ReadWrite" />
         <Node name="Delta_ALARM_LOW_LD1" type="T_INT" access="ReadWrite" />
         <Node name="Delta_ALARM_LOW_LD2" type="T_INT" access="ReadWrite" />
         <Node name="Delta_ALARM_LOW_LD3" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_TT1" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_TT2" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_TT3" type="T_INT" access="ReadWrite" />
         <Node name="Delta_LIMIT_TT1" type="T_INT" access="ReadWrite" />
         <Node name="Delta_LIMIT_TT2" type="T_INT" access="ReadWrite" />
         <Node name="Delta_LIMIT_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="limit_dn_TT_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="limit_dn_TT_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="limit_dn_TT_P3" type="T_BOOL" access="ReadWrite" />
+        <Node name="limit_up_TT_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="limit_up_TT_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="limit_up_TT_P3" type="T_BOOL" access="ReadWrite" />
         <Node name="simulate_PozP1" type="T_BOOL" access="ReadWrite" />
         <Node name="simulate_PozP2" type="T_BOOL" access="ReadWrite" />
         <Node name="simulate_PozP3" type="T_BOOL" access="ReadWrite" />
