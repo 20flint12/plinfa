@@ -283,7 +283,9 @@
         <Node name="Delta_LIMIT_TT1" type="T_INT" access="ReadWrite" />
         <Node name="Delta_LIMIT_TT2" type="T_INT" access="ReadWrite" />
         <Node name="Delta_LIMIT_TT3" type="T_INT" access="ReadWrite" />
-        <Node name="signal_max" type="T_BOOL" access="ReadWrite" />
+        <Node name="simulate_PozP1" type="T_BOOL" access="ReadWrite" />
+        <Node name="simulate_PozP2" type="T_BOOL" access="ReadWrite" />
+        <Node name="simulate_PozP3" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="SEC">
         <Node name="PLC_GVL">
