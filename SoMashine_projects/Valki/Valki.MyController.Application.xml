@@ -284,6 +284,9 @@
         <Node name="ALARM_LOW_TT1" type="T_INT" access="ReadWrite" />
         <Node name="ALARM_LOW_TT2" type="T_INT" access="ReadWrite" />
         <Node name="ALARM_LOW_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="alarm_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="alarm_P3" type="T_BOOL" access="ReadWrite" />
         <Node name="alarm_up_LD_P1" type="T_BOOL" access="ReadWrite" />
         <Node name="alarm_up_LD_P2" type="T_BOOL" access="ReadWrite" />
         <Node name="alarm_up_LD_P3" type="T_BOOL" access="ReadWrite" />
@@ -308,6 +311,9 @@
         <Node name="Delta_LIMIT_TT1" type="T_INT" access="ReadWrite" />
         <Node name="Delta_LIMIT_TT2" type="T_INT" access="ReadWrite" />
         <Node name="Delta_LIMIT_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="kvitir_P1" type="T_BOOL" access="ReadWrite" />
+        <Node name="kvitir_P2" type="T_BOOL" access="ReadWrite" />
+        <Node name="kvitir_P3" type="T_BOOL" access="ReadWrite" />
         <Node name="limit_dn_TT_P1" type="T_BOOL" access="ReadWrite" />
         <Node name="limit_dn_TT_P2" type="T_BOOL" access="ReadWrite" />
         <Node name="limit_dn_TT_P3" type="T_BOOL" access="ReadWrite" />
