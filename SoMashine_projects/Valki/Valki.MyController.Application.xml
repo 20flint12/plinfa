@@ -226,6 +226,12 @@
         <Node name="ust_TT3" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="GVL_VAR_KL">
+        <Node name="delay_ctrl_P1" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_ctrl_P2" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_ctrl_P3" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_scan_P1" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_scan_P2" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_scan_P3" type="T_TIME" access="ReadWrite" />
         <Node name="var_KL_P1_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL_P1_stop" type="T_BOOL" access="ReadWrite" />
         <Node name="var_KL_P1_up" type="T_BOOL" access="ReadWrite" />
@@ -329,11 +335,8 @@
         <Node name="simulate_PozP1" type="T_BOOL" access="ReadWrite" />
         <Node name="simulate_PozP2" type="T_BOOL" access="ReadWrite" />
         <Node name="simulate_PozP3" type="T_BOOL" access="ReadWrite" />
-        <Node name="TT1_curr" type="T_INT" access="ReadWrite" />
         <Node name="TT1_max2" type="T_INT" access="ReadWrite" />
-        <Node name="TT2_curr" type="T_INT" access="ReadWrite" />
         <Node name="TT2_max2" type="T_INT" access="ReadWrite" />
-        <Node name="TT3_curr" type="T_INT" access="ReadWrite" />
         <Node name="TT3_max2" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="SEC">
