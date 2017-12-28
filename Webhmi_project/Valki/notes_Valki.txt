@@ -1,0 +1,55 @@
+﻿
+
+PC     192.168.1.93
+panel  192.168.1.50
+contr  192.168.1.49	
+webhmi 192.168.1.55
+
+
+
+95.47.116.233:49995
+95.47.116.233:8080
+
+	
+ controller	 *.*.*.*	 49995	 192.168.1.49	 1107	 TCP/UDP	
+ webhmi	     *.*.*.*	 8080	 192.168.1.55	 80	 TCP/UDP	
+ 	
+ C493000A95B3	 192.168.1.55	 webhmi	
+ 0080F40BB07E	 192.168.1.49	 controller	
+ 0001234E7A9D	 192.168.1.50	 panel	
+ 
+
+http://95.47.116.233:8080/ admin admin
+http://95.47.116.233:8088/ admin admin
+
+
+vpn.novaline.net.ua
+vk624
+0935805191
+
+
+etcp3://95.47.116.233:49995,192.168.1.49
+
+http://novaline.net.ua/
+TM241CEC24T_U @0080F40BB07E
+
+Port Forwards List
+----------------------------------------
+Source             Proto  Port Range  Redirect to     Local port
+ALL                TCP    60001       192.168.1.91    60001      
+ALL                UDP    60001       192.168.1.91    60001      
+ALL                TCP    8088        192.168.1.1     80         
+ALL                TCP    49995       192.168.1.49    1107       
+ALL                UDP    49995       192.168.1.49    1107       
+ALL                TCP    8080        192.168.1.55    80         
+ALL                UDP    8080        192.168.1.55    80     
+
+
+
+
+
+
+
+
+
+
