@@ -1,10 +1,9 @@
-﻿
+
 
 PC     192.168.1.93
 panel  192.168.1.50
 contr  192.168.1.49	
 webhmi 192.168.1.55
-
 
 
 95.47.116.233:49995
@@ -45,6 +44,318 @@ ALL                TCP    8080        192.168.1.55    80
 ALL                UDP    8080        192.168.1.55    80     
 
 
+
+
+******************************
+daily_reports calend
+
+function main (userId)
+
+  AddInfoMessage("::: sending daily report ...", userId);
+
+  local now = os.time(); -- текущее время системы 
+  local dt = os.date("%c", now)
+
+  local cuts_total = GetReg("report_CutsTotal"); -- report_CutsTotal (D492@Internal WebHMI)
+  local cuts_per_day = GetReg("report_CutsPerDay"); -- report_CutsPerDay (D490@Internal WebHMI)
+  
+  -- Обнуление счётчика суток
+  WriteReg("report_CutsPerDay", 0); -- report_CutsPerDay (D490@Internal WebHMI)
+
+
+  local msg = dt .. "\nДобовий звіт:"
+  msg = msg .. "\n1. Кількість порізок всього - " .. cuts_total
+  msg = msg .. "\n2. Кількість порізок за добу - " .. cuts_per_day
+  
+  
+  SendTelegramMessage(442763659, msg)
+  SendTelegramMessage(252239846, msg)   -- Володя Лило
+  
+  SendEmailMessage("20flint12@gmail.com", "Добовий звіт", msg);
+  
+  SendEmailMessage("mfkart@gmail.com", "Добовий звіт", msg);
+  SendEmailMessage("i.bilan@plinfa.info", "Добовий звіт", msg);
+  SendEmailMessage("plinfa.bvm@gmail.com", "Добовий звіт", msg);
+  
+  
+    -- "<p style='color: red;'>Произошла ошибка охладителя #12</p><p>Низкий уровень масла.</p>");
+  
+end
+
+
+
+************************************
+Monitor - MashineHours everyloop
+-- глобальные переменные, сохраняются между вызовами скрипта
+run_state = false; -- для запоминания текущего состояния 
+
+function main (userId)
+    -- локальные переменные 
+    -- local run_status = (GetReg("MHours_enable")==1); -- debug_w (D11@Internal WebHMI)
+
+    local step_A_running = (GetReg("Step_A")~=99);
+    local step_B_running = (GetReg("Step_B")~=99);
+    local step_C_running = (GetReg("Step_C")~=99); 
+    local auto_mode = (GetReg("bGlobalAuto") == 1); -- WEB_CONTROL_1.14 - bGlobalAuto  (HR21@соединение Шнайдер)
+    local run_status = auto_mode and (step_A_running or step_B_running or step_C_running)
+
+    local now = os.time(); -- текущее время системы 
+    local time_diff = 0; -- разница во времени между текущим временем и временем последнего вызова
+    
+    -- ловим фронт события включения механизма
+    if (not run_state) and run_status then 
+        WriteReg("MHours_startTime", now); -- Время старта привода №П43
+        -- WriteReg("MHours_runTime_saved", GetReg("MHours_runTime")); -- MHours_runTime_saved (DS20@Internal WebHMI)
+ 
+    -- считаем время 
+    elseif run_state and run_status then 
+        time_diff = (now - GetReg("MHours_startTime")); -- посчитать разницу времени
+        WriteReg("MHours_runTime", GetReg("MHours_runTime_saved")+time_diff); -- увеличить счетчик моточасов
+        
+    -- ловим фронт события выключения механизма
+    elseif run_state and (not run_status) then 
+        WriteReg("MHours_stopTime", now); -- переписать конечную точку времени 
+        WriteReg("MHours_runTime_saved", GetReg("MHours_runTime")); -- MHours_runTime_saved (DS20@Internal WebHMI)
+        WriteReg("MHours_integer", GetReg("MHours_runTime")); -- MHours_integer (D197@Internal WebHMI)
+
+    end 
+    
+    run_state = run_status; 
+   
+    -- Отображение строки времени
+    WriteReg("MHours_string", SecondsToClock(GetReg("MHours_runTime"))); -- debug_w (D6@Internal WebHMI)
+
+end
+
+
+
+function SecondsToClock(seconds)
+  local seconds = tonumber(seconds)
+
+  if seconds <= 0 then
+    return "00:00:00";
+  else
+    hours = string.format("%02.f", math.floor(seconds/3600));
+    mins = string.format("%02.f", math.floor(seconds/60 - (hours*60)));
+    secs = string.format("%02.f", math.floor(seconds - hours*3600 - mins *60));
+    return hours..":"..mins..":"..secs
+  end
+end
+
+
+
+
+**********************************
+Monitor - StopAuto
+
+function main (userId)
+
+    local state_var_StopAuto = GetReg("var_StopAuto"); -- Стоп (I12) (DI44@соединение Шнайдер)
+
+
+
+    local msg = ""
+    
+    -- if(state_var_StopAuto == 0) then
+        -- msg = msg .. "Off"
+    if(state_var_StopAuto == 1) then
+        
+        msg = "StopAuto = On"
+    end
+    
+    AddInfoMessage(msg, userId);
+    SendTelegramMessage(442763659, msg)
+    SendTelegramMessage(456820450, msg) -- Саша механик
+
+end
+
+
+
+*******************************
+Monitor - CutterCycle
+
+-- глобальные 
+TIMER_DELAY = 30; -- задержка таймера 30 сек. 
+tmrStartTime = 0; -- время начала работы таймера
+to_send = false;
+
+function main (userId)
+
+    local step_B = GetReg("Step_B"); -- Step_B (%MW24) (HR24@соединение Шнайдер)
+    local auto_mode = (GetReg("bGlobalAuto") == 1); -- WEB_CONTROL_1.14 - bGlobalAuto  (HR21@соединение Шнайдер)
+    local now = os.time(); -- текущее время системы 
+    
+    local msg = "CutterCycle - "
+
+    if auto_mode then
+    -- if true then
+        msg = msg .. "bGlobalAuto: "
+
+        if tmrStartTime == 0 then
+            if(step_B == 73) then -- STEP_HorizontalCutting_fwd 73
+                to_send = true;
+                tmrStartTime = now; -- текущее время системы 
+                msg = msg .. "STEP_HorizontalCutting_fwd; " .. tmrStartTime
+            end
+        else
+            if (step_B == 69) and 
+               ((now - tmrStartTime) > TIMER_DELAY) and (tmrStartTime > 0) and
+               (not to_send) then -- STEP_VerticalCutting_up 69
+               
+                to_send = true;
+                tmrStartTime = 0
+
+                local cuts_total = GetReg("report_CutsTotal"); -- report_CutsTotal (D492@Internal WebHMI)
+                local cuts_per_day = GetReg("report_CutsPerDay"); -- report_CutsPerDay (D490@Internal WebHMI)
+                cuts_total = cuts_total + 1
+                cuts_per_day = cuts_per_day + 1
+                WriteReg("report_CutsTotal", cuts_total); -- report_CutsTotal (D492@Internal WebHMI)
+                WriteReg("report_CutsPerDay", cuts_per_day); -- report_CutsPerDay (D490@Internal WebHMI)
+                msg = msg .. "STEP_VerticalCutting_up; " .. now .. "; cuts_total=" .. cuts_total .. "; cuts_per_day=" .. cuts_per_day
+            else
+                
+            end                
+        end
+    end
+    
+    
+    if to_send then
+        to_send = false;
+
+        -- AddInfoMessage(msg, userId);
+        SendTelegramMessage(442763659, msg)
+    end
+ 
+end
+
+
+
+*****************************
+Animation
+
+
+function main (userId)
+
+    local is_HC_fwd = (GetReg("ctrl_HorizontalCutting_fwd")==1); -- ctrl_HorizontalCutting_fwd (D1052@Internal WebHMI)
+    local is_HC_rev = (GetReg("ctrl_HorizontalCutting_rev")==1); -- ctrl_HorizontalCutting_rev (D1053@Internal WebHMI)
+    local is_dHC_fwd = (GetReg("ctrld_HorizontalCutting_fwd")==1); 
+    local is_dHC_rev = (GetReg("ctrld_HorizontalCutting_rev")==1); 
+
+    local posX = GetReg("animationX_HorizCutting"); -- animationX_HorizCutting (D1110@Internal WebHMI)
+    local sens_rev = ((GetReg("C32_s")==1) or (GetReg("C28_s")==1));
+    local sens_fwd = ((GetReg("C16_s")==1) or (GetReg("C22_s")==1));
+
+    if(sens_rev and posX ~=520) then
+        posX = 520
+        WriteReg("animationX_HorizCutting", posX); -- animationY_VertCutting (D1112@Internal WebHMI)
+        -- AddInfoMessage("rev " .. posX, userId);
+    elseif(sens_fwd and posX ~=0) then
+        posX = 0
+        WriteReg("animationX_HorizCutting", posX); -- animationY_VertCutting (D1112@Internal WebHMI)
+        -- AddInfoMessage("fwd " .. posX, userId);
+    else
+        if(is_HC_rev or is_dHC_rev) then
+            if(posX <= 515) then 
+                posX = posX + 4;
+                WriteReg("animationX_HorizCutting", posX); -- animationY_VertCutting (D1112@Internal WebHMI)
+            end   
+        elseif(is_HC_fwd or is_dHC_fwd) then
+            if(posX > 5) then 
+                posX = posX - 4;
+                WriteReg("animationX_HorizCutting", posX); -- animationY_VertCutting (D1112@Internal WebHMI)
+            end
+        end
+    end
+
+    --#############################################################################################################
+    local is_VC_up = (GetReg("ctrl_VerticalCutting_up")==1);
+    local is_VC_dn = (GetReg("ctrl_VerticalCutting_dn")==1);
+    local is_dVC_up = (GetReg("ctrld_VerticalCutting_up")==1);
+    local is_dVC_dn = (GetReg("ctrld_VerticalCutting_dn")==1);
+
+    local posY = GetReg("animationY_VertCutting"); -- animationY_VertCutting (D1112@Internal WebHMI)
+    local sens_up = (GetReg("C17A_s")==1);
+    local sens_dn = (GetReg("C18D_s")==1);
+  
+    if(sens_up and posY ~=0) then
+        posY = 0
+        WriteReg("animationY_VertCutting", posY);
+        -- AddInfoMessage("up " .. posY, userId);
+    elseif(sens_dn and posY ~=150) then
+        posY = 150
+        WriteReg("animationY_VertCutting", posY);
+        -- AddInfoMessage("dn " .. posY, userId);
+    else
+        if(is_VC_up or is_dVC_up) then
+            if(posY >= 3) then 
+                posY = posY - 2;
+                WriteReg("animationY_VertCutting", posY);
+            end   
+        elseif(is_VC_dn or is_dVC_dn) then
+            if(posY <= 147) then 
+                posY = posY + 2;
+                WriteReg("animationY_VertCutting", posY);
+            end   
+        end
+    end
+
+end
+
+
+****************************
+Initialization
+
+
+local main_block = 1;
+local main_debug = 1;
+
+function main (userId)
+    -- Add your code here
+    if(GetReg("var_mom_raschod_vody")  == 0 ) then -- Моментальный расход воды (D108@Internal WebHMI)
+        WriteReg("var_mom_raschod_vody", 1); -- Моментальный расход воды
+
+        -- WriteReg("byte_timeout_1", 7); -- timeout 1 (D301@Internal WebHMI)
+        -- WriteReg("byte_timeout_2", 8); -- timeout 2 (D351@Internal WebHMI)
+        -- WriteReg("byte_timeout_3", 9); -- timeout 1 (D301@Internal WebHMI)
+        -- WriteReg("byte_timeout_4", 10); -- timeout 2 (D351@Internal WebHMI)
+
+        WriteReg("MHours_runTime", GetReg("MHours_runTime_saved"));
+        
+        local t0 = GetReg(8); -- T0 (T0@Internal WebHMI)
+        -- local temp = os.date("*t", 906000490)
+
+        local msg = "[" .. t0 .. "] This is a initial config:\n"
+
+        local state_bDebugBlockInitState = GetReg("bDebugBlockInitState"); -- WEB_CONTROL_2.12 - bDebugBlockInitState (HR22@соединение Шнайдер)
+        msg = msg .. "bDebugBlockInitState = " .. state_bDebugBlockInitState .. '\n'
+        
+        local state_bDebugBlockLimit = GetReg("bDebugBlockLimit"); -- WEB_CONTROL_2.13 - bDebugBlockLimit (HR22@соединение Шнайдер)
+        msg = msg .. "bDebugBlockLimit = " .. state_bDebugBlockLimit .. '\n'
+        
+        local state_bDebugBlockKM = GetReg("bDebugBlockKM");
+        msg = msg .. "bDebugBlockKM = " .. state_bDebugBlockKM .. '\n'
+        
+        local state_bDebug = GetReg("bDebug");
+        msg = msg .. "bDebug = " .. state_bDebug .. '\n'
+
+        -- ##############################################################################
+        local state_bGlobalTest = GetReg("bGlobalTest"); -- WEB_CONTROL_1.12 - bGlobalTest (HR21@соединение Шнайдер)
+        msg = msg .. "bGlobalTest = " .. state_bGlobalTest .. '\n'
+
+        local state_bGlobalAlarm = GetReg("bGlobalAlarm"); -- WEB_CONTROL_1.13 - bGlobalAlarm (HR21@соединение Шнайдер)
+        msg = msg .. "bGlobalAlarm = " .. state_bGlobalAlarm .. '\n'
+
+        local state_bGlobalAuto = GetReg("bGlobalAuto"); -- WEB_CONTROL_1.14 - bGlobalAuto  (HR21@соединение Шнайдер)
+        msg = msg .. "bGlobalAuto = " .. state_bGlobalAuto .. '\n'
+        
+
+        AddInfoMessage(msg, userId);
+        -- AddAlertMessage("Alert! This is a test alert script", userId);
+        SendTelegramMessage(442763659, msg)
+
+    end
+    
+end
 
 
 
