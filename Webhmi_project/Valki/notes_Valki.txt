@@ -26,6 +26,7 @@ vpn.novaline.net.ua
 vk624
 0935805191
 
+0957291502
 
 etcp3://95.47.116.233:49995,192.168.1.49
 
@@ -42,6 +43,17 @@ ALL                TCP    49995       192.168.1.49    1107
 ALL                UDP    49995       192.168.1.49    1107       
 ALL                TCP    8080        192.168.1.55    80         
 ALL                UDP    8080        192.168.1.55    80     
+
+
+
+
+user user5191
+http://192.168.1.55/dashboard.php?id=2
+http://95.47.116.233:8080/setup/scripts.php#script5
+
+http://95.47.116.233:8080/dashboard.php?id=1
+
+
 
 
 

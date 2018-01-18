@@ -270,6 +270,7 @@
         <Node name="SL1_LD1" type="T_INT" access="Read" directaddress="%IW3" />
         <Node name="SL2_LD2" type="T_INT" access="Read" directaddress="%IW5" />
         <Node name="SL3_LD3" type="T_INT" access="Read" directaddress="%IW7" />
+        <Node name="SL4_LD4" type="T_INT" access="Read" directaddress="%IW9" />
         <Node name="SQ1_max1" type="T_BIT_X_0" access="Read" directaddress="%IX0.0" />
         <Node name="SQ2_min1" type="T_BIT_X_1" access="Read" directaddress="%IX0.1" />
         <Node name="SQ3_PozP1" type="T_BIT_X_2" access="Read" directaddress="%IX0.2" />
@@ -282,6 +283,7 @@
         <Node name="TA1_TT1" type="T_INT" access="Read" directaddress="%IW2" />
         <Node name="TA2_TT2" type="T_INT" access="Read" directaddress="%IW4" />
         <Node name="TA3_TT3" type="T_INT" access="Read" directaddress="%IW6" />
+        <Node name="TA4_TT4" type="T_INT" access="Read" directaddress="%IW8" />
       </Node>
       <Node name="POU_MAIN">
         <Node name="alarm_dn_LD_P1" type="T_BOOL" access="ReadWrite" />

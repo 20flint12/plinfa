@@ -69,7 +69,9 @@ http://192.168.0.85
 surmylo		88888878
 
 
-
+192.168.48.48
+192.168.48.11
+192.168.48.60
 plinfa
 TTT333ddd
 rtsp://plinfa:TTT333ddd@192.168.48.48:554/Streaming/Channels/1
