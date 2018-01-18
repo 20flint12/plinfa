@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.3.50</Version>
+    <SymbolConfigObject version="3.5.3.50" />
+    <ProjectInfo name="Kurgan" devicename="MyController" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_WORD" size="2" swapsize="2" typeclass="Word" iecname="WORD" />
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="GVL">
+        <Node name="KLxx_0_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="KLxx_ON_OFF" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="IOCONFIG_GLOBALS_MAPPING">
+        <Node name="A1_IW0" type="T_WORD" access="Read" directaddress="%IW0">
+          <Comment>DI : </Comment>
+        </Node>
+        <Node name="A1_QW0" type="T_WORD" access="ReadWrite" directaddress="%QW0">
+          <Comment>DQ : </Comment>
+        </Node>
+        <Node name="A2_QD1" type="T_DWORD" access="ReadWrite" directaddress="%QD1">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A3_IW0" type="T_INT" access="Read" directaddress="%IW2" />
+        <Node name="A3_IW1" type="T_INT" access="Read" directaddress="%IW3">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A3_IW2" type="T_INT" access="Read" directaddress="%IW4">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A3_IW3" type="T_INT" access="Read" directaddress="%IW5">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A3_IW4" type="T_INT" access="Read" directaddress="%IW6">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A3_IW5" type="T_INT" access="Read" directaddress="%IW7">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A3_IW6" type="T_INT" access="Read" directaddress="%IW8">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A3_IW7" type="T_INT" access="Read" directaddress="%IW9">
+          <Comment>A3 : </Comment>
+        </Node>
+        <Node name="A4_IW0" type="T_INT" access="Read" directaddress="%IW10">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A4_IW1" type="T_INT" access="Read" directaddress="%IW11">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A4_IW2" type="T_INT" access="Read" directaddress="%IW12">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A4_IW3" type="T_INT" access="Read" directaddress="%IW13">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A4_IW4" type="T_INT" access="Read" directaddress="%IW14">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A4_IW5" type="T_INT" access="Read" directaddress="%IW15">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A4_IW6" type="T_INT" access="Read" directaddress="%IW16">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A4_IW7" type="T_INT" access="Read" directaddress="%IW17">
+          <Comment>A4 : </Comment>
+        </Node>
+        <Node name="A5_IW0" type="T_INT" access="Read" directaddress="%IW18">
+          <Comment>A5 : </Comment>
+        </Node>
+        <Node name="A5_IW1" type="T_INT" access="Read" directaddress="%IW19">
+          <Comment>A5 : </Comment>
+        </Node>
+        <Node name="A5_IW2" type="T_INT" access="Read" directaddress="%IW20">
+          <Comment>A5 : </Comment>
+        </Node>
+        <Node name="A5_IW3" type="T_INT" access="Read" directaddress="%IW21">
+          <Comment>A5 : </Comment>
+        </Node>
+        <Node name="A5_IW4" type="T_INT" access="Read" directaddress="%IW22">
+          <Comment>A5 : </Comment>
+        </Node>
+        <Node name="A5_IW5" type="T_INT" access="Read" directaddress="%IW23">
+          <Comment>A5 : </Comment>
+        </Node>
+        <Node name="A5_IW6" type="T_INT" access="Read" directaddress="%IW24">
+          <Comment>A5 : </Comment>
+        </Node>
+        <Node name="A5_IW7" type="T_INT" access="Read" directaddress="%IW25">
+          <Comment>A5 : </Comment>
+        </Node>
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
