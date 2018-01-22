@@ -30,8 +30,14 @@ vk624
 
 etcp3://95.47.116.233:49995,192.168.1.49
 
+enodename3://95.47.116.233:49995,TM241CEC24T_U @0080F40BB07E
+
+
+
+
+
 http://novaline.net.ua/
-TM241CEC24T_U @0080F40BB07E
+
 
 Port Forwards List
 ----------------------------------------
@@ -47,12 +53,15 @@ ALL                UDP    8080        192.168.1.55    80
 
 
 
-user user5191
-http://192.168.1.55/dashboard.php?id=2
-http://95.47.116.233:8080/setup/scripts.php#script5
 
-http://95.47.116.233:8080/dashboard.php?id=1
 
+
+http://95.47.116.233:8080/
+login:		user 
+password:	user5191
+
+в локальной сети
+http://192.168.1.55/
 
 
 
