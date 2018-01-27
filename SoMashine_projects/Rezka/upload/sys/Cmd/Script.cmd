@@ -1,0 +1,6 @@
+Download "/usr/App/Application.app"
+Download "/usr/App/Application.crc"
+Download "/usr/App/Application.map"
+Upload "/usr/App/Application.app"
+Upload "/usr/App/Application.crc"
+Upload "/usr/App/Application.map"
