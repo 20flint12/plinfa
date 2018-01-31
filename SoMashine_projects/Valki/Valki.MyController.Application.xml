@@ -204,9 +204,6 @@
         <Node name="calibr_LD1" type="T_BOOL" access="ReadWrite" />
         <Node name="calibr_LD2" type="T_BOOL" access="ReadWrite" />
         <Node name="calibr_LD3" type="T_BOOL" access="ReadWrite" />
-        <Node name="corr_time_P1" type="T_TIME" access="ReadWrite" />
-        <Node name="corr_time_P2" type="T_TIME" access="ReadWrite" />
-        <Node name="corr_time_P3" type="T_TIME" access="ReadWrite" />
         <Node name="kvitir" type="T_BOOL" access="ReadWrite" />
         <Node name="LD1_cur" type="T_INT" access="ReadWrite" directaddress="%MW23" />
         <Node name="LD2_cur" type="T_INT" access="ReadWrite" directaddress="%MW24" />
@@ -226,6 +223,9 @@
         <Node name="ust_TT3" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="GVL_VAR_KL">
+        <Node name="corr_time_P1" type="T_TIME" access="ReadWrite" />
+        <Node name="corr_time_P2" type="T_TIME" access="ReadWrite" />
+        <Node name="corr_time_P3" type="T_TIME" access="ReadWrite" />
         <Node name="delay_ctrl_P1" type="T_TIME" access="ReadWrite" />
         <Node name="delay_ctrl_P2" type="T_TIME" access="ReadWrite" />
         <Node name="delay_ctrl_P3" type="T_TIME" access="ReadWrite" />
