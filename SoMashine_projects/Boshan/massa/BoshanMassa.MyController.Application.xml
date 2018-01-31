@@ -24,8 +24,7 @@
         <Node name="ctrl_SMK102" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_StopAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TransporterPuskAuto" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_TransporterResetPuskAuto" type="T_BOOL" access="ReadWrite" />
-        <Node name="ctrl_TransporterResetStopAuto" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_TransporterResetAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TransporterStopAuto" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_USM40" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_VERDES" type="T_BOOL" access="ReadWrite" />
@@ -124,6 +123,10 @@
         <Node name="stage_K_8_out_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="stage_K_9_in_EXEC" type="T_BOOL" access="ReadWrite" />
         <Node name="stage_K_9_out_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="Transporter_All_running" type="T_BOOL" access="ReadWrite" />
+        <Node name="Transporter_All_stopped" type="T_BOOL" access="ReadWrite" />
+        <Node name="TransporterAuto_starting" type="T_BOOL" access="ReadWrite" />
+        <Node name="TransporterAuto_stopping" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="POU_MASHINES">
         <Node name="error_USM40" type="T_BOOL" access="ReadWrite" />
