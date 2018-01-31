@@ -1,0 +1,148 @@
+
+Информация о ПО панели HMIGTO5310
+
+Vijeo Designer Runtime Version		6.2.2.252
+Vijeo Designer Version				6.2.5
+Build Number						5103
+
+
+Netmanage controller list
+Thursday, July 27, 2017 10:41:25 AM
+================================================================================
+
+MacAddress=00:80:f4:0b:5f:14
+Controller=TM241CEC24T_U
+FW_Version=V4.0.5.11
+KernalVersion=6.9
+ProgrammingSystem=1.55.14.0
+
+
+
+Михаил Картавенко <mfkart@gmail.com>,
+"plinfa.bvm" <plinfa.bvm@gmail.com>,
+i.bilan@plinfa.info
+
+акты обучения
+
+Hello,
+We need your help.
+After upgrading version Vijeo Designer to 6.2 we encountered with problem to open our design made in Somachine version 4.1. 
+Russian support gave us Vijeo_Designer_6.2_SP5.1_Runtime_for_Windows,
+SP5_Hotfix(6.2.5.5103_6.2.5.5104) and Runtime_For_Windows_SP5_Hotfix(6.2.5.5103_6.2.5.5104).
+We opened successfully our design, but after that encoutered next thins.
+We uploaded design to panel HMIGTO5310. It works well on panel but appeared error message 
+"Incompatible version of Communications System Data file".
+What can we do to solve this problem?
+
+Panel info:
+
+HMIGTO5310
+Vijeo Designer Runtime Version		6.2.2.252
+Vijeo Designer Version				6.2.5
+Build Number						5103
+
+PC:
+Vijeo Designer v.6.2.5.5103 HotFix 5103-5104
+
+Инженер-программист Сурмило Сергей Анатольевич.
+Компания «Plinfa». Харьков.
+
+
+
+
+Предложите 4 ip камеры с подсветкой на 10-20 метров уличные с ip регистратором на 4 входа. Связь с самой дальней камерой 1000 метров. Интересует не дорогой вариант. Спасибо. 
+
+
+BC11000CU
+3840 x 2748 / WQUXGA	1/2.3"	CMOS	Color
+BC11000CU
+Hello. Can you offer a camera with the ability to record video in 4K for fulldome format (square). Also we need fisheye lens for it.
+
+What is the price of BC11000CU
+
+	
+Виктория Валентиновна Английский
+Данные контакта
+0631657419
+
+
+http://integrys.com/request-a-quote/?product_name=Baumer+VCXU-50C-+CX+Series%2C+USB+3.0%2C+Color+2448+%C3%97+2048+px+Cameras
+We want to use this cam for calibration our fuuldome installation in Kharkiv Planetarium
+May be you have better proposition
+Thanks in advance
+
+
+
+function get_curr_cycle_time(start_time)
+    
+    curr_time = GetReg(285); -- T0+ (T0@Internal WebHMI)
+    curr_cycle_time = curr_time - start_time;
+    return curr_cycle_time
+end
+ 
+function is_cycle_running(curr_cycle_time, max_cycle_time)
+    
+    if( curr_cycle_time >= max_cycle_time ) then
+        return 0            
+    else
+        return 1
+    end
+end
+
+
+
+ec2-54-247-82-87.eu-west-1.compute.amazonaws.com
+Database
+d7qdg95thdu4qq
+User
+ebxubcfkjwqsfq
+Port
+5432
+Password
+2c75c2eb38d802f5a16d5dbb83cf50eba2cdd54968c85b459bff960f16118bd0
+URI
+postgres://ebxubcfkjwqsfq:2c75c2eb38d802f5a16d5dbb83cf50eba2cdd54968c85b459bff960f16118bd0@ec2-54-247-82-87.eu-west-1.compute.amazonaws.com:5432/d7qdg95thdu4qqHeroku CLI
+heroku pg:psql postgresql-transparent-45960 --app astro-factor
+
+
+
+r5d8h3k3
+
+Ідентифікаційні дані
+Податковий номер	2777117572
+Прізвище, ім’я та по батькові	СУРМИЛО СЕРГІЙ АНАТОЛІЙОВИЧ
+Реєстраційні дані
+Код ДПІ за основним місцем обліку	2032
+Найменування ДПІ за основним місцем обліку	СХIДНА ОДПI М.ХАРКОВА ГУ ДФС (КОМIНТЕРНIВСЬКИЙ Р-Н)
+Дата взяття на облік платника податків	14.01.2015
+Номер взяття на облік платника податків	203215001910
+Особливий режим	
+Дата зняття з обліку	22.02.2017
+Адреса	УКРАЇНА, 61037, ХАРКIВСЬКА ОБЛАСТЬ, М.ХАРКІВ, КОМІНТЕРНІВСЬКИЙ Р-Н, ВУЛ. ПЛЕХАНІВСЬКА, БУД. 121, КВ.121
+Телефони	0688845064
+Дані про реєстрацію платником ПДВ
+Дані відсутні
+Дані про реєстрацію платником єдиного податку
+Дата переходу на спрощену систему оподаткування	22.01.2015
+Група	2
+Ставка	20
+Дата анулювання	28.02.2017
+Дані про реєстрацію платником ЄСВ
+Дата взяття на облік	14.01.2015
+Реєстраційний номер платника єдиного внеску	10000000325902
+Клас професійного ризику виробництва	2
+Код КВЕД по якому призначено клас професійного ризику	_62.01
+Дата зняття з обліку	
+Відомості з Реєстру осіб, які здійснюють операції з товаром
+Дані відсутні
+Відомості про РРО
+Дані відсутні
+Інформація про книги ОРО
+Дані відсутні
+Відомості про об’єкти оподаткування
+Дані відсутні
+Інформація про неосновні місця обліку
+Дані відсутні
+Дані про банківські рахунки
+Дані відсутні
+
