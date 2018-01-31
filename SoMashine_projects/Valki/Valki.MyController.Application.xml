@@ -215,12 +215,12 @@
         <Node name="TT1_max" type="T_INT" access="ReadWrite" directaddress="%MW20" />
         <Node name="TT2_max" type="T_INT" access="ReadWrite" directaddress="%MW21" />
         <Node name="TT3_max" type="T_INT" access="ReadWrite" directaddress="%MW22" />
-        <Node name="ust_LD1" type="T_INT" access="ReadWrite" />
-        <Node name="ust_LD2" type="T_INT" access="ReadWrite" />
-        <Node name="ust_LD3" type="T_INT" access="ReadWrite" />
-        <Node name="ust_TT1" type="T_INT" access="ReadWrite" />
-        <Node name="ust_TT2" type="T_INT" access="ReadWrite" />
-        <Node name="ust_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="ust_LD1" type="T_INT" access="ReadWrite" directaddress="%MW33" />
+        <Node name="ust_LD2" type="T_INT" access="ReadWrite" directaddress="%MW34" />
+        <Node name="ust_LD3" type="T_INT" access="ReadWrite" directaddress="%MW35" />
+        <Node name="ust_TT1" type="T_INT" access="ReadWrite" directaddress="%MW30" />
+        <Node name="ust_TT2" type="T_INT" access="ReadWrite" directaddress="%MW31" />
+        <Node name="ust_TT3" type="T_INT" access="ReadWrite" directaddress="%MW32" />
       </Node>
       <Node name="GVL_VAR_KL">
         <Node name="corr_time_P1" type="T_TIME" access="ReadWrite" />
@@ -292,12 +292,12 @@
         <Node name="alarm_dn_TT_P1" type="T_BOOL" access="ReadWrite" />
         <Node name="alarm_dn_TT_P2" type="T_BOOL" access="ReadWrite" />
         <Node name="alarm_dn_TT_P3" type="T_BOOL" access="ReadWrite" />
-        <Node name="ALARM_HIGH_TT1" type="T_INT" access="ReadWrite" />
-        <Node name="ALARM_HIGH_TT2" type="T_INT" access="ReadWrite" />
-        <Node name="ALARM_HIGH_TT3" type="T_INT" access="ReadWrite" />
-        <Node name="ALARM_LOW_TT1" type="T_INT" access="ReadWrite" />
-        <Node name="ALARM_LOW_TT2" type="T_INT" access="ReadWrite" />
-        <Node name="ALARM_LOW_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="ALARM_HIGH_TT1" type="T_INT" access="ReadWrite" directaddress="%MW41" />
+        <Node name="ALARM_HIGH_TT2" type="T_INT" access="ReadWrite" directaddress="%MW46" />
+        <Node name="ALARM_HIGH_TT3" type="T_INT" access="ReadWrite" directaddress="%MW51" />
+        <Node name="ALARM_LOW_TT1" type="T_INT" access="ReadWrite" directaddress="%MW42" />
+        <Node name="ALARM_LOW_TT2" type="T_INT" access="ReadWrite" directaddress="%MW47" />
+        <Node name="ALARM_LOW_TT3" type="T_INT" access="ReadWrite" directaddress="%MW52" />
         <Node name="alarm_P1" type="T_BOOL" access="ReadWrite" />
         <Node name="alarm_P2" type="T_BOOL" access="ReadWrite" />
         <Node name="alarm_P3" type="T_BOOL" access="ReadWrite" />
@@ -316,15 +316,15 @@
         <Node name="ctrl_out_P3_dn" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_out_P3_stop" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_out_P3_up" type="T_BOOL" access="ReadWrite" />
-        <Node name="Delta_ALARM_HIGH_LD1" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_HIGH_LD2" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_HIGH_LD3" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_LOW_LD1" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_LOW_LD2" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_ALARM_LOW_LD3" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_LIMIT_TT1" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_LIMIT_TT2" type="T_INT" access="ReadWrite" />
-        <Node name="Delta_LIMIT_TT3" type="T_INT" access="ReadWrite" />
+        <Node name="Delta_ALARM_HIGH_LD1" type="T_INT" access="ReadWrite" directaddress="%MW43" />
+        <Node name="Delta_ALARM_HIGH_LD2" type="T_INT" access="ReadWrite" directaddress="%MW48" />
+        <Node name="Delta_ALARM_HIGH_LD3" type="T_INT" access="ReadWrite" directaddress="%MW53" />
+        <Node name="Delta_ALARM_LOW_LD1" type="T_INT" access="ReadWrite" directaddress="%MW44" />
+        <Node name="Delta_ALARM_LOW_LD2" type="T_INT" access="ReadWrite" directaddress="%MW49" />
+        <Node name="Delta_ALARM_LOW_LD3" type="T_INT" access="ReadWrite" directaddress="%MW54" />
+        <Node name="Delta_LIMIT_TT1" type="T_INT" access="ReadWrite" directaddress="%MW40" />
+        <Node name="Delta_LIMIT_TT2" type="T_INT" access="ReadWrite" directaddress="%MW45" />
+        <Node name="Delta_LIMIT_TT3" type="T_INT" access="ReadWrite" directaddress="%MW50" />
         <Node name="kvitir_P1" type="T_BOOL" access="ReadWrite" />
         <Node name="kvitir_P2" type="T_BOOL" access="ReadWrite" />
         <Node name="kvitir_P3" type="T_BOOL" access="ReadWrite" />
