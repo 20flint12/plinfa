@@ -14,3 +14,6 @@ doc/Дзвин
 temp/
 
 fanuc/
+
+
+*.opt
