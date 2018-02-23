@@ -269,6 +269,8 @@
         <Node name="ctrl_PropTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TakeTable_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_Tipper32RE21_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="ctrl_Tipper32RE21_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_in" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrl_TurnTroll_out" type="T_BOOL" access="ReadWrite" />
         <Node name="ctrld_GetTroll_a_in" type="T_BOOL" access="ReadWrite" />
@@ -396,6 +398,10 @@
         <Node name="CutsPerDay" type="T_UINT" access="ReadWrite" />
         <Node name="CutsPerHour" type="T_UINT" access="ReadWrite" />
         <Node name="CutsTotal" type="T_UINT" access="ReadWrite" />
+        <Node name="delay_32RE21_down_empty" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_32RE21_down_loaded" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_32RE21_up_empty" type="T_TIME" access="ReadWrite" />
+        <Node name="delay_32RE21_up_loaded" type="T_TIME" access="ReadWrite" />
         <Node name="Prog_0_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_0_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_0_C" type="T_BOOL" access="ReadWrite" />
@@ -412,6 +418,7 @@
         <Node name="Prog_4_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Prog_4_C" type="T_BOOL" access="ReadWrite" />
         <Node name="TIME_Edge" type="T_TIME" access="ReadWrite" />
+        <Node name="time_fade_in_out_32RE21" type="T_TIME" access="ReadWrite" />
         <Node name="Trig_1_A" type="T_BOOL" access="ReadWrite" />
         <Node name="Trig_1_B" type="T_BOOL" access="ReadWrite" />
         <Node name="Trig_1_C" type="T_BOOL" access="ReadWrite" />
@@ -734,6 +741,24 @@
         <Node name="timer_GrabTroll_out" type="T_TIME" access="ReadWrite" />
         <Node name="timer_TurnTroll_in" type="T_TIME" access="ReadWrite" />
         <Node name="timer_TurnTroll_out" type="T_TIME" access="ReadWrite" />
+      </Node>
+      <Node name="POU_5_1_TIPPER32RE21">
+        <Node name="end_sensor_down" type="T_BOOL" access="ReadWrite" />
+        <Node name="end_sensor_up" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_Tipper32RE21_in" type="T_BOOL" access="ReadWrite" />
+        <Node name="sens_Tipper32RE21_out" type="T_BOOL" access="ReadWrite" />
+        <Node name="stage_0_delay" type="T_BOOL" access="ReadWrite" />
+        <Node name="stage_1_delay" type="T_BOOL" access="ReadWrite" />
+        <Node name="stage_3_delay" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_Tipper32RE21_in_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_Tipper32RE21_in_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_Tipper32RE21_in_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_Tipper32RE21_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_Tipper32RE21_out_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_Tipper32RE21_out_EXEC" type="T_BOOL" access="ReadWrite" />
+        <Node name="step_Tipper32RE21_out_INIT_ERR" type="T_BOOL" access="ReadWrite" />
+        <Node name="timer_Tipper32RE21_in" type="T_TIME" access="ReadWrite" />
+        <Node name="timer_Tipper32RE21_out" type="T_TIME" access="ReadWrite" />
       </Node>
       <Node name="POU_5_OPROKIDYVANIE">
         <Node name="sens_FixingFrame_in" type="T_BOOL" access="ReadWrite" />

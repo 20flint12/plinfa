@@ -26,13 +26,13 @@
           <Comment>DI : </Comment>
         </Node>
         <Node name="A2_ID" type="T_DWORD" access="Read" directaddress="%ID1">
-          <Comment>Module_3 : </Comment>
+          <Comment>A11 : </Comment>
         </Node>
         <Node name="A3_ID" type="T_DWORD" access="Read" directaddress="%ID2">
-          <Comment>Module_3 : </Comment>
+          <Comment>A11 : </Comment>
         </Node>
         <Node name="A4_ID" type="T_DWORD" access="Read" directaddress="%ID3">
-          <Comment>Module_3 : </Comment>
+          <Comment>A11 : </Comment>
         </Node>
       </Node>
     </Node>

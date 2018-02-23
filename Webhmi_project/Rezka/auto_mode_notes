@@ -171,12 +171,14 @@ user 	user
 [B1]STEP_FrameToTipper_in							[C1]STEP_TurnTroll_out|							
 [B1]STEP_PressTroll_in								
 [B1]STEP_PropTroll_in 
-[B1]STEP_MoveTipper_in		
-[B1]STEP_Pause_in		
+[B1]STEP_MoveTipper_in  (STEP_Tipper32RE21_in)		
+[B1]STEP_Pause_in		(STEP_wait_32RE21_in)		
 [B1]STEP_FrameToTipper_out	
-[B1]STEP_MoveTipper_out	|
+[B1]STEP_MoveTipper_out	(STEP_Tipper32RE21_out)
+						(STEP_wait_32RE21_out)
+|
 	[post_B1_MoveTipper_out] ---------------------- {Prog_2_B} + {D}STEP_PulloutTroll_in
-
+		[post_B1_wait_32RE21_out]
 
 2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №2 BBBBBBBBBBBBBBBBBBBB (Порезать массив)
 {Prog_2_B} + {D}STEP_PulloutTroll_in
@@ -193,10 +195,11 @@ user 	user
 2BBBBBBBBBBBBBBBBBBBB AutoCycle_B №3 BBBBBBBBBBBBBBBBBBBB (Забрать порезаный массив)
 {Prog_3_B}
 [B3]STEP_PropTroll_in
-[B3]STEP_MoveTipper_in		
-[B3]STEP_Pause_in		
+[B3]STEP_MoveTipper_in	(STEP_Tipper32RE21_in)	
+[B3]STEP_Pause_in		(STEP_wait_32RE21_in)
 [B3]STEP_FrameToTipper_in 	
-[B3]STEP_MoveTipper_out		
+[B3]STEP_MoveTipper_out	(STEP_Tipper32RE21_out)
+						(STEP_wait_32RE21_out)	
 [B3]STEP_FrameToTipper_out	
 	[post_B3_FrameToTipper_out] ------------------- {Prog_4_C}
 [B3]STEP_PropTroll_out								[C4]STEP_PressTroll_out
