@@ -8,6 +8,8 @@
   <TypeList>
     <TypeSimple name="T_WORD" size="2" swapsize="2" typeclass="Word" iecname="WORD" />
     <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_USINT" size="1" swapsize="1" typeclass="USInt" iecname="USINT" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
     <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
   </TypeList>
   <NodeList>
@@ -33,6 +35,174 @@
         </Node>
         <Node name="A4_ID" type="T_DWORD" access="Read" directaddress="%ID3">
           <Comment>A11 : </Comment>
+        </Node>
+        <Node name="RA_IW_01_2" type="T_INT" access="Read" directaddress="%IW34">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_02_2" type="T_INT" access="Read" directaddress="%IW35">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_03_2" type="T_INT" access="Read" directaddress="%IW36">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_04_2" type="T_INT" access="Read" directaddress="%IW37">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_05_2" type="T_INT" access="Read" directaddress="%IW38">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_06_2" type="T_INT" access="Read" directaddress="%IW39">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_07_2" type="T_INT" access="Read" directaddress="%IW40">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_08_2" type="T_INT" access="Read" directaddress="%IW41">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_09_2" type="T_INT" access="Read" directaddress="%IW42">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_1" type="T_INT" access="Read" directaddress="%IW9">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_10" type="T_INT" access="Read" directaddress="%IW18">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_10_2" type="T_INT" access="Read" directaddress="%IW43">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_11" type="T_INT" access="Read" directaddress="%IW19">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_11_2" type="T_INT" access="Read" directaddress="%IW44">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_12" type="T_INT" access="Read" directaddress="%IW20">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_12_2" type="T_INT" access="Read" directaddress="%IW45">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_13" type="T_INT" access="Read" directaddress="%IW21">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_13_2" type="T_INT" access="Read" directaddress="%IW46">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_14" type="T_INT" access="Read" directaddress="%IW22">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_14_2" type="T_INT" access="Read" directaddress="%IW47">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_15" type="T_INT" access="Read" directaddress="%IW23">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_15_2" type="T_INT" access="Read" directaddress="%IW48">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_16" type="T_INT" access="Read" directaddress="%IW24">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_16_2" type="T_INT" access="Read" directaddress="%IW49">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_17" type="T_INT" access="Read" directaddress="%IW25">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_17_2" type="T_INT" access="Read" directaddress="%IW50">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_18" type="T_INT" access="Read" directaddress="%IW26">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_18_2" type="T_INT" access="Read" directaddress="%IW51">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_19" type="T_INT" access="Read" directaddress="%IW27">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_19_2" type="T_INT" access="Read" directaddress="%IW52">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_2" type="T_INT" access="Read" directaddress="%IW10">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_20" type="T_INT" access="Read" directaddress="%IW28">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_20_2" type="T_INT" access="Read" directaddress="%IW53">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_21" type="T_INT" access="Read" directaddress="%IW29">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_21_2" type="T_INT" access="Read" directaddress="%IW54">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_22" type="T_INT" access="Read" directaddress="%IW30">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_22_2" type="T_INT" access="Read" directaddress="%IW55">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_23" type="T_INT" access="Read" directaddress="%IW31">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_23_2" type="T_INT" access="Read" directaddress="%IW56">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_24" type="T_INT" access="Read" directaddress="%IW32">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_24_2" type="T_INT" access="Read" directaddress="%IW57">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RA_IW_3" type="T_INT" access="Read" directaddress="%IW11">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_4" type="T_INT" access="Read" directaddress="%IW12">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_5" type="T_INT" access="Read" directaddress="%IW13">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_6" type="T_INT" access="Read" directaddress="%IW14">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_7" type="T_INT" access="Read" directaddress="%IW15">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_8" type="T_INT" access="Read" directaddress="%IW16">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RA_IW_9" type="T_INT" access="Read" directaddress="%IW17">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RI_IB8_1" type="T_USINT" access="Read" directaddress="%IB16">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RI_IB8_1_2" type="T_USINT" access="Read" directaddress="%IB66">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="RI_IB8_2" type="T_USINT" access="Read" directaddress="%IB17">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="RI_IB8_2_2" type="T_USINT" access="Read" directaddress="%IB67">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="WO_QB8_1" type="T_USINT" access="ReadWrite" directaddress="%QB32">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="WO_QB8_1_2" type="T_USINT" access="ReadWrite" directaddress="%QB34">
+          <Comment>island_3_BSP_2 : </Comment>
+        </Node>
+        <Node name="WO_QB8_2" type="T_USINT" access="ReadWrite" directaddress="%QB33">
+          <Comment>island_3_BSP_1 : </Comment>
+        </Node>
+        <Node name="WO_QB8_2_2" type="T_USINT" access="ReadWrite" directaddress="%QB35">
+          <Comment>island_3_BSP_2 : </Comment>
         </Node>
       </Node>
     </Node>

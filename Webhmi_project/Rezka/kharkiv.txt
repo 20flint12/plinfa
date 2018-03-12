@@ -42,6 +42,8 @@ http://plinfa:TTT333ddd@193.169.81.79:45644/Streaming/channels/102/httppreview
 
 rtsp://192.168.48.48:554/Streaming/Channels/1
 rtsp://plinfa:TTT333ddd@192.168.48.48:554/Streaming/Channels/1
+rtsp://plinfa:TTT333ddd@192.168.48.60:554/Streaming/Channels/1
+rtsp://plinfa:TTT333ddd@192.168.48.11:554/Streaming/Channels/1
 
 Take picture
 http://plinfa:TTT333ddd@192.168.48.48/Streaming/channels/1/picture
