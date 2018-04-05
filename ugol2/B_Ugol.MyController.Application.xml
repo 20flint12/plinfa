@@ -30,6 +30,7 @@
         <Node name="AvarPit1" type="T_BOOL" access="ReadWrite" />
         <Node name="AvarPit2" type="T_BOOL" access="ReadWrite" />
         <Node name="AvarStop" type="T_BOOL" access="ReadWrite" />
+        <Node name="GlobalDebug" type="T_BOOL" access="ReadWrite" />
         <Node name="KvitirHMI" type="T_BOOL" access="ReadWrite" />
         <Node name="Pusk_Pit1_AR" type="T_BOOL" access="ReadWrite" />
         <Node name="Pusk_Pit1_RR" type="T_BOOL" access="ReadWrite" />
@@ -110,12 +111,6 @@
         <Node name="PuskHMI_Red2_RR" type="T_BOOL" access="ReadWrite" />
         <Node name="PuskHMI_Yellow1_RR" type="T_BOOL" access="ReadWrite" />
         <Node name="PuskHMI_Yellow2_RR" type="T_BOOL" access="ReadWrite" />
-      </Node>
-      <Node name="POU_TESTING">
-        <Node name="EXTMOD_0_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="EXTMOD_ON_OFF" type="T_BOOL" access="ReadWrite" />
-        <Node name="ONBOARD_0_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="ONBOARD_ON_OFF" type="T_BOOL" access="ReadWrite" />
       </Node>
     </Node>
   </NodeList>
